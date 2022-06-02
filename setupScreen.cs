@@ -16,5 +16,10 @@ namespace Lecture_Seri
         {
             InitializeComponent();
         }
+
+        private void setupScreen_Load(object sender, EventArgs e)
+        {
+           
+        }
     }
 }
