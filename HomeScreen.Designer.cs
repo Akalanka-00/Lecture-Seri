@@ -36,31 +36,36 @@
             this.addToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lectureToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lectureToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.screenCapturesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.customNotesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.notesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.recordingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lectureReferencesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.anAssignmentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.selectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lectureNotesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.screenShotsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.customNotesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lectureMaterialsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.anAssignmentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.recordingsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.assignmentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lectureReferencesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.screenShotsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.customNotesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.screenCapturesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.customNotesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1288, 724);
             this.panel1.TabIndex = 0;
@@ -71,7 +76,7 @@
             this.panel2.Controls.Add(this.menuStrip1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1288, 70);
             this.panel2.TabIndex = 0;
@@ -121,6 +126,7 @@
             this.lectureToolStripMenuItem.Name = "lectureToolStripMenuItem";
             this.lectureToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.lectureToolStripMenuItem.Text = "Course";
+            this.lectureToolStripMenuItem.Click += new System.EventHandler(this.lectureToolStripMenuItem_Click);
             // 
             // lectureToolStripMenuItem1
             // 
@@ -128,26 +134,44 @@
             this.screenCapturesToolStripMenuItem,
             this.customNotesToolStripMenuItem1});
             this.lectureToolStripMenuItem1.Name = "lectureToolStripMenuItem1";
-            this.lectureToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.lectureToolStripMenuItem1.Size = new System.Drawing.Size(216, 26);
             this.lectureToolStripMenuItem1.Text = "Lecture";
+            // 
+            // screenCapturesToolStripMenuItem
+            // 
+            this.screenCapturesToolStripMenuItem.Name = "screenCapturesToolStripMenuItem";
+            this.screenCapturesToolStripMenuItem.Size = new System.Drawing.Size(198, 26);
+            this.screenCapturesToolStripMenuItem.Text = "Screen Captures";
+            // 
+            // customNotesToolStripMenuItem1
+            // 
+            this.customNotesToolStripMenuItem1.Name = "customNotesToolStripMenuItem1";
+            this.customNotesToolStripMenuItem1.Size = new System.Drawing.Size(198, 26);
+            this.customNotesToolStripMenuItem1.Text = "Custom Notes";
             // 
             // notesToolStripMenuItem
             // 
             this.notesToolStripMenuItem.Name = "notesToolStripMenuItem";
-            this.notesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.notesToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.notesToolStripMenuItem.Text = "Notes";
             // 
             // recordingsToolStripMenuItem
             // 
             this.recordingsToolStripMenuItem.Name = "recordingsToolStripMenuItem";
-            this.recordingsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.recordingsToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.recordingsToolStripMenuItem.Text = "Recordings";
             // 
             // lectureReferencesToolStripMenuItem
             // 
             this.lectureReferencesToolStripMenuItem.Name = "lectureReferencesToolStripMenuItem";
-            this.lectureReferencesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.lectureReferencesToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.lectureReferencesToolStripMenuItem.Text = "Lecture References";
+            // 
+            // anAssignmentToolStripMenuItem
+            // 
+            this.anAssignmentToolStripMenuItem.Name = "anAssignmentToolStripMenuItem";
+            this.anAssignmentToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.anAssignmentToolStripMenuItem.Text = "An Assignment";
             // 
             // selectToolStripMenuItem
             // 
@@ -167,62 +191,70 @@
             this.screenShotsToolStripMenuItem,
             this.customNotesToolStripMenuItem});
             this.lectureNotesToolStripMenuItem.Name = "lectureNotesToolStripMenuItem";
-            this.lectureNotesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.lectureNotesToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.lectureNotesToolStripMenuItem.Text = "Lecture Notes";
-            // 
-            // lectureMaterialsToolStripMenuItem
-            // 
-            this.lectureMaterialsToolStripMenuItem.Name = "lectureMaterialsToolStripMenuItem";
-            this.lectureMaterialsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.lectureMaterialsToolStripMenuItem.Text = "Lecture Materials";
-            // 
-            // anAssignmentToolStripMenuItem
-            // 
-            this.anAssignmentToolStripMenuItem.Name = "anAssignmentToolStripMenuItem";
-            this.anAssignmentToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.anAssignmentToolStripMenuItem.Text = "An Assignment";
-            // 
-            // recordingsToolStripMenuItem1
-            // 
-            this.recordingsToolStripMenuItem1.Name = "recordingsToolStripMenuItem1";
-            this.recordingsToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
-            this.recordingsToolStripMenuItem1.Text = "Recordings";
-            // 
-            // assignmentToolStripMenuItem
-            // 
-            this.assignmentToolStripMenuItem.Name = "assignmentToolStripMenuItem";
-            this.assignmentToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.assignmentToolStripMenuItem.Text = "Assignment";
-            // 
-            // lectureReferencesToolStripMenuItem1
-            // 
-            this.lectureReferencesToolStripMenuItem1.Name = "lectureReferencesToolStripMenuItem1";
-            this.lectureReferencesToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
-            this.lectureReferencesToolStripMenuItem1.Text = "Lecture References";
             // 
             // screenShotsToolStripMenuItem
             // 
             this.screenShotsToolStripMenuItem.Name = "screenShotsToolStripMenuItem";
-            this.screenShotsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.screenShotsToolStripMenuItem.Size = new System.Drawing.Size(198, 26);
             this.screenShotsToolStripMenuItem.Text = "Screen Captures";
             // 
             // customNotesToolStripMenuItem
             // 
             this.customNotesToolStripMenuItem.Name = "customNotesToolStripMenuItem";
-            this.customNotesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.customNotesToolStripMenuItem.Size = new System.Drawing.Size(198, 26);
             this.customNotesToolStripMenuItem.Text = "Custom Notes";
             // 
-            // screenCapturesToolStripMenuItem
+            // lectureMaterialsToolStripMenuItem
             // 
-            this.screenCapturesToolStripMenuItem.Name = "screenCapturesToolStripMenuItem";
-            this.screenCapturesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.screenCapturesToolStripMenuItem.Text = "Screen Captures";
+            this.lectureMaterialsToolStripMenuItem.Name = "lectureMaterialsToolStripMenuItem";
+            this.lectureMaterialsToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.lectureMaterialsToolStripMenuItem.Text = "Lecture Materials";
             // 
-            // customNotesToolStripMenuItem1
+            // recordingsToolStripMenuItem1
             // 
-            this.customNotesToolStripMenuItem1.Name = "customNotesToolStripMenuItem1";
-            this.customNotesToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
-            this.customNotesToolStripMenuItem1.Text = "Custom Notes";
+            this.recordingsToolStripMenuItem1.Name = "recordingsToolStripMenuItem1";
+            this.recordingsToolStripMenuItem1.Size = new System.Drawing.Size(216, 26);
+            this.recordingsToolStripMenuItem1.Text = "Recordings";
+            // 
+            // assignmentToolStripMenuItem
+            // 
+            this.assignmentToolStripMenuItem.Name = "assignmentToolStripMenuItem";
+            this.assignmentToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.assignmentToolStripMenuItem.Text = "Assignment";
+            // 
+            // lectureReferencesToolStripMenuItem1
+            // 
+            this.lectureReferencesToolStripMenuItem1.Name = "lectureReferencesToolStripMenuItem1";
+            this.lectureReferencesToolStripMenuItem1.Size = new System.Drawing.Size(216, 26);
+            this.lectureReferencesToolStripMenuItem1.Text = "Lecture References";
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.panel5);
+            this.panel3.Controls.Add(this.panel4);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(0, 70);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1288, 654);
+            this.panel3.TabIndex = 1;
+            // 
+            // panel4
+            // 
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(297, 654);
+            this.panel4.TabIndex = 0;
+            // 
+            // panel5
+            // 
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel5.Location = new System.Drawing.Point(297, 599);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(991, 55);
+            this.panel5.TabIndex = 1;
             // 
             // HomeScreen
             // 
@@ -231,7 +263,7 @@
             this.ClientSize = new System.Drawing.Size(1288, 724);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "HomeScreen";
             this.Text = "HomeScreen";
             this.panel1.ResumeLayout(false);
@@ -239,6 +271,7 @@
             this.panel2.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -267,5 +300,8 @@
         private System.Windows.Forms.ToolStripMenuItem customNotesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem assignmentToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem lectureReferencesToolStripMenuItem1;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel4;
     }
 }

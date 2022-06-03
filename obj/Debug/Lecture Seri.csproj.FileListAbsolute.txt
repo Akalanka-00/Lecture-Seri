@@ -16,3 +16,4 @@ D:\Projects\c#\Lecture Seri\Lecture Seri\bin\Debug\Microsoft.WindowsAPICodePack.
 D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Debug\Lecture Seri.csproj.CopyComplete
 D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Debug\Lecture_Seri.SplashScreen.resources
 D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Debug\Lecture_Seri.HomeScreen.resources
+D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Debug\Lecture_Seri.newCourseScreen.resources

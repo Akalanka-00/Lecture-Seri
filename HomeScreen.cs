@@ -17,9 +17,21 @@ namespace Lecture_Seri
             InitializeComponent();
         }
 
+        
+        private void newCourse()
+        {
+            newCourseScreen ncs = new newCourseScreen();
+            ncs.Show();
+        }
+
         private void newLectureToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void lectureToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            newCourse();
         }
     }
 }
