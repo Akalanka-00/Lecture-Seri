@@ -21,5 +21,16 @@ namespace Lecture_Seri
         {
            
         }
+
+        private void okBtn_Click(object sender, EventArgs e)
+        {
+            uniSettings.Default.uni = uniTxtBox.Text;
+            uniSettings.Default.degree = degreeTxtBox.Text;
+            uniSettings.Default.email= mailTxtBox.Text;
+            uniSettings.Default.psw = pswTxtBox.Text;
+
+            uniSettings.Default.Save();
+            Console.WriteLine(uniSettings.Default.uni);
+        }
     }
 }
