@@ -47,7 +47,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.pathTxtBox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
@@ -258,7 +258,7 @@
             // 
             this.panel8.BackColor = System.Drawing.Color.Transparent;
             this.panel8.Controls.Add(this.button1);
-            this.panel8.Controls.Add(this.textBox1);
+            this.panel8.Controls.Add(this.pathTxtBox);
             this.panel8.Controls.Add(this.label6);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel8.Location = new System.Drawing.Point(0, 373);
@@ -267,13 +267,12 @@
             this.panel8.Size = new System.Drawing.Size(842, 38);
             this.panel8.TabIndex = 6;
             // 
-            // textBox1
+            // pathTxtBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(184, 1);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.PasswordChar = '*';
-            this.textBox1.Size = new System.Drawing.Size(541, 28);
-            this.textBox1.TabIndex = 1;
+            this.pathTxtBox.Location = new System.Drawing.Point(184, 1);
+            this.pathTxtBox.Name = "pathTxtBox";
+            this.pathTxtBox.Size = new System.Drawing.Size(541, 28);
+            this.pathTxtBox.TabIndex = 1;
             // 
             // label6
             // 
@@ -289,12 +288,13 @@
             // button1
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(731, 4);
+            this.button1.Location = new System.Drawing.Point(731, 0);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(99, 28);
             this.button1.TabIndex = 2;
             this.button1.Text = "browse";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // setupScreen
             // 
@@ -346,7 +346,7 @@
         private System.Windows.Forms.Button okBtn;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox pathTxtBox;
         private System.Windows.Forms.Label label6;
     }
 }

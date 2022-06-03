@@ -9,3 +9,9 @@ D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Debug\Lecture Seri.csproj.GenerateR
 D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Debug\Lecture Seri.csproj.CoreCompileInputs.cache
 D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Debug\Lecture Seri.exe
 D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Debug\Lecture Seri.pdb
+D:\Projects\c#\Lecture Seri\Lecture Seri\bin\Debug\Microsoft.WindowsAPICodePack.dll
+D:\Projects\c#\Lecture Seri\Lecture Seri\bin\Debug\Microsoft.WindowsAPICodePack.Shell.dll
+D:\Projects\c#\Lecture Seri\Lecture Seri\bin\Debug\Microsoft.WindowsAPICodePack.xml
+D:\Projects\c#\Lecture Seri\Lecture Seri\bin\Debug\Microsoft.WindowsAPICodePack.Shell.xml
+D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Debug\Lecture Seri.csproj.CopyComplete
+D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Debug\Lecture_Seri.SplashScreen.resources

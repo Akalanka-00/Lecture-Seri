@@ -82,5 +82,17 @@ namespace Lecture_Seri {
                 this["localPath"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool dataSaved {
+            get {
+                return ((bool)(this["dataSaved"]));
+            }
+            set {
+                this["dataSaved"] = value;
+            }
+        }
     }
 }
