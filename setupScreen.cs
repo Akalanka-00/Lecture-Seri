@@ -30,7 +30,9 @@ namespace Lecture_Seri
             uniSettings.Default.psw = pswTxtBox.Text;
 
             uniSettings.Default.Save();
-            Console.WriteLine(uniSettings.Default.uni);
+
+
+           // Console.WriteLine(uniSettings.Default.uni);
         }
     }
 }
