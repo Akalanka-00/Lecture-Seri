@@ -16,5 +16,10 @@ namespace Lecture_Seri
         {
             InitializeComponent();
         }
+
+        private void newLectureToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
