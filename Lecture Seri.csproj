@@ -67,6 +67,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="excelWrite.cs" />
     <Compile Include="HomeScreen.cs">
       <SubType>Form</SubType>
     </Compile>
