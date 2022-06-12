@@ -30,6 +30,12 @@ namespace Lecture_Seri
             ans.Show();
         }
 
+        private void newReference()
+        {
+            addReferencesScreen arf = new addReferencesScreen();
+            arf.Show();
+        }
+
         private void newLectureToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
@@ -43,6 +49,11 @@ namespace Lecture_Seri
         private void notesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             newNote();
+        }
+
+        private void lectureReferencesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            newReference();
         }
     }
 }

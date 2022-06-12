@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Lecture_Seri
 {
-    public partial class addNoteScreen : Form
+    public partial class addReferencesScreen : Form
     {
-        public addNoteScreen()
+        public addReferencesScreen()
         {
             InitializeComponent();
         }
@@ -23,9 +23,8 @@ namespace Lecture_Seri
             idComboBox.SelectedIndex = 0;
         }
 
-        private void addNotes_Load(object sender, EventArgs e)
+        private void addReferencesScreen_Load(object sender, EventArgs e)
         {
-
             initScreen();
         }
     }

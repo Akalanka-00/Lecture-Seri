@@ -131,7 +131,7 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(145, 26);
             this.exitToolStripMenuItem.Text = "Settings";
             // 
             // addToolStripMenuItem
@@ -193,6 +193,7 @@
             this.lectureReferencesToolStripMenuItem.Name = "lectureReferencesToolStripMenuItem";
             this.lectureReferencesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.lectureReferencesToolStripMenuItem.Text = "Lecture References";
+            this.lectureReferencesToolStripMenuItem.Click += new System.EventHandler(this.lectureReferencesToolStripMenuItem_Click);
             // 
             // anAssignmentToolStripMenuItem
             // 

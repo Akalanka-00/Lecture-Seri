@@ -1,6 +1,6 @@
 ﻿namespace Lecture_Seri
 {
-    partial class addNoteScreen
+    partial class addReferencesScreen
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.button1 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.nameTxtBox = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.okBtn = new System.Windows.Forms.Button();
@@ -38,24 +43,72 @@
             this.label6 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.lvlComboBox = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.nameTxtBox = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.panel4.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // button1
+            // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(526, 15);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(84, 37);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "clipboard";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(13, 25);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(36, 16);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Note";
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.button1);
+            this.panel4.Controls.Add(this.nameTxtBox);
+            this.panel4.Controls.Add(this.label2);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 207);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(637, 61);
+            this.panel4.TabIndex = 7;
+            // 
+            // nameTxtBox
+            // 
+            this.nameTxtBox.Location = new System.Drawing.Point(144, 22);
+            this.nameTxtBox.Name = "nameTxtBox";
+            this.nameTxtBox.Size = new System.Drawing.Size(372, 22);
+            this.nameTxtBox.TabIndex = 1;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.panel4);
+            this.panel1.Controls.Add(this.panel9);
+            this.panel1.Controls.Add(this.panel7);
+            this.panel1.Controls.Add(this.panel5);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(637, 464);
+            this.panel1.TabIndex = 2;
             // 
             // panel9
             // 
@@ -162,6 +215,17 @@
             this.label5.TabIndex = 0;
             this.label5.Text = "Course ID";
             // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.lvlComboBox);
+            this.panel5.Controls.Add(this.label3);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel5.Location = new System.Drawing.Point(0, 85);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(637, 61);
+            this.panel5.TabIndex = 3;
+            // 
             // lvlComboBox
             // 
             this.lvlComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -191,17 +255,6 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "Level";
             // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.lvlComboBox);
-            this.panel5.Controls.Add(this.label3);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(0, 85);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(637, 61);
-            this.panel5.TabIndex = 3;
-            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.label1);
@@ -221,72 +274,22 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(637, 85);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Add a new Note";
+            this.label1.Text = "Add a new Reference";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.panel9);
-            this.panel1.Controls.Add(this.panel7);
-            this.panel1.Controls.Add(this.panel5);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(637, 464);
-            this.panel1.TabIndex = 1;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.button1);
-            this.panel4.Controls.Add(this.nameTxtBox);
-            this.panel4.Controls.Add(this.label2);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 207);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(637, 61);
-            this.panel4.TabIndex = 7;
-            // 
-            // button1
-            // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(571, 15);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(39, 37);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "...";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // nameTxtBox
-            // 
-            this.nameTxtBox.Location = new System.Drawing.Point(144, 22);
-            this.nameTxtBox.Name = "nameTxtBox";
-            this.nameTxtBox.Size = new System.Drawing.Size(421, 22);
-            this.nameTxtBox.TabIndex = 1;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 25);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(36, 16);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Note";
-            // 
-            // addNoteScreen
+            // addReferencesScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(637, 464);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "addNoteScreen";
-            this.Text = "addNotes";
-            this.Load += new System.EventHandler(this.addNotes_Load);
+            this.Name = "addReferencesScreen";
+            this.Text = "addReferencesScreen";
+            this.Load += new System.EventHandler(this.addReferencesScreen_Load);
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
@@ -295,14 +298,17 @@
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel2.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.TextBox nameTxtBox;
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button okBtn;
@@ -313,15 +319,10 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.ComboBox lvlComboBox;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox nameTxtBox;
-        private System.Windows.Forms.Label label2;
     }
 }
