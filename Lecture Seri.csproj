@@ -67,6 +67,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="addNoteScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addNoteScreen.Designer.cs">
+      <DependentUpon>addNoteScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="excelWrite.cs" />
     <Compile Include="HomeScreen.cs">
       <SubType>Form</SubType>
@@ -99,6 +105,9 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>uniSettings.settings</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="addNoteScreen.resx">
+      <DependentUpon>addNoteScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HomeScreen.resx">
       <DependentUpon>HomeScreen.cs</DependentUpon>
     </EmbeddedResource>

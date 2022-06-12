@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -50,13 +53,10 @@
             this.recordingsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.assignmentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lectureReferencesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -69,6 +69,32 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1288, 724);
             this.panel1.TabIndex = 0;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.panel5);
+            this.panel3.Controls.Add(this.panel4);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(0, 70);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1288, 654);
+            this.panel3.TabIndex = 1;
+            // 
+            // panel5
+            // 
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel5.Location = new System.Drawing.Point(297, 599);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(991, 55);
+            this.panel5.TabIndex = 1;
+            // 
+            // panel4
+            // 
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(297, 654);
+            this.panel4.TabIndex = 0;
             // 
             // panel2
             // 
@@ -134,7 +160,7 @@
             this.screenCapturesToolStripMenuItem,
             this.customNotesToolStripMenuItem1});
             this.lectureToolStripMenuItem1.Name = "lectureToolStripMenuItem1";
-            this.lectureToolStripMenuItem1.Size = new System.Drawing.Size(216, 26);
+            this.lectureToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
             this.lectureToolStripMenuItem1.Text = "Lecture";
             // 
             // screenCapturesToolStripMenuItem
@@ -152,25 +178,26 @@
             // notesToolStripMenuItem
             // 
             this.notesToolStripMenuItem.Name = "notesToolStripMenuItem";
-            this.notesToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
-            this.notesToolStripMenuItem.Text = "Notes";
+            this.notesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.notesToolStripMenuItem.Text = "Lecture Notes";
+            this.notesToolStripMenuItem.Click += new System.EventHandler(this.notesToolStripMenuItem_Click);
             // 
             // recordingsToolStripMenuItem
             // 
             this.recordingsToolStripMenuItem.Name = "recordingsToolStripMenuItem";
-            this.recordingsToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.recordingsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.recordingsToolStripMenuItem.Text = "Recordings";
             // 
             // lectureReferencesToolStripMenuItem
             // 
             this.lectureReferencesToolStripMenuItem.Name = "lectureReferencesToolStripMenuItem";
-            this.lectureReferencesToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.lectureReferencesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.lectureReferencesToolStripMenuItem.Text = "Lecture References";
             // 
             // anAssignmentToolStripMenuItem
             // 
             this.anAssignmentToolStripMenuItem.Name = "anAssignmentToolStripMenuItem";
-            this.anAssignmentToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.anAssignmentToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.anAssignmentToolStripMenuItem.Text = "An Assignment";
             // 
             // selectToolStripMenuItem
@@ -230,32 +257,6 @@
             this.lectureReferencesToolStripMenuItem1.Size = new System.Drawing.Size(216, 26);
             this.lectureReferencesToolStripMenuItem1.Text = "Lecture References";
             // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.panel5);
-            this.panel3.Controls.Add(this.panel4);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 70);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1288, 654);
-            this.panel3.TabIndex = 1;
-            // 
-            // panel4
-            // 
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(297, 654);
-            this.panel4.TabIndex = 0;
-            // 
-            // panel5
-            // 
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(297, 599);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(991, 55);
-            this.panel5.TabIndex = 1;
-            // 
             // HomeScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
@@ -267,11 +268,11 @@
             this.Name = "HomeScreen";
             this.Text = "HomeScreen";
             this.panel1.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

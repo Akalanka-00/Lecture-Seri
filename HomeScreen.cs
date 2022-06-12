@@ -24,6 +24,12 @@ namespace Lecture_Seri
             ncs.Show();
         }
 
+        private void newNote()
+        {
+            addNoteScreen ans = new addNoteScreen();
+            ans.Show();
+        }
+
         private void newLectureToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
@@ -32,6 +38,11 @@ namespace Lecture_Seri
         private void lectureToolStripMenuItem_Click(object sender, EventArgs e)
         {
             newCourse();
+        }
+
+        private void notesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            newNote();
         }
     }
 }
