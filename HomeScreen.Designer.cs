@@ -187,6 +187,7 @@
             this.recordingsToolStripMenuItem.Name = "recordingsToolStripMenuItem";
             this.recordingsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.recordingsToolStripMenuItem.Text = "Recordings";
+            this.recordingsToolStripMenuItem.Click += new System.EventHandler(this.recordingsToolStripMenuItem_Click);
             // 
             // lectureReferencesToolStripMenuItem
             // 

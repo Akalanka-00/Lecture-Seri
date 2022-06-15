@@ -19,3 +19,4 @@ D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Debug\Lecture_Seri.HomeScreen.resou
 D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Debug\Lecture_Seri.newCourseScreen.resources
 D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Debug\Lecture_Seri.addNoteScreen.resources
 D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Debug\Lecture_Seri.addReferencesScreen.resources
+D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Debug\Lecture_Seri.recordingScreen.resources

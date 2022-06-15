@@ -94,6 +94,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="recordingScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="recordingScreen.Designer.cs">
+      <DependentUpon>recordingScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="setupScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +139,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="recordingScreen.resx">
+      <DependentUpon>recordingScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="setupScreen.resx">
       <DependentUpon>setupScreen.cs</DependentUpon>
     </EmbeddedResource>

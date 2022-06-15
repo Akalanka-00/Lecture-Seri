@@ -36,6 +36,12 @@ namespace Lecture_Seri
             arf.Show();
         }
 
+        private void newRecord()
+        {
+            recordingScreen rs = new recordingScreen();
+            rs.Show();
+        }
+
         private void newLectureToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
@@ -54,6 +60,11 @@ namespace Lecture_Seri
         private void lectureReferencesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             newReference();
+        }
+
+        private void recordingsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            newRecord();
         }
     }
 }
