@@ -27,5 +27,10 @@ namespace Lecture_Seri
         {
             initScreen();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }
