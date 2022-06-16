@@ -66,5 +66,10 @@ namespace Lecture_Seri
         {
             newRecord();
         }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
