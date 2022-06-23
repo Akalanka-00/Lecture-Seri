@@ -37,6 +37,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.addToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lectureToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lectureToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -54,7 +55,6 @@
             this.recordingsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.assignmentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lectureReferencesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -151,9 +151,18 @@
             this.exitToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(42)))), ((int)(((byte)(76)))));
             this.exitToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(145, 26);
             this.exitToolStripMenuItem.Text = "Settings";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
+            // exitToolStripMenuItem1
+            // 
+            this.exitToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(42)))), ((int)(((byte)(76)))));
+            this.exitToolStripMenuItem1.ForeColor = System.Drawing.Color.White;
+            this.exitToolStripMenuItem1.Name = "exitToolStripMenuItem1";
+            this.exitToolStripMenuItem1.Size = new System.Drawing.Size(145, 26);
+            this.exitToolStripMenuItem1.Text = "Exit";
+            this.exitToolStripMenuItem1.Click += new System.EventHandler(this.exitToolStripMenuItem1_Click);
             // 
             // addToolStripMenuItem
             // 
@@ -166,8 +175,9 @@
             this.anAssignmentToolStripMenuItem});
             this.addToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.addToolStripMenuItem.Name = "addToolStripMenuItem";
-            this.addToolStripMenuItem.Size = new System.Drawing.Size(51, 24);
-            this.addToolStripMenuItem.Text = "Add";
+            this.addToolStripMenuItem.Size = new System.Drawing.Size(56, 24);
+            this.addToolStripMenuItem.Text = "tools";
+            this.addToolStripMenuItem.Click += new System.EventHandler(this.addToolStripMenuItem_Click);
             // 
             // lectureToolStripMenuItem
             // 
@@ -257,7 +267,7 @@
             this.customNotesToolStripMenuItem});
             this.lectureNotesToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.lectureNotesToolStripMenuItem.Name = "lectureNotesToolStripMenuItem";
-            this.lectureNotesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.lectureNotesToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.lectureNotesToolStripMenuItem.Text = "Lecture Notes";
             // 
             // screenShotsToolStripMenuItem
@@ -277,7 +287,7 @@
             this.lectureMaterialsToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(42)))), ((int)(((byte)(76)))));
             this.lectureMaterialsToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.lectureMaterialsToolStripMenuItem.Name = "lectureMaterialsToolStripMenuItem";
-            this.lectureMaterialsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.lectureMaterialsToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.lectureMaterialsToolStripMenuItem.Text = "Lecture Materials";
             // 
             // recordingsToolStripMenuItem1
@@ -285,7 +295,7 @@
             this.recordingsToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(42)))), ((int)(((byte)(76)))));
             this.recordingsToolStripMenuItem1.ForeColor = System.Drawing.Color.White;
             this.recordingsToolStripMenuItem1.Name = "recordingsToolStripMenuItem1";
-            this.recordingsToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.recordingsToolStripMenuItem1.Size = new System.Drawing.Size(216, 26);
             this.recordingsToolStripMenuItem1.Text = "Recordings";
             // 
             // assignmentToolStripMenuItem
@@ -293,7 +303,7 @@
             this.assignmentToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(42)))), ((int)(((byte)(76)))));
             this.assignmentToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.assignmentToolStripMenuItem.Name = "assignmentToolStripMenuItem";
-            this.assignmentToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.assignmentToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.assignmentToolStripMenuItem.Text = "Assignment";
             // 
             // lectureReferencesToolStripMenuItem1
@@ -301,17 +311,8 @@
             this.lectureReferencesToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(42)))), ((int)(((byte)(76)))));
             this.lectureReferencesToolStripMenuItem1.ForeColor = System.Drawing.Color.White;
             this.lectureReferencesToolStripMenuItem1.Name = "lectureReferencesToolStripMenuItem1";
-            this.lectureReferencesToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.lectureReferencesToolStripMenuItem1.Size = new System.Drawing.Size(216, 26);
             this.lectureReferencesToolStripMenuItem1.Text = "Lecture References";
-            // 
-            // exitToolStripMenuItem1
-            // 
-            this.exitToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(42)))), ((int)(((byte)(76)))));
-            this.exitToolStripMenuItem1.ForeColor = System.Drawing.Color.White;
-            this.exitToolStripMenuItem1.Name = "exitToolStripMenuItem1";
-            this.exitToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
-            this.exitToolStripMenuItem1.Text = "Exit";
-            this.exitToolStripMenuItem1.Click += new System.EventHandler(this.exitToolStripMenuItem1_Click);
             // 
             // HomeScreen
             // 

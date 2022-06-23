@@ -76,5 +76,10 @@ namespace Lecture_Seri
         {
             this.Close();
         }
+
+        private void addToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
