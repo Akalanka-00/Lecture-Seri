@@ -17,7 +17,7 @@ namespace Lecture_Seri
             InitializeComponent();
         }
 
-        
+
         private void newCourse()
         {
             newCourseScreen ncs = new newCourseScreen();
