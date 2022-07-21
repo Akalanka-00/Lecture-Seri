@@ -106,12 +106,19 @@
     <Compile Include="setupScreen.Designer.cs">
       <DependentUpon>setupScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="signInScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="signInScreen.Designer.cs">
+      <DependentUpon>signInScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="SplashScreen.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SplashScreen.Designer.cs">
       <DependentUpon>SplashScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="uniSettings.cs" />
     <Compile Include="uniSettings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
@@ -144,6 +151,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="setupScreen.resx">
       <DependentUpon>setupScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="signInScreen.resx">
+      <DependentUpon>signInScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SplashScreen.resx">
       <DependentUpon>SplashScreen.cs</DependentUpon>

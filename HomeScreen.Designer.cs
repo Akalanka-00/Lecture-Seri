@@ -32,13 +32,21 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.lvlComboBox = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.materialSelectBox = new System.Windows.Forms.ComboBox();
+            this.panel11 = new System.Windows.Forms.Panel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.SignInToolBtn = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolBtn = new System.Windows.Forms.ToolStripMenuItem();
             this.addToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lectureToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lectureToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -56,20 +64,13 @@
             this.recordingsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.assignmentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lectureReferencesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lvlComboBox = new System.Windows.Forms.ComboBox();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.materialSelectBox = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.panel8.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
-            this.panel8.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -88,15 +89,15 @@
             this.panel3.Controls.Add(this.panel5);
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 70);
+            this.panel3.Location = new System.Drawing.Point(0, 79);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1288, 654);
+            this.panel3.Size = new System.Drawing.Size(1288, 645);
             this.panel3.TabIndex = 1;
             // 
             // panel5
             // 
             this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(297, 599);
+            this.panel5.Location = new System.Drawing.Point(297, 590);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(991, 55);
             this.panel5.TabIndex = 1;
@@ -111,15 +112,72 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(297, 654);
+            this.panel4.Size = new System.Drawing.Size(297, 645);
             this.panel4.TabIndex = 0;
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.White;
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel10.Location = new System.Drawing.Point(0, 47);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(297, 1);
+            this.panel10.TabIndex = 3;
+            // 
+            // panel9
+            // 
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel9.Location = new System.Drawing.Point(0, 37);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(297, 10);
+            this.panel9.TabIndex = 2;
+            // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.lvlComboBox);
+            this.panel8.Controls.Add(this.label1);
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel8.Location = new System.Drawing.Point(0, 0);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(297, 37);
+            this.panel8.TabIndex = 1;
+            // 
+            // lvlComboBox
+            // 
+            this.lvlComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.lvlComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lvlComboBox.FormattingEnabled = true;
+            this.lvlComboBox.Items.AddRange(new object[] {
+            "L1S1",
+            "L1S2",
+            "L2S1",
+            "L2S2",
+            "L3S1",
+            "L3S2",
+            "L4S1",
+            "L4S2"});
+            this.lvlComboBox.Location = new System.Drawing.Point(88, 4);
+            this.lvlComboBox.Name = "lvlComboBox";
+            this.lvlComboBox.Size = new System.Drawing.Size(168, 29);
+            this.lvlComboBox.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(80, 37);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Level ";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(42)))), ((int)(((byte)(76)))));
             this.panel6.Controls.Add(this.panel7);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel6.Location = new System.Drawing.Point(0, 475);
+            this.panel6.Location = new System.Drawing.Point(0, 466);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(297, 179);
             this.panel6.TabIndex = 0;
@@ -144,8 +202,34 @@
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1288, 70);
+            this.panel2.Size = new System.Drawing.Size(1288, 79);
             this.panel2.TabIndex = 0;
+            // 
+            // materialSelectBox
+            // 
+            this.materialSelectBox.Dock = System.Windows.Forms.DockStyle.Right;
+            this.materialSelectBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.materialSelectBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.materialSelectBox.Font = new System.Drawing.Font("Century Gothic", 10.4F);
+            this.materialSelectBox.FormattingEnabled = true;
+            this.materialSelectBox.Items.AddRange(new object[] {
+            "Lecture Notes",
+            "Tutorials",
+            "Custom Notes",
+            "Assignments",
+            "Pass papers"});
+            this.materialSelectBox.Location = new System.Drawing.Point(1103, 28);
+            this.materialSelectBox.Name = "materialSelectBox";
+            this.materialSelectBox.Size = new System.Drawing.Size(168, 29);
+            this.materialSelectBox.TabIndex = 3;
+            // 
+            // panel11
+            // 
+            this.panel11.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel11.Location = new System.Drawing.Point(1271, 28);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(17, 51);
+            this.panel11.TabIndex = 1;
             // 
             // menuStrip1
             // 
@@ -157,7 +241,7 @@
             this.selectToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1288, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(1288, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -165,10 +249,11 @@
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.exitToolStripMenuItem,
-            this.exitToolStripMenuItem1});
+            this.SignInToolBtn,
+            this.exitToolBtn});
             this.fileToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 26);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // exitToolStripMenuItem
@@ -176,18 +261,26 @@
             this.exitToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(42)))), ((int)(((byte)(76)))));
             this.exitToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(145, 26);
             this.exitToolStripMenuItem.Text = "Settings";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
-            // exitToolStripMenuItem1
+            // SignInToolBtn
             // 
-            this.exitToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(42)))), ((int)(((byte)(76)))));
-            this.exitToolStripMenuItem1.ForeColor = System.Drawing.Color.White;
-            this.exitToolStripMenuItem1.Name = "exitToolStripMenuItem1";
-            this.exitToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
-            this.exitToolStripMenuItem1.Text = "Exit";
-            this.exitToolStripMenuItem1.Click += new System.EventHandler(this.exitToolStripMenuItem1_Click);
+            this.SignInToolBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(42)))), ((int)(((byte)(76)))));
+            this.SignInToolBtn.ForeColor = System.Drawing.Color.White;
+            this.SignInToolBtn.Name = "SignInToolBtn";
+            this.SignInToolBtn.Size = new System.Drawing.Size(145, 26);
+            this.SignInToolBtn.Text = "Sign In";
+            this.SignInToolBtn.Click += new System.EventHandler(this.SignInToolBtn_Click);
+            // 
+            // exitToolBtn
+            // 
+            this.exitToolBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(42)))), ((int)(((byte)(76)))));
+            this.exitToolBtn.ForeColor = System.Drawing.Color.White;
+            this.exitToolBtn.Name = "exitToolBtn";
+            this.exitToolBtn.Size = new System.Drawing.Size(145, 26);
+            this.exitToolBtn.Text = "Exit";
+            this.exitToolBtn.Click += new System.EventHandler(this.exitToolBtn_Click);
             // 
             // addToolStripMenuItem
             // 
@@ -200,9 +293,8 @@
             this.anAssignmentToolStripMenuItem});
             this.addToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.addToolStripMenuItem.Name = "addToolStripMenuItem";
-            this.addToolStripMenuItem.Size = new System.Drawing.Size(56, 26);
+            this.addToolStripMenuItem.Size = new System.Drawing.Size(56, 24);
             this.addToolStripMenuItem.Text = "tools";
-            this.addToolStripMenuItem.Click += new System.EventHandler(this.addToolStripMenuItem_Click);
             // 
             // lectureToolStripMenuItem
             // 
@@ -281,7 +373,7 @@
             this.lectureReferencesToolStripMenuItem1});
             this.selectToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.selectToolStripMenuItem.Name = "selectToolStripMenuItem";
-            this.selectToolStripMenuItem.Size = new System.Drawing.Size(63, 26);
+            this.selectToolStripMenuItem.Size = new System.Drawing.Size(63, 24);
             this.selectToolStripMenuItem.Text = "Select";
             // 
             // lectureNotesToolStripMenuItem
@@ -339,89 +431,6 @@
             this.lectureReferencesToolStripMenuItem1.Size = new System.Drawing.Size(216, 26);
             this.lectureReferencesToolStripMenuItem1.Text = "Lecture References";
             // 
-            // panel8
-            // 
-            this.panel8.Controls.Add(this.lvlComboBox);
-            this.panel8.Controls.Add(this.label1);
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel8.Location = new System.Drawing.Point(0, 0);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(297, 37);
-            this.panel8.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 37);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Level ";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lvlComboBox
-            // 
-            this.lvlComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.lvlComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lvlComboBox.FormattingEnabled = true;
-            this.lvlComboBox.Items.AddRange(new object[] {
-            "L1S1",
-            "L1S2",
-            "L2S1",
-            "L2S2",
-            "L3S1",
-            "L3S2",
-            "L4S1",
-            "L4S2"});
-            this.lvlComboBox.Location = new System.Drawing.Point(88, 4);
-            this.lvlComboBox.Name = "lvlComboBox";
-            this.lvlComboBox.Size = new System.Drawing.Size(168, 29);
-            this.lvlComboBox.TabIndex = 2;
-            // 
-            // panel9
-            // 
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel9.Location = new System.Drawing.Point(0, 37);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(297, 10);
-            this.panel9.TabIndex = 2;
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.White;
-            this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel10.Location = new System.Drawing.Point(0, 47);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(297, 1);
-            this.panel10.TabIndex = 3;
-            // 
-            // panel11
-            // 
-            this.panel11.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel11.Location = new System.Drawing.Point(1271, 30);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(17, 40);
-            this.panel11.TabIndex = 1;
-            // 
-            // materialSelectBox
-            // 
-            this.materialSelectBox.Dock = System.Windows.Forms.DockStyle.Right;
-            this.materialSelectBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.materialSelectBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.materialSelectBox.Font = new System.Drawing.Font("Century Gothic", 10.4F);
-            this.materialSelectBox.FormattingEnabled = true;
-            this.materialSelectBox.Items.AddRange(new object[] {
-            "Lecture Notes",
-            "Tutorials",
-            "Custom Notes",
-            "Assignments",
-            "Pass papers"});
-            this.materialSelectBox.Location = new System.Drawing.Point(1103, 30);
-            this.materialSelectBox.Name = "materialSelectBox";
-            this.materialSelectBox.Size = new System.Drawing.Size(168, 29);
-            this.materialSelectBox.TabIndex = 3;
-            // 
             // HomeScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
@@ -436,12 +445,12 @@
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
+            this.panel8.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.panel8.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -474,7 +483,7 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem SignInToolBtn;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label label1;
@@ -483,5 +492,6 @@
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.ComboBox materialSelectBox;
         private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.ToolStripMenuItem exitToolBtn;
     }
 }

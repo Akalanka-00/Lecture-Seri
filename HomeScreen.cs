@@ -42,6 +42,12 @@ namespace Lecture_Seri
             rs.Show();
         }
 
+        private void signIn()
+        {
+            signInScreen sis = new signInScreen();
+            sis.Show();
+        }
+
         private void newLectureToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
@@ -67,25 +73,20 @@ namespace Lecture_Seri
             newRecord();
         }
 
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void exitToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void addToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void HomeScreen_Load(object sender, EventArgs e)
         {
             lvlComboBox.SelectedIndex = 0;
             materialSelectBox.SelectedIndex = 0;
+        }
+
+        private void SignInToolBtn_Click(object sender, EventArgs e)
+        {
+            signIn();
+        }
+
+        private void exitToolBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
