@@ -63,6 +63,18 @@
             this.panel20 = new System.Windows.Forms.Panel();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
+            this.panel21 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.panel22 = new System.Windows.Forms.Panel();
+            this.panel23 = new System.Windows.Forms.Panel();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.panel24 = new System.Windows.Forms.Panel();
+            this.label13 = new System.Windows.Forms.Label();
+            this.panel25 = new System.Windows.Forms.Panel();
+            this.panel26 = new System.Windows.Forms.Panel();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -76,6 +88,10 @@
             this.panel17.SuspendLayout();
             this.panel18.SuspendLayout();
             this.panel20.SuspendLayout();
+            this.panel21.SuspendLayout();
+            this.panel23.SuspendLayout();
+            this.panel24.SuspendLayout();
+            this.panel26.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -237,6 +253,8 @@
             // 
             // panel11
             // 
+            this.panel11.Controls.Add(this.panel24);
+            this.panel11.Controls.Add(this.panel21);
             this.panel11.Controls.Add(this.panel18);
             this.panel11.Controls.Add(this.panel15);
             this.panel11.Controls.Add(this.panel12);
@@ -447,6 +465,134 @@
             this.label10.Text = "Re Paassword";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // panel21
+            // 
+            this.panel21.Controls.Add(this.label11);
+            this.panel21.Controls.Add(this.panel22);
+            this.panel21.Controls.Add(this.panel23);
+            this.panel21.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel21.Location = new System.Drawing.Point(0, 276);
+            this.panel21.Name = "panel21";
+            this.panel21.Size = new System.Drawing.Size(558, 75);
+            this.panel21.TabIndex = 4;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.8F);
+            this.label11.ForeColor = System.Drawing.Color.Red;
+            this.label11.Location = new System.Drawing.Point(140, 31);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(177, 15);
+            this.label11.TabIndex = 6;
+            this.label11.Text = "This username is already taken";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // panel22
+            // 
+            this.panel22.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel22.Location = new System.Drawing.Point(0, 31);
+            this.panel22.Name = "panel22";
+            this.panel22.Size = new System.Drawing.Size(140, 44);
+            this.panel22.TabIndex = 5;
+            // 
+            // panel23
+            // 
+            this.panel23.Controls.Add(this.textBox4);
+            this.panel23.Controls.Add(this.label12);
+            this.panel23.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel23.Location = new System.Drawing.Point(0, 0);
+            this.panel23.Name = "panel23";
+            this.panel23.Size = new System.Drawing.Size(558, 31);
+            this.panel23.TabIndex = 4;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.textBox4.Location = new System.Drawing.Point(140, 0);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(6, 3, 3, 3);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(386, 26);
+            this.textBox4.TabIndex = 5;
+            // 
+            // label12
+            // 
+            this.label12.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(0, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(140, 31);
+            this.label12.TabIndex = 4;
+            this.label12.Text = "Univeresity";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // panel24
+            // 
+            this.panel24.Controls.Add(this.label13);
+            this.panel24.Controls.Add(this.panel25);
+            this.panel24.Controls.Add(this.panel26);
+            this.panel24.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel24.Location = new System.Drawing.Point(0, 351);
+            this.panel24.Name = "panel24";
+            this.panel24.Size = new System.Drawing.Size(558, 75);
+            this.panel24.TabIndex = 5;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.8F);
+            this.label13.ForeColor = System.Drawing.Color.Red;
+            this.label13.Location = new System.Drawing.Point(140, 31);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(177, 15);
+            this.label13.TabIndex = 6;
+            this.label13.Text = "This username is already taken";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // panel25
+            // 
+            this.panel25.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel25.Location = new System.Drawing.Point(0, 31);
+            this.panel25.Name = "panel25";
+            this.panel25.Size = new System.Drawing.Size(140, 44);
+            this.panel25.TabIndex = 5;
+            // 
+            // panel26
+            // 
+            this.panel26.Controls.Add(this.textBox5);
+            this.panel26.Controls.Add(this.label14);
+            this.panel26.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel26.Location = new System.Drawing.Point(0, 0);
+            this.panel26.Name = "panel26";
+            this.panel26.Size = new System.Drawing.Size(558, 31);
+            this.panel26.TabIndex = 4;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Dock = System.Windows.Forms.DockStyle.Left;
+            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.textBox5.Location = new System.Drawing.Point(140, 0);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(6, 3, 3, 3);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(266, 26);
+            this.textBox5.TabIndex = 5;
+            // 
+            // label14
+            // 
+            this.label14.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
+            this.label14.ForeColor = System.Drawing.Color.White;
+            this.label14.Location = new System.Drawing.Point(0, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(140, 31);
+            this.label14.TabIndex = 4;
+            this.label14.Text = "Country";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // signInScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -478,6 +624,14 @@
             this.panel18.PerformLayout();
             this.panel20.ResumeLayout(false);
             this.panel20.PerformLayout();
+            this.panel21.ResumeLayout(false);
+            this.panel21.PerformLayout();
+            this.panel23.ResumeLayout(false);
+            this.panel23.PerformLayout();
+            this.panel24.ResumeLayout(false);
+            this.panel24.PerformLayout();
+            this.panel26.ResumeLayout(false);
+            this.panel26.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -519,5 +673,17 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Panel panel24;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Panel panel25;
+        private System.Windows.Forms.Panel panel26;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Panel panel21;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Panel panel22;
+        private System.Windows.Forms.Panel panel23;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Label label12;
     }
 }

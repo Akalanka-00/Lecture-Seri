@@ -218,7 +218,7 @@
             "Custom Notes",
             "Assignments",
             "Pass papers"});
-            this.materialSelectBox.Location = new System.Drawing.Point(1103, 28);
+            this.materialSelectBox.Location = new System.Drawing.Point(1103, 30);
             this.materialSelectBox.Name = "materialSelectBox";
             this.materialSelectBox.Size = new System.Drawing.Size(168, 29);
             this.materialSelectBox.TabIndex = 3;
@@ -226,9 +226,9 @@
             // panel11
             // 
             this.panel11.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel11.Location = new System.Drawing.Point(1271, 28);
+            this.panel11.Location = new System.Drawing.Point(1271, 30);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(17, 51);
+            this.panel11.Size = new System.Drawing.Size(17, 49);
             this.panel11.TabIndex = 1;
             // 
             // menuStrip1
@@ -241,7 +241,7 @@
             this.selectToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1288, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1288, 30);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
