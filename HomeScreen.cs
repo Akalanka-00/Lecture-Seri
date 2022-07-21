@@ -81,5 +81,11 @@ namespace Lecture_Seri
         {
 
         }
+
+        private void HomeScreen_Load(object sender, EventArgs e)
+        {
+            lvlComboBox.SelectedIndex = 0;
+            materialSelectBox.SelectedIndex = 0;
+        }
     }
 }

@@ -1,22 +1,22 @@
 D:\Projects\c#\Lecture Seri\Lecture Seri\bin\Debug\Lecture Seri.exe.config
 D:\Projects\c#\Lecture Seri\Lecture Seri\bin\Debug\Lecture Seri.exe
 D:\Projects\c#\Lecture Seri\Lecture Seri\bin\Debug\Lecture Seri.pdb
-D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Debug\Lecture Seri.csproj.AssemblyReference.cache
-D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Debug\Lecture Seri.csproj.SuggestedBindingRedirects.cache
-D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Debug\Lecture_Seri.Properties.Resources.resources
-D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Debug\Lecture_Seri.setupScreen.resources
-D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Debug\Lecture Seri.csproj.GenerateResource.cache
-D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Debug\Lecture Seri.csproj.CoreCompileInputs.cache
-D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Debug\Lecture Seri.exe
-D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Debug\Lecture Seri.pdb
 D:\Projects\c#\Lecture Seri\Lecture Seri\bin\Debug\Microsoft.WindowsAPICodePack.dll
 D:\Projects\c#\Lecture Seri\Lecture Seri\bin\Debug\Microsoft.WindowsAPICodePack.Shell.dll
 D:\Projects\c#\Lecture Seri\Lecture Seri\bin\Debug\Microsoft.WindowsAPICodePack.xml
 D:\Projects\c#\Lecture Seri\Lecture Seri\bin\Debug\Microsoft.WindowsAPICodePack.Shell.xml
-D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Debug\Lecture Seri.csproj.CopyComplete
-D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Debug\Lecture_Seri.SplashScreen.resources
-D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Debug\Lecture_Seri.HomeScreen.resources
-D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Debug\Lecture_Seri.newCourseScreen.resources
+D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Debug\Lecture Seri.csproj.AssemblyReference.cache
+D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Debug\Lecture Seri.csproj.SuggestedBindingRedirects.cache
 D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Debug\Lecture_Seri.addNoteScreen.resources
 D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Debug\Lecture_Seri.addReferencesScreen.resources
+D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Debug\Lecture_Seri.HomeScreen.resources
+D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Debug\Lecture_Seri.newCourseScreen.resources
+D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Debug\Lecture_Seri.Properties.Resources.resources
 D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Debug\Lecture_Seri.recordingScreen.resources
+D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Debug\Lecture_Seri.setupScreen.resources
+D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Debug\Lecture_Seri.SplashScreen.resources
+D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Debug\Lecture Seri.csproj.GenerateResource.cache
+D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Debug\Lecture Seri.csproj.CoreCompileInputs.cache
+D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Debug\Lecture Seri.csproj.CopyComplete
+D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Debug\Lecture Seri.exe
+D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Debug\Lecture Seri.pdb

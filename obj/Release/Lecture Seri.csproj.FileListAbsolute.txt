@@ -1,0 +1,22 @@
+D:\Projects\c#\Lecture Seri\Lecture Seri\bin\Release\Lecture Seri.exe.config
+D:\Projects\c#\Lecture Seri\Lecture Seri\bin\Release\Lecture Seri.exe
+D:\Projects\c#\Lecture Seri\Lecture Seri\bin\Release\Lecture Seri.pdb
+D:\Projects\c#\Lecture Seri\Lecture Seri\bin\Release\Microsoft.WindowsAPICodePack.dll
+D:\Projects\c#\Lecture Seri\Lecture Seri\bin\Release\Microsoft.WindowsAPICodePack.Shell.dll
+D:\Projects\c#\Lecture Seri\Lecture Seri\bin\Release\Microsoft.WindowsAPICodePack.xml
+D:\Projects\c#\Lecture Seri\Lecture Seri\bin\Release\Microsoft.WindowsAPICodePack.Shell.xml
+D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Release\Lecture Seri.csproj.AssemblyReference.cache
+D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Release\Lecture Seri.csproj.SuggestedBindingRedirects.cache
+D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Release\Lecture_Seri.addNoteScreen.resources
+D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Release\Lecture_Seri.addReferencesScreen.resources
+D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Release\Lecture_Seri.HomeScreen.resources
+D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Release\Lecture_Seri.newCourseScreen.resources
+D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Release\Lecture_Seri.Properties.Resources.resources
+D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Release\Lecture_Seri.recordingScreen.resources
+D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Release\Lecture_Seri.setupScreen.resources
+D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Release\Lecture_Seri.SplashScreen.resources
+D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Release\Lecture Seri.csproj.GenerateResource.cache
+D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Release\Lecture Seri.csproj.CoreCompileInputs.cache
+D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Release\Lecture Seri.csproj.CopyComplete
+D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Release\Lecture Seri.exe
+D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Release\Lecture Seri.pdb
