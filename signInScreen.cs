@@ -27,6 +27,7 @@ namespace Lecture_Seri
                 label4.Text = "Sign Up";
                 label3.Text = "New User";
                 label1.Text = "Sign In";
+                movingPanel.Width = 568;
             }
             else
             {
@@ -34,8 +35,14 @@ namespace Lecture_Seri
                 label4.Text = "Sign In";
                 label3.Text = "Already have an Account   ";
                 label1.Text = "Sign Up";
+                movingPanel.Width = 0;
             }
 
+        }
+
+        private void signInScreen_Load(object sender, EventArgs e)
+        {
+            movingPanel.Width = 0;
         }
     }
 }
