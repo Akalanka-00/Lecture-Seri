@@ -18,6 +18,8 @@ namespace Lecture_Seri
         }
 
         bool signin = true;
+		Bitmap image;
+		String basae64Text = "";
 		public static string[] Names = new string[]
 	{
 	"Afghanistan",
@@ -286,6 +288,42 @@ namespace Lecture_Seri
         {
             movingPanel.Width = 0;
 			countryCombo.SelectedIndex = 0;
+        }
+
+		private void setAvatar()
+        {
+			OpenFileDialog open = new OpenFileDialog();
+			// image filters  
+			open.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp)|*.jpg; *.jpeg; *.gif; *.bmp";
+			if (open.ShowDialog() == DialogResult.OK)
+			{
+				// display image in picture box  
+				avatar.Image = new Bitmap(open.FileName);
+				// image file path  
+				image = new Bitmap(open.FileName);
+				byte[] imageArray = System.IO.File.ReadAllBytes(open.FileName);
+				basae64Text = Convert.ToBase64String(imageArray);
+
+			}
+		}
+
+		private void saveData()
+        {
+			userSettings.Default.Avatar = basae64Text;
+
+			userSettings.Default.Save();
+        }
+      
+
+        private void addAvatarBtn_Click_1(object sender, EventArgs e)
+        {
+			setAvatar();
+		}
+
+        private void signupBtn_Click(object sender, EventArgs e)
+        {
+			saveData();
+			this.Close();
         }
     }
 }

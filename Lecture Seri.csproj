@@ -79,6 +79,9 @@
     <Compile Include="addReferencesScreen.Designer.cs">
       <DependentUpon>addReferencesScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="CircularShape.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="excelWrite.cs" />
     <Compile Include="HomeScreen.cs">
       <SubType>Form</SubType>
@@ -123,6 +126,11 @@
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>uniSettings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="userSettings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>userSettings.settings</DependentUpon>
     </Compile>
     <EmbeddedResource Include="addNoteScreen.resx">
       <DependentUpon>addNoteScreen.cs</DependentUpon>
@@ -172,6 +180,10 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>uniSettings.Designer.cs</LastGenOutput>
     </None>
+    <None Include="userSettings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>userSettings.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -190,6 +202,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avatar.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -48,6 +49,24 @@ namespace Lecture_Seri
             sis.Show();
         }
 
+        public Image byteArrayToImage(byte[] source)
+        {
+            MemoryStream ms = new MemoryStream(source);
+            Image ret = Image.FromStream(ms);
+            return ret;
+        }
+
+        private void loadAvatar()
+        {
+            Image img;
+            String avatarTxt = userSettings.Default.Avatar;
+            byte[] imageArray;
+            imageArray = Convert.FromBase64String(avatarTxt);
+             img = byteArrayToImage(imageArray);
+            avatarShape.Image = img;
+
+        }
+
         private void newLectureToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
@@ -77,6 +96,7 @@ namespace Lecture_Seri
         {
             lvlComboBox.SelectedIndex = 0;
             materialSelectBox.SelectedIndex = 0;
+            loadAvatar();
         }
 
         private void SignInToolBtn_Click(object sender, EventArgs e)
