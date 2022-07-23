@@ -21,3 +21,4 @@ D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Debug\Lecture Seri.csproj.CopyCompl
 D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Debug\Lecture Seri.exe
 D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Debug\Lecture Seri.pdb
 D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Debug\Lecture_Seri.signInScreen.resources
+D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Debug\Lecture_Seri.UniversityScreen.resources

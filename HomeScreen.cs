@@ -18,7 +18,11 @@ namespace Lecture_Seri
             InitializeComponent();
         }
 
-
+        private void addUni()
+        {
+            UniversityScreen us = new UniversityScreen();
+            us.Show();
+        }
         private void newCourse()
         {
             newCourseScreen ncs = new newCourseScreen();
@@ -125,6 +129,11 @@ namespace Lecture_Seri
         private void HomeScreen_Activated(object sender, EventArgs e)
         {
             loadAvatar();
+        }
+
+        private void addUniversityToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            addUni();
         }
     }
 }

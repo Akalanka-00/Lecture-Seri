@@ -48,8 +48,9 @@
             this.panel11 = new System.Windows.Forms.Panel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SignInToolBtn = new System.Windows.Forms.ToolStripMenuItem();
+            this.addUniversityToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolBtn = new System.Windows.Forms.ToolStripMenuItem();
             this.addToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lectureToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -68,7 +69,6 @@
             this.recordingsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.assignmentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lectureReferencesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.addSchoolUniversityToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -297,7 +297,7 @@
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.SignInToolBtn,
-            this.addSchoolUniversityToolStripMenuItem,
+            this.addUniversityToolStripMenuItem,
             this.exitToolStripMenuItem,
             this.exitToolBtn});
             this.fileToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
@@ -305,29 +305,36 @@
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
             this.fileToolStripMenuItem.Text = "File";
             // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.BackColor = System.Drawing.Color.White;
-            this.exitToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(145, 26);
-            this.exitToolStripMenuItem.Text = "Settings";
-            // 
             // SignInToolBtn
             // 
             this.SignInToolBtn.BackColor = System.Drawing.Color.White;
             this.SignInToolBtn.ForeColor = System.Drawing.Color.Black;
             this.SignInToolBtn.Name = "SignInToolBtn";
-            this.SignInToolBtn.Size = new System.Drawing.Size(145, 26);
+            this.SignInToolBtn.Size = new System.Drawing.Size(224, 26);
             this.SignInToolBtn.Text = "Sign In";
             this.SignInToolBtn.Click += new System.EventHandler(this.SignInToolBtn_Click);
+            // 
+            // addUniversityToolStripMenuItem
+            // 
+            this.addUniversityToolStripMenuItem.Name = "addUniversityToolStripMenuItem";
+            this.addUniversityToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.addUniversityToolStripMenuItem.Text = "University";
+            this.addUniversityToolStripMenuItem.Click += new System.EventHandler(this.addUniversityToolStripMenuItem_Click);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.BackColor = System.Drawing.Color.White;
+            this.exitToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.exitToolStripMenuItem.Text = "Settings";
             // 
             // exitToolBtn
             // 
             this.exitToolBtn.BackColor = System.Drawing.Color.White;
             this.exitToolBtn.ForeColor = System.Drawing.Color.Black;
             this.exitToolBtn.Name = "exitToolBtn";
-            this.exitToolBtn.Size = new System.Drawing.Size(145, 26);
+            this.exitToolBtn.Size = new System.Drawing.Size(224, 26);
             this.exitToolBtn.Text = "Exit";
             this.exitToolBtn.Click += new System.EventHandler(this.exitToolBtn_Click);
             // 
@@ -480,12 +487,6 @@
             this.lectureReferencesToolStripMenuItem1.Size = new System.Drawing.Size(216, 26);
             this.lectureReferencesToolStripMenuItem1.Text = "Lecture References";
             // 
-            // addSchoolUniversityToolStripMenuItem
-            // 
-            this.addSchoolUniversityToolStripMenuItem.Name = "addSchoolUniversityToolStripMenuItem";
-            this.addSchoolUniversityToolStripMenuItem.Size = new System.Drawing.Size(239, 26);
-            this.addSchoolUniversityToolStripMenuItem.Text = "Add School/University";
-            // 
             // HomeScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
@@ -554,6 +555,6 @@
         private CircularShape avatarShape;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Panel panel14;
-        private System.Windows.Forms.ToolStripMenuItem addSchoolUniversityToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addUniversityToolStripMenuItem;
     }
 }
