@@ -285,6 +285,7 @@ namespace Lecture_Seri
         private void signInScreen_Load(object sender, EventArgs e)
         {
             movingPanel.Width = 0;
+			countryCombo.SelectedIndex = 0;
         }
     }
 }
