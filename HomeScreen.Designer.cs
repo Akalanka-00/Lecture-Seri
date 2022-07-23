@@ -96,6 +96,7 @@
             // 
             // panel5
             // 
+            this.panel5.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel5.Location = new System.Drawing.Point(297, 590);
             this.panel5.Name = "panel5";
@@ -104,7 +105,7 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(52)))), ((int)(((byte)(86)))));
+            this.panel4.BackColor = System.Drawing.Color.Gainsboro;
             this.panel4.Controls.Add(this.panel10);
             this.panel4.Controls.Add(this.panel9);
             this.panel4.Controls.Add(this.panel8);
@@ -117,7 +118,7 @@
             // 
             // panel10
             // 
-            this.panel10.BackColor = System.Drawing.Color.White;
+            this.panel10.BackColor = System.Drawing.Color.DarkGray;
             this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel10.Location = new System.Drawing.Point(0, 47);
             this.panel10.Name = "panel10";
@@ -134,6 +135,7 @@
             // 
             // panel8
             // 
+            this.panel8.BackColor = System.Drawing.Color.Gainsboro;
             this.panel8.Controls.Add(this.lvlComboBox);
             this.panel8.Controls.Add(this.label1);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
@@ -164,7 +166,7 @@
             // label1
             // 
             this.label1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(80, 37);
@@ -174,7 +176,7 @@
             // 
             // panel6
             // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(42)))), ((int)(((byte)(76)))));
+            this.panel6.BackColor = System.Drawing.Color.LightGray;
             this.panel6.Controls.Add(this.panel7);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel6.Location = new System.Drawing.Point(0, 466);
@@ -184,7 +186,7 @@
             // 
             // panel7
             // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(42)))), ((int)(((byte)(56)))));
+            this.panel7.BackColor = System.Drawing.Color.Gainsboro;
             this.panel7.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel7.Location = new System.Drawing.Point(0, 124);
             this.panel7.Name = "panel7";
@@ -193,7 +195,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(32)))), ((int)(((byte)(66)))));
+            this.panel2.BackColor = System.Drawing.Color.Gainsboro;
             this.panel2.Controls.Add(this.materialSelectBox);
             this.panel2.Controls.Add(this.panel11);
             this.panel2.Controls.Add(this.menuStrip1);
@@ -207,6 +209,7 @@
             // 
             // materialSelectBox
             // 
+            this.materialSelectBox.BackColor = System.Drawing.Color.White;
             this.materialSelectBox.Dock = System.Windows.Forms.DockStyle.Right;
             this.materialSelectBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.materialSelectBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -218,7 +221,7 @@
             "Custom Notes",
             "Assignments",
             "Pass papers"});
-            this.materialSelectBox.Location = new System.Drawing.Point(1103, 30);
+            this.materialSelectBox.Location = new System.Drawing.Point(1103, 28);
             this.materialSelectBox.Name = "materialSelectBox";
             this.materialSelectBox.Size = new System.Drawing.Size(168, 29);
             this.materialSelectBox.TabIndex = 3;
@@ -226,14 +229,14 @@
             // panel11
             // 
             this.panel11.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel11.Location = new System.Drawing.Point(1271, 30);
+            this.panel11.Location = new System.Drawing.Point(1271, 28);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(17, 49);
+            this.panel11.Size = new System.Drawing.Size(17, 51);
             this.panel11.TabIndex = 1;
             // 
             // menuStrip1
             // 
-            this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(32)))), ((int)(((byte)(66)))));
+            this.menuStrip1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
@@ -241,7 +244,7 @@
             this.selectToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1288, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(1288, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -251,34 +254,34 @@
             this.exitToolStripMenuItem,
             this.SignInToolBtn,
             this.exitToolBtn});
-            this.fileToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.fileToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // exitToolStripMenuItem
             // 
-            this.exitToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(42)))), ((int)(((byte)(76)))));
-            this.exitToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.exitToolStripMenuItem.BackColor = System.Drawing.Color.White;
+            this.exitToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(145, 26);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.exitToolStripMenuItem.Text = "Settings";
             // 
             // SignInToolBtn
             // 
-            this.SignInToolBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(42)))), ((int)(((byte)(76)))));
-            this.SignInToolBtn.ForeColor = System.Drawing.Color.White;
+            this.SignInToolBtn.BackColor = System.Drawing.Color.White;
+            this.SignInToolBtn.ForeColor = System.Drawing.Color.Black;
             this.SignInToolBtn.Name = "SignInToolBtn";
-            this.SignInToolBtn.Size = new System.Drawing.Size(145, 26);
+            this.SignInToolBtn.Size = new System.Drawing.Size(224, 26);
             this.SignInToolBtn.Text = "Sign In";
             this.SignInToolBtn.Click += new System.EventHandler(this.SignInToolBtn_Click);
             // 
             // exitToolBtn
             // 
-            this.exitToolBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(42)))), ((int)(((byte)(76)))));
-            this.exitToolBtn.ForeColor = System.Drawing.Color.White;
+            this.exitToolBtn.BackColor = System.Drawing.Color.White;
+            this.exitToolBtn.ForeColor = System.Drawing.Color.Black;
             this.exitToolBtn.Name = "exitToolBtn";
-            this.exitToolBtn.Size = new System.Drawing.Size(145, 26);
+            this.exitToolBtn.Size = new System.Drawing.Size(224, 26);
             this.exitToolBtn.Text = "Exit";
             this.exitToolBtn.Click += new System.EventHandler(this.exitToolBtn_Click);
             // 
@@ -288,79 +291,79 @@
             this.lectureToolStripMenuItem,
             this.lectureToolStripMenuItem1,
             this.notesToolStripMenuItem,
-            this.recordingsToolStripMenuItem,
             this.lectureReferencesToolStripMenuItem,
+            this.recordingsToolStripMenuItem,
             this.anAssignmentToolStripMenuItem});
-            this.addToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.addToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.addToolStripMenuItem.Name = "addToolStripMenuItem";
             this.addToolStripMenuItem.Size = new System.Drawing.Size(56, 24);
             this.addToolStripMenuItem.Text = "tools";
             // 
             // lectureToolStripMenuItem
             // 
-            this.lectureToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(42)))), ((int)(((byte)(76)))));
-            this.lectureToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.lectureToolStripMenuItem.BackColor = System.Drawing.Color.White;
+            this.lectureToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.lectureToolStripMenuItem.Name = "lectureToolStripMenuItem";
-            this.lectureToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.lectureToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.lectureToolStripMenuItem.Text = "Course";
             this.lectureToolStripMenuItem.Click += new System.EventHandler(this.lectureToolStripMenuItem_Click);
             // 
             // lectureToolStripMenuItem1
             // 
-            this.lectureToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(42)))), ((int)(((byte)(76)))));
+            this.lectureToolStripMenuItem1.BackColor = System.Drawing.Color.White;
             this.lectureToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.screenCapturesToolStripMenuItem,
             this.customNotesToolStripMenuItem1});
-            this.lectureToolStripMenuItem1.ForeColor = System.Drawing.Color.White;
+            this.lectureToolStripMenuItem1.ForeColor = System.Drawing.Color.Black;
             this.lectureToolStripMenuItem1.Name = "lectureToolStripMenuItem1";
-            this.lectureToolStripMenuItem1.Size = new System.Drawing.Size(216, 26);
+            this.lectureToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
             this.lectureToolStripMenuItem1.Text = "Lecture";
             // 
             // screenCapturesToolStripMenuItem
             // 
             this.screenCapturesToolStripMenuItem.Name = "screenCapturesToolStripMenuItem";
-            this.screenCapturesToolStripMenuItem.Size = new System.Drawing.Size(198, 26);
+            this.screenCapturesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.screenCapturesToolStripMenuItem.Text = "Screen Captures";
             // 
             // customNotesToolStripMenuItem1
             // 
             this.customNotesToolStripMenuItem1.Name = "customNotesToolStripMenuItem1";
-            this.customNotesToolStripMenuItem1.Size = new System.Drawing.Size(198, 26);
+            this.customNotesToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
             this.customNotesToolStripMenuItem1.Text = "Custom Notes";
             // 
             // notesToolStripMenuItem
             // 
-            this.notesToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(42)))), ((int)(((byte)(76)))));
-            this.notesToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.notesToolStripMenuItem.BackColor = System.Drawing.Color.White;
+            this.notesToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.notesToolStripMenuItem.Name = "notesToolStripMenuItem";
-            this.notesToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.notesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.notesToolStripMenuItem.Text = "Lecture Notes";
             this.notesToolStripMenuItem.Click += new System.EventHandler(this.notesToolStripMenuItem_Click);
             // 
             // recordingsToolStripMenuItem
             // 
-            this.recordingsToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(42)))), ((int)(((byte)(76)))));
-            this.recordingsToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.recordingsToolStripMenuItem.BackColor = System.Drawing.Color.White;
+            this.recordingsToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.recordingsToolStripMenuItem.Name = "recordingsToolStripMenuItem";
-            this.recordingsToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.recordingsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.recordingsToolStripMenuItem.Text = "Recordings";
             this.recordingsToolStripMenuItem.Click += new System.EventHandler(this.recordingsToolStripMenuItem_Click);
             // 
             // lectureReferencesToolStripMenuItem
             // 
-            this.lectureReferencesToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(42)))), ((int)(((byte)(76)))));
-            this.lectureReferencesToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.lectureReferencesToolStripMenuItem.BackColor = System.Drawing.Color.White;
+            this.lectureReferencesToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.lectureReferencesToolStripMenuItem.Name = "lectureReferencesToolStripMenuItem";
-            this.lectureReferencesToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.lectureReferencesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.lectureReferencesToolStripMenuItem.Text = "Lecture References";
             this.lectureReferencesToolStripMenuItem.Click += new System.EventHandler(this.lectureReferencesToolStripMenuItem_Click);
             // 
             // anAssignmentToolStripMenuItem
             // 
-            this.anAssignmentToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(42)))), ((int)(((byte)(76)))));
-            this.anAssignmentToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.anAssignmentToolStripMenuItem.BackColor = System.Drawing.Color.White;
+            this.anAssignmentToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.anAssignmentToolStripMenuItem.Name = "anAssignmentToolStripMenuItem";
-            this.anAssignmentToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.anAssignmentToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.anAssignmentToolStripMenuItem.Text = "An Assignment";
             // 
             // selectToolStripMenuItem
@@ -371,7 +374,7 @@
             this.recordingsToolStripMenuItem1,
             this.assignmentToolStripMenuItem,
             this.lectureReferencesToolStripMenuItem1});
-            this.selectToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.selectToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.selectToolStripMenuItem.Name = "selectToolStripMenuItem";
             this.selectToolStripMenuItem.Size = new System.Drawing.Size(63, 24);
             this.selectToolStripMenuItem.Text = "Select";

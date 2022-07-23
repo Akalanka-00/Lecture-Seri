@@ -37,12 +37,6 @@
             this.panel25 = new System.Windows.Forms.Panel();
             this.panel26 = new System.Windows.Forms.Panel();
             this.label14 = new System.Windows.Forms.Label();
-            this.panel21 = new System.Windows.Forms.Panel();
-            this.label11 = new System.Windows.Forms.Label();
-            this.panel22 = new System.Windows.Forms.Panel();
-            this.panel23 = new System.Windows.Forms.Panel();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
             this.panel18 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.panel19 = new System.Windows.Forms.Panel();
@@ -75,14 +69,18 @@
             this.label2 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.countryCombo = new System.Windows.Forms.ComboBox();
+            this.panel27 = new System.Windows.Forms.Panel();
+            this.label15 = new System.Windows.Forms.Label();
+            this.panel28 = new System.Windows.Forms.Panel();
+            this.panel29 = new System.Windows.Forms.Panel();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel24.SuspendLayout();
             this.panel26.SuspendLayout();
-            this.panel21.SuspendLayout();
-            this.panel23.SuspendLayout();
             this.panel18.SuspendLayout();
             this.panel20.SuspendLayout();
             this.panel15.SuspendLayout();
@@ -92,6 +90,8 @@
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel27.SuspendLayout();
+            this.panel29.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -130,8 +130,9 @@
             // 
             // panel11
             // 
+            this.panel11.BackColor = System.Drawing.Color.White;
+            this.panel11.Controls.Add(this.panel27);
             this.panel11.Controls.Add(this.panel24);
-            this.panel11.Controls.Add(this.panel21);
             this.panel11.Controls.Add(this.panel18);
             this.panel11.Controls.Add(this.panel15);
             this.panel11.Controls.Add(this.panel12);
@@ -148,7 +149,7 @@
             this.panel24.Controls.Add(this.panel25);
             this.panel24.Controls.Add(this.panel26);
             this.panel24.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel24.Location = new System.Drawing.Point(0, 351);
+            this.panel24.Location = new System.Drawing.Point(0, 276);
             this.panel24.Name = "panel24";
             this.panel24.Size = new System.Drawing.Size(558, 75);
             this.panel24.TabIndex = 5;
@@ -168,6 +169,7 @@
             // 
             // panel25
             // 
+            this.panel25.BackColor = System.Drawing.Color.White;
             this.panel25.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel25.Location = new System.Drawing.Point(0, 31);
             this.panel25.Name = "panel25";
@@ -186,79 +188,16 @@
             // 
             // label14
             // 
+            this.label14.BackColor = System.Drawing.Color.White;
             this.label14.Dock = System.Windows.Forms.DockStyle.Left;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.label14.ForeColor = System.Drawing.Color.White;
+            this.label14.ForeColor = System.Drawing.Color.Black;
             this.label14.Location = new System.Drawing.Point(0, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(140, 31);
             this.label14.TabIndex = 4;
             this.label14.Text = "Country";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // panel21
-            // 
-            this.panel21.Controls.Add(this.label11);
-            this.panel21.Controls.Add(this.panel22);
-            this.panel21.Controls.Add(this.panel23);
-            this.panel21.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel21.Location = new System.Drawing.Point(0, 276);
-            this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(558, 75);
-            this.panel21.TabIndex = 4;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.8F);
-            this.label11.ForeColor = System.Drawing.Color.Red;
-            this.label11.Location = new System.Drawing.Point(140, 31);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(177, 15);
-            this.label11.TabIndex = 6;
-            this.label11.Text = "This username is already taken";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // panel22
-            // 
-            this.panel22.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel22.Location = new System.Drawing.Point(0, 31);
-            this.panel22.Name = "panel22";
-            this.panel22.Size = new System.Drawing.Size(140, 44);
-            this.panel22.TabIndex = 5;
-            // 
-            // panel23
-            // 
-            this.panel23.Controls.Add(this.textBox4);
-            this.panel23.Controls.Add(this.label12);
-            this.panel23.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel23.Location = new System.Drawing.Point(0, 0);
-            this.panel23.Name = "panel23";
-            this.panel23.Size = new System.Drawing.Size(558, 31);
-            this.panel23.TabIndex = 4;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textBox4.Location = new System.Drawing.Point(140, 0);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(6, 3, 3, 3);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(386, 26);
-            this.textBox4.TabIndex = 5;
-            // 
-            // label12
-            // 
-            this.label12.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(0, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(140, 31);
-            this.label12.TabIndex = 4;
-            this.label12.Text = "Univeresity";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // panel18
             // 
@@ -279,13 +218,14 @@
             this.label9.ForeColor = System.Drawing.Color.Red;
             this.label9.Location = new System.Drawing.Point(140, 31);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(177, 15);
+            this.label9.Size = new System.Drawing.Size(178, 15);
             this.label9.TabIndex = 6;
-            this.label9.Text = "This username is already taken";
+            this.label9.Text = "The password did not matched.";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // panel19
             // 
+            this.panel19.BackColor = System.Drawing.Color.White;
             this.panel19.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel19.Location = new System.Drawing.Point(0, 31);
             this.panel19.Name = "panel19";
@@ -314,9 +254,10 @@
             // 
             // label10
             // 
+            this.label10.BackColor = System.Drawing.Color.White;
             this.label10.Dock = System.Windows.Forms.DockStyle.Left;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.ForeColor = System.Drawing.Color.Black;
             this.label10.Location = new System.Drawing.Point(0, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(140, 31);
@@ -343,13 +284,14 @@
             this.label7.ForeColor = System.Drawing.Color.Red;
             this.label7.Location = new System.Drawing.Point(140, 31);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(177, 15);
+            this.label7.Size = new System.Drawing.Size(178, 15);
             this.label7.TabIndex = 6;
-            this.label7.Text = "This username is already taken";
+            this.label7.Text = "The password did not matched.";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // panel16
             // 
+            this.panel16.BackColor = System.Drawing.Color.White;
             this.panel16.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel16.Location = new System.Drawing.Point(0, 31);
             this.panel16.Name = "panel16";
@@ -378,9 +320,10 @@
             // 
             // label8
             // 
+            this.label8.BackColor = System.Drawing.Color.White;
             this.label8.Dock = System.Windows.Forms.DockStyle.Left;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.ForeColor = System.Drawing.Color.Black;
             this.label8.Location = new System.Drawing.Point(0, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(140, 31);
@@ -414,6 +357,7 @@
             // 
             // panel14
             // 
+            this.panel14.BackColor = System.Drawing.Color.White;
             this.panel14.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel14.Location = new System.Drawing.Point(0, 31);
             this.panel14.Name = "panel14";
@@ -442,9 +386,10 @@
             // 
             // label5
             // 
+            this.label5.BackColor = System.Drawing.Color.White;
             this.label5.Dock = System.Windows.Forms.DockStyle.Left;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(0, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(140, 31);
@@ -454,6 +399,7 @@
             // 
             // panel10
             // 
+            this.panel10.BackColor = System.Drawing.Color.White;
             this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel10.Location = new System.Drawing.Point(0, 0);
             this.panel10.Name = "panel10";
@@ -471,6 +417,7 @@
             // 
             // panel9
             // 
+            this.panel9.BackColor = System.Drawing.Color.White;
             this.panel9.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel9.Location = new System.Drawing.Point(698, 0);
             this.panel9.Name = "panel9";
@@ -479,6 +426,7 @@
             // 
             // panel8
             // 
+            this.panel8.BackColor = System.Drawing.Color.White;
             this.panel8.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel8.Location = new System.Drawing.Point(0, 0);
             this.panel8.Name = "panel8";
@@ -497,7 +445,7 @@
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(52)))), ((int)(((byte)(86)))));
+            this.panel5.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel5.Controls.Add(this.label4);
             this.panel5.Controls.Add(this.label3);
             this.panel5.Controls.Add(this.panel6);
@@ -523,7 +471,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(0, 37);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(165, 16);
@@ -533,6 +481,7 @@
             // 
             // panel6
             // 
+            this.panel6.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel6.Location = new System.Drawing.Point(0, 0);
             this.panel6.Name = "panel6";
@@ -541,10 +490,10 @@
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(52)))), ((int)(((byte)(86)))));
+            this.label1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(828, 68);
@@ -563,10 +512,10 @@
             // 
             // label2
             // 
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(32)))), ((int)(((byte)(66)))));
+            this.label2.BackColor = System.Drawing.Color.WhiteSmoke;
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(0, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(828, 112);
@@ -576,7 +525,7 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(32)))), ((int)(((byte)(66)))));
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -832,12 +781,79 @@
             this.countryCombo.Size = new System.Drawing.Size(177, 24);
             this.countryCombo.TabIndex = 5;
             // 
+            // panel27
+            // 
+            this.panel27.Controls.Add(this.label15);
+            this.panel27.Controls.Add(this.panel28);
+            this.panel27.Controls.Add(this.panel29);
+            this.panel27.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel27.Location = new System.Drawing.Point(0, 351);
+            this.panel27.Name = "panel27";
+            this.panel27.Size = new System.Drawing.Size(558, 75);
+            this.panel27.TabIndex = 6;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.8F);
+            this.label15.ForeColor = System.Drawing.Color.Red;
+            this.label15.Location = new System.Drawing.Point(140, 31);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(178, 15);
+            this.label15.TabIndex = 6;
+            this.label15.Text = "The password did not matched.";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // panel28
+            // 
+            this.panel28.BackColor = System.Drawing.Color.White;
+            this.panel28.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel28.Location = new System.Drawing.Point(0, 31);
+            this.panel28.Name = "panel28";
+            this.panel28.Size = new System.Drawing.Size(140, 44);
+            this.panel28.TabIndex = 5;
+            // 
+            // panel29
+            // 
+            this.panel29.Controls.Add(this.textBox5);
+            this.panel29.Controls.Add(this.label16);
+            this.panel29.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel29.Location = new System.Drawing.Point(0, 0);
+            this.panel29.Name = "panel29";
+            this.panel29.Size = new System.Drawing.Size(558, 31);
+            this.panel29.TabIndex = 4;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Dock = System.Windows.Forms.DockStyle.Left;
+            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.textBox5.Location = new System.Drawing.Point(140, 0);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(6, 3, 3, 3);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(266, 26);
+            this.textBox5.TabIndex = 5;
+            // 
+            // label16
+            // 
+            this.label16.BackColor = System.Drawing.Color.White;
+            this.label16.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
+            this.label16.ForeColor = System.Drawing.Color.Black;
+            this.label16.Location = new System.Drawing.Point(0, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(140, 31);
+            this.label16.TabIndex = 4;
+            this.label16.Text = "Location";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // signInScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(828, 835);
             this.Controls.Add(this.panel1);
+            this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "signInScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -850,10 +866,6 @@
             this.panel24.ResumeLayout(false);
             this.panel24.PerformLayout();
             this.panel26.ResumeLayout(false);
-            this.panel21.ResumeLayout(false);
-            this.panel21.PerformLayout();
-            this.panel23.ResumeLayout(false);
-            this.panel23.PerformLayout();
             this.panel18.ResumeLayout(false);
             this.panel18.PerformLayout();
             this.panel20.ResumeLayout(false);
@@ -870,6 +882,10 @@
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel2.ResumeLayout(false);
+            this.panel27.ResumeLayout(false);
+            this.panel27.PerformLayout();
+            this.panel29.ResumeLayout(false);
+            this.panel29.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -916,12 +932,12 @@
         private System.Windows.Forms.Panel panel25;
         private System.Windows.Forms.Panel panel26;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Panel panel21;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Panel panel22;
-        private System.Windows.Forms.Panel panel23;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.ComboBox countryCombo;
+        private System.Windows.Forms.Panel panel27;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Panel panel28;
+        private System.Windows.Forms.Panel panel29;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label label16;
     }
 }
