@@ -74,5 +74,7 @@ namespace Lecture_Seri
                 pathTxtBox.Text = dialog.FileName;
             }
         }
+
+      
     }
 }

@@ -59,11 +59,19 @@ namespace Lecture_Seri
         private void loadAvatar()
         {
             Image img;
-            String avatarTxt = userSettings.Default.Avatar;
             byte[] imageArray;
-            imageArray = Convert.FromBase64String(avatarTxt);
-             img = byteArrayToImage(imageArray);
-            avatarShape.Image = img;
+            String avatarTxt = userSettings.Default.Avatar;
+           if(avatarTxt != "")
+            {
+                imageArray = Convert.FromBase64String(avatarTxt);
+                img = byteArrayToImage(imageArray);
+                avatarShape.Image = img;
+            }
+            else
+            {
+                
+            }
+          
 
         }
 
@@ -97,6 +105,11 @@ namespace Lecture_Seri
             lvlComboBox.SelectedIndex = 0;
             materialSelectBox.SelectedIndex = 0;
             loadAvatar();
+
+            if (userSettings.Default.access == false)
+            {
+                signIn();
+            }
         }
 
         private void SignInToolBtn_Click(object sender, EventArgs e)
@@ -107,6 +120,11 @@ namespace Lecture_Seri
         private void exitToolBtn_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void HomeScreen_Activated(object sender, EventArgs e)
+        {
+            loadAvatar();
         }
     }
 }

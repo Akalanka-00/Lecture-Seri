@@ -70,5 +70,29 @@ namespace Lecture_Seri {
                 this["mail"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string country {
+            get {
+                return ((string)(this["country"]));
+            }
+            set {
+                this["country"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool access {
+            get {
+                return ((bool)(this["access"]));
+            }
+            set {
+                this["access"] = value;
+            }
+        }
     }
 }

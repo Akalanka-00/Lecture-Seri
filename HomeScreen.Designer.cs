@@ -41,6 +41,10 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.materialSelectBox = new System.Windows.Forms.ComboBox();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.avatarShape = new Lecture_Seri.CircularShape();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.panel12 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -53,8 +57,8 @@
             this.screenCapturesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.customNotesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.notesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.recordingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lectureReferencesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.recordingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.anAssignmentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.selectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lectureNotesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -64,18 +68,15 @@
             this.recordingsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.assignmentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lectureReferencesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.avatarShape = new Lecture_Seri.CircularShape();
+            this.addSchoolUniversityToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.avatarShape)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -230,17 +231,52 @@
             "Custom Notes",
             "Assignments",
             "Pass papers"});
-            this.materialSelectBox.Location = new System.Drawing.Point(1060, 38);
+            this.materialSelectBox.Location = new System.Drawing.Point(1060, 36);
             this.materialSelectBox.Name = "materialSelectBox";
             this.materialSelectBox.Size = new System.Drawing.Size(168, 29);
             this.materialSelectBox.TabIndex = 3;
             // 
+            // panel13
+            // 
+            this.panel13.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel13.Location = new System.Drawing.Point(1228, 36);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(10, 35);
+            this.panel13.TabIndex = 4;
+            // 
+            // avatarShape
+            // 
+            this.avatarShape.Dock = System.Windows.Forms.DockStyle.Right;
+            this.avatarShape.Image = global::Lecture_Seri.Properties.Resources.avatar;
+            this.avatarShape.Location = new System.Drawing.Point(1238, 36);
+            this.avatarShape.Name = "avatarShape";
+            this.avatarShape.Size = new System.Drawing.Size(33, 35);
+            this.avatarShape.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.avatarShape.TabIndex = 3;
+            this.avatarShape.TabStop = false;
+            // 
+            // panel14
+            // 
+            this.panel14.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel14.Location = new System.Drawing.Point(0, 71);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(1271, 8);
+            this.panel14.TabIndex = 3;
+            // 
+            // panel12
+            // 
+            this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel12.Location = new System.Drawing.Point(0, 28);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(1271, 8);
+            this.panel12.TabIndex = 2;
+            // 
             // panel11
             // 
             this.panel11.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel11.Location = new System.Drawing.Point(1271, 30);
+            this.panel11.Location = new System.Drawing.Point(1271, 28);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(17, 49);
+            this.panel11.Size = new System.Drawing.Size(17, 51);
             this.panel11.TabIndex = 1;
             // 
             // menuStrip1
@@ -253,19 +289,20 @@
             this.selectToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1288, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(1288, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // fileToolStripMenuItem
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.exitToolStripMenuItem,
             this.SignInToolBtn,
+            this.addSchoolUniversityToolStripMenuItem,
+            this.exitToolStripMenuItem,
             this.exitToolBtn});
             this.fileToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 26);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // exitToolStripMenuItem
@@ -305,7 +342,7 @@
             this.anAssignmentToolStripMenuItem});
             this.addToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.addToolStripMenuItem.Name = "addToolStripMenuItem";
-            this.addToolStripMenuItem.Size = new System.Drawing.Size(56, 26);
+            this.addToolStripMenuItem.Size = new System.Drawing.Size(56, 24);
             this.addToolStripMenuItem.Text = "tools";
             // 
             // lectureToolStripMenuItem
@@ -349,15 +386,6 @@
             this.notesToolStripMenuItem.Text = "Lecture Notes";
             this.notesToolStripMenuItem.Click += new System.EventHandler(this.notesToolStripMenuItem_Click);
             // 
-            // recordingsToolStripMenuItem
-            // 
-            this.recordingsToolStripMenuItem.BackColor = System.Drawing.Color.White;
-            this.recordingsToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
-            this.recordingsToolStripMenuItem.Name = "recordingsToolStripMenuItem";
-            this.recordingsToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
-            this.recordingsToolStripMenuItem.Text = "Recordings";
-            this.recordingsToolStripMenuItem.Click += new System.EventHandler(this.recordingsToolStripMenuItem_Click);
-            // 
             // lectureReferencesToolStripMenuItem
             // 
             this.lectureReferencesToolStripMenuItem.BackColor = System.Drawing.Color.White;
@@ -366,6 +394,15 @@
             this.lectureReferencesToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.lectureReferencesToolStripMenuItem.Text = "Lecture References";
             this.lectureReferencesToolStripMenuItem.Click += new System.EventHandler(this.lectureReferencesToolStripMenuItem_Click);
+            // 
+            // recordingsToolStripMenuItem
+            // 
+            this.recordingsToolStripMenuItem.BackColor = System.Drawing.Color.White;
+            this.recordingsToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
+            this.recordingsToolStripMenuItem.Name = "recordingsToolStripMenuItem";
+            this.recordingsToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.recordingsToolStripMenuItem.Text = "Recordings";
+            this.recordingsToolStripMenuItem.Click += new System.EventHandler(this.recordingsToolStripMenuItem_Click);
             // 
             // anAssignmentToolStripMenuItem
             // 
@@ -385,7 +422,7 @@
             this.lectureReferencesToolStripMenuItem1});
             this.selectToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.selectToolStripMenuItem.Name = "selectToolStripMenuItem";
-            this.selectToolStripMenuItem.Size = new System.Drawing.Size(63, 26);
+            this.selectToolStripMenuItem.Size = new System.Drawing.Size(63, 24);
             this.selectToolStripMenuItem.Text = "Select";
             // 
             // lectureNotesToolStripMenuItem
@@ -443,40 +480,11 @@
             this.lectureReferencesToolStripMenuItem1.Size = new System.Drawing.Size(216, 26);
             this.lectureReferencesToolStripMenuItem1.Text = "Lecture References";
             // 
-            // panel12
+            // addSchoolUniversityToolStripMenuItem
             // 
-            this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel12.Location = new System.Drawing.Point(0, 30);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(1271, 8);
-            this.panel12.TabIndex = 2;
-            // 
-            // panel13
-            // 
-            this.panel13.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel13.Location = new System.Drawing.Point(1228, 38);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(10, 33);
-            this.panel13.TabIndex = 4;
-            // 
-            // panel14
-            // 
-            this.panel14.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel14.Location = new System.Drawing.Point(0, 71);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(1271, 8);
-            this.panel14.TabIndex = 3;
-            // 
-            // avatarShape
-            // 
-            this.avatarShape.Dock = System.Windows.Forms.DockStyle.Right;
-            this.avatarShape.Image = global::Lecture_Seri.Properties.Resources.avatar;
-            this.avatarShape.Location = new System.Drawing.Point(1238, 38);
-            this.avatarShape.Name = "avatarShape";
-            this.avatarShape.Size = new System.Drawing.Size(33, 33);
-            this.avatarShape.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.avatarShape.TabIndex = 3;
-            this.avatarShape.TabStop = false;
+            this.addSchoolUniversityToolStripMenuItem.Name = "addSchoolUniversityToolStripMenuItem";
+            this.addSchoolUniversityToolStripMenuItem.Size = new System.Drawing.Size(239, 26);
+            this.addSchoolUniversityToolStripMenuItem.Text = "Add School/University";
             // 
             // HomeScreen
             // 
@@ -488,6 +496,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "HomeScreen";
             this.Text = "HomeScreen";
+            this.Activated += new System.EventHandler(this.HomeScreen_Activated);
             this.Load += new System.EventHandler(this.HomeScreen_Load);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
@@ -496,9 +505,9 @@
             this.panel6.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.avatarShape)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.avatarShape)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -545,5 +554,6 @@
         private CircularShape avatarShape;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Panel panel14;
+        private System.Windows.Forms.ToolStripMenuItem addSchoolUniversityToolStripMenuItem;
     }
 }
