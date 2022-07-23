@@ -210,7 +210,6 @@
             // materialSelectBox
             // 
             this.materialSelectBox.BackColor = System.Drawing.Color.White;
-            this.materialSelectBox.Dock = System.Windows.Forms.DockStyle.Right;
             this.materialSelectBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.materialSelectBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.materialSelectBox.Font = new System.Drawing.Font("Century Gothic", 10.4F);
@@ -221,7 +220,7 @@
             "Custom Notes",
             "Assignments",
             "Pass papers"});
-            this.materialSelectBox.Location = new System.Drawing.Point(1103, 28);
+            this.materialSelectBox.Location = new System.Drawing.Point(1003, 33);
             this.materialSelectBox.Name = "materialSelectBox";
             this.materialSelectBox.Size = new System.Drawing.Size(168, 29);
             this.materialSelectBox.TabIndex = 3;
@@ -236,7 +235,7 @@
             // 
             // menuStrip1
             // 
-            this.menuStrip1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.menuStrip1.BackColor = System.Drawing.Color.Gainsboro;
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
