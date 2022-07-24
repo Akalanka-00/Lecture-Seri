@@ -67,7 +67,6 @@
             this.signUpUsernameTxt = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.avatar = new Lecture_Seri.CircularShape();
             this.panel42 = new System.Windows.Forms.Panel();
             this.removeAvatarBtn = new System.Windows.Forms.Button();
             this.panel46 = new System.Windows.Forms.Panel();
@@ -79,7 +78,7 @@
             this.panel39 = new System.Windows.Forms.Panel();
             this.movingPanel = new System.Windows.Forms.Panel();
             this.panel37 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.signInBtn = new System.Windows.Forms.Button();
             this.panel38 = new System.Windows.Forms.Panel();
             this.panel30 = new System.Windows.Forms.Panel();
             this.panel35 = new System.Windows.Forms.Panel();
@@ -95,7 +94,6 @@
             this.signinUsernameTxt = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.panel23 = new System.Windows.Forms.Panel();
-            this.circularShape2 = new Lecture_Seri.CircularShape();
             this.panel45 = new System.Windows.Forms.Panel();
             this.panel48 = new System.Windows.Forms.Panel();
             this.panel49 = new System.Windows.Forms.Panel();
@@ -111,6 +109,8 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.avatar = new Lecture_Seri.CircularShape();
+            this.circularShape2 = new Lecture_Seri.CircularShape();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -127,7 +127,6 @@
             this.panel12.SuspendLayout();
             this.panel13.SuspendLayout();
             this.panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.avatar)).BeginInit();
             this.panel42.SuspendLayout();
             this.movingPanel.SuspendLayout();
             this.panel37.SuspendLayout();
@@ -136,10 +135,11 @@
             this.panel32.SuspendLayout();
             this.panel31.SuspendLayout();
             this.panel23.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.circularShape2)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.avatar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.circularShape2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -188,9 +188,9 @@
             this.panel11.Controls.Add(this.panel12);
             this.panel11.Controls.Add(this.panel10);
             this.panel11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel11.Location = new System.Drawing.Point(160, 0);
+            this.panel11.Location = new System.Drawing.Point(663, 0);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(538, 607);
+            this.panel11.Size = new System.Drawing.Size(35, 607);
             this.panel11.TabIndex = 3;
             // 
             // panel21
@@ -200,7 +200,7 @@
             this.panel21.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel21.Location = new System.Drawing.Point(0, 501);
             this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(538, 43);
+            this.panel21.Size = new System.Drawing.Size(35, 43);
             this.panel21.TabIndex = 7;
             // 
             // signupBtn
@@ -210,7 +210,7 @@
             this.signupBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.signupBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.8F);
             this.signupBtn.ForeColor = System.Drawing.Color.White;
-            this.signupBtn.Location = new System.Drawing.Point(366, 0);
+            this.signupBtn.Location = new System.Drawing.Point(-137, 0);
             this.signupBtn.Name = "signupBtn";
             this.signupBtn.Size = new System.Drawing.Size(102, 43);
             this.signupBtn.TabIndex = 1;
@@ -221,7 +221,7 @@
             // panel22
             // 
             this.panel22.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel22.Location = new System.Drawing.Point(468, 0);
+            this.panel22.Location = new System.Drawing.Point(-35, 0);
             this.panel22.Name = "panel22";
             this.panel22.Size = new System.Drawing.Size(70, 43);
             this.panel22.TabIndex = 0;
@@ -234,7 +234,7 @@
             this.panel27.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel27.Location = new System.Drawing.Point(0, 426);
             this.panel27.Name = "panel27";
-            this.panel27.Size = new System.Drawing.Size(538, 75);
+            this.panel27.Size = new System.Drawing.Size(35, 75);
             this.panel27.TabIndex = 6;
             // 
             // warningSignupEmail
@@ -266,7 +266,7 @@
             this.panel29.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel29.Location = new System.Drawing.Point(0, 0);
             this.panel29.Name = "panel29";
-            this.panel29.Size = new System.Drawing.Size(538, 31);
+            this.panel29.Size = new System.Drawing.Size(35, 31);
             this.panel29.TabIndex = 4;
             // 
             // signUpMailTxt
@@ -300,7 +300,7 @@
             this.panel24.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel24.Location = new System.Drawing.Point(0, 351);
             this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(538, 75);
+            this.panel24.Size = new System.Drawing.Size(35, 75);
             this.panel24.TabIndex = 5;
             // 
             // warningSignupCountry
@@ -332,7 +332,7 @@
             this.panel26.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel26.Location = new System.Drawing.Point(0, 0);
             this.panel26.Name = "panel26";
-            this.panel26.Size = new System.Drawing.Size(538, 31);
+            this.panel26.Size = new System.Drawing.Size(35, 31);
             this.panel26.TabIndex = 4;
             // 
             // countryCombo
@@ -605,7 +605,7 @@
             this.panel18.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel18.Location = new System.Drawing.Point(0, 276);
             this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(538, 75);
+            this.panel18.Size = new System.Drawing.Size(35, 75);
             this.panel18.TabIndex = 3;
             // 
             // warningSignupPsw2
@@ -637,7 +637,7 @@
             this.panel20.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel20.Location = new System.Drawing.Point(0, 0);
             this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(538, 31);
+            this.panel20.Size = new System.Drawing.Size(35, 31);
             this.panel20.TabIndex = 4;
             // 
             // textBox3
@@ -671,7 +671,7 @@
             this.panel15.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel15.Location = new System.Drawing.Point(0, 201);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(538, 75);
+            this.panel15.Size = new System.Drawing.Size(35, 75);
             this.panel15.TabIndex = 2;
             // 
             // warningSignupPsw
@@ -703,7 +703,7 @@
             this.panel17.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel17.Location = new System.Drawing.Point(0, 0);
             this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(538, 31);
+            this.panel17.Size = new System.Drawing.Size(35, 31);
             this.panel17.TabIndex = 4;
             // 
             // signUpPswTxt
@@ -737,7 +737,7 @@
             this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel12.Location = new System.Drawing.Point(0, 126);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(538, 75);
+            this.panel12.Size = new System.Drawing.Size(35, 75);
             this.panel12.TabIndex = 1;
             // 
             // warningSignupUsername
@@ -769,7 +769,7 @@
             this.panel13.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel13.Location = new System.Drawing.Point(0, 0);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(538, 31);
+            this.panel13.Size = new System.Drawing.Size(35, 31);
             this.panel13.TabIndex = 4;
             // 
             // signUpUsernameTxt
@@ -806,19 +806,8 @@
             this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel10.Location = new System.Drawing.Point(0, 0);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(538, 126);
+            this.panel10.Size = new System.Drawing.Size(35, 126);
             this.panel10.TabIndex = 0;
-            // 
-            // avatar
-            // 
-            this.avatar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.avatar.Image = ((System.Drawing.Image)(resources.GetObject("avatar.Image")));
-            this.avatar.Location = new System.Drawing.Point(232, 28);
-            this.avatar.Name = "avatar";
-            this.avatar.Size = new System.Drawing.Size(60, 76);
-            this.avatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.avatar.TabIndex = 4;
-            this.avatar.TabStop = false;
             // 
             // panel42
             // 
@@ -828,7 +817,7 @@
             this.panel42.Controls.Add(this.panel44);
             this.panel42.Controls.Add(this.panel43);
             this.panel42.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel42.Location = new System.Drawing.Point(292, 28);
+            this.panel42.Location = new System.Drawing.Point(-211, 28);
             this.panel42.Name = "panel42";
             this.panel42.Size = new System.Drawing.Size(246, 76);
             this.panel42.TabIndex = 3;
@@ -900,7 +889,7 @@
             this.panel40.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel40.Location = new System.Drawing.Point(0, 104);
             this.panel40.Name = "panel40";
-            this.panel40.Size = new System.Drawing.Size(538, 22);
+            this.panel40.Size = new System.Drawing.Size(35, 22);
             this.panel40.TabIndex = 1;
             // 
             // panel39
@@ -908,7 +897,7 @@
             this.panel39.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel39.Location = new System.Drawing.Point(0, 0);
             this.panel39.Name = "panel39";
-            this.panel39.Size = new System.Drawing.Size(538, 28);
+            this.panel39.Size = new System.Drawing.Size(35, 28);
             this.panel39.TabIndex = 0;
             // 
             // movingPanel
@@ -922,37 +911,38 @@
             this.movingPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.movingPanel.Location = new System.Drawing.Point(130, 0);
             this.movingPanel.Name = "movingPanel";
-            this.movingPanel.Size = new System.Drawing.Size(30, 607);
+            this.movingPanel.Size = new System.Drawing.Size(533, 607);
             this.movingPanel.TabIndex = 2;
             // 
             // panel37
             // 
-            this.panel37.Controls.Add(this.button1);
+            this.panel37.Controls.Add(this.signInBtn);
             this.panel37.Controls.Add(this.panel38);
             this.panel37.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel37.Location = new System.Drawing.Point(0, 327);
             this.panel37.Name = "panel37";
-            this.panel37.Size = new System.Drawing.Size(30, 43);
+            this.panel37.Size = new System.Drawing.Size(533, 43);
             this.panel37.TabIndex = 8;
             // 
-            // button1
+            // signInBtn
             // 
-            this.button1.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.8F);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(-142, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(102, 43);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Sign Up";
-            this.button1.UseVisualStyleBackColor = false;
+            this.signInBtn.BackColor = System.Drawing.Color.RoyalBlue;
+            this.signInBtn.Dock = System.Windows.Forms.DockStyle.Right;
+            this.signInBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.signInBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.8F);
+            this.signInBtn.ForeColor = System.Drawing.Color.White;
+            this.signInBtn.Location = new System.Drawing.Point(361, 0);
+            this.signInBtn.Name = "signInBtn";
+            this.signInBtn.Size = new System.Drawing.Size(102, 43);
+            this.signInBtn.TabIndex = 1;
+            this.signInBtn.Text = "Sign Up";
+            this.signInBtn.UseVisualStyleBackColor = false;
+            this.signInBtn.Click += new System.EventHandler(this.signInBtn_Click);
             // 
             // panel38
             // 
             this.panel38.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel38.Location = new System.Drawing.Point(-40, 0);
+            this.panel38.Location = new System.Drawing.Point(463, 0);
             this.panel38.Name = "panel38";
             this.panel38.Size = new System.Drawing.Size(70, 43);
             this.panel38.TabIndex = 0;
@@ -963,7 +953,7 @@
             this.panel30.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel30.Location = new System.Drawing.Point(0, 276);
             this.panel30.Name = "panel30";
-            this.panel30.Size = new System.Drawing.Size(30, 51);
+            this.panel30.Size = new System.Drawing.Size(533, 51);
             this.panel30.TabIndex = 4;
             // 
             // panel35
@@ -974,7 +964,7 @@
             this.panel35.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel35.Location = new System.Drawing.Point(0, 201);
             this.panel35.Name = "panel35";
-            this.panel35.Size = new System.Drawing.Size(30, 75);
+            this.panel35.Size = new System.Drawing.Size(533, 75);
             this.panel35.TabIndex = 5;
             // 
             // warningSigninPsw
@@ -1006,7 +996,7 @@
             this.panel34.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel34.Location = new System.Drawing.Point(0, 0);
             this.panel34.Name = "panel34";
-            this.panel34.Size = new System.Drawing.Size(30, 31);
+            this.panel34.Size = new System.Drawing.Size(533, 31);
             this.panel34.TabIndex = 4;
             // 
             // signInPswTxt
@@ -1040,7 +1030,7 @@
             this.panel32.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel32.Location = new System.Drawing.Point(0, 126);
             this.panel32.Name = "panel32";
-            this.panel32.Size = new System.Drawing.Size(30, 75);
+            this.panel32.Size = new System.Drawing.Size(533, 75);
             this.panel32.TabIndex = 3;
             // 
             // warningSigninUsername
@@ -1072,7 +1062,7 @@
             this.panel31.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel31.Location = new System.Drawing.Point(0, 0);
             this.panel31.Name = "panel31";
-            this.panel31.Size = new System.Drawing.Size(30, 31);
+            this.panel31.Size = new System.Drawing.Size(533, 31);
             this.panel31.TabIndex = 4;
             // 
             // signinUsernameTxt
@@ -1108,24 +1098,13 @@
             this.panel23.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel23.Location = new System.Drawing.Point(0, 0);
             this.panel23.Name = "panel23";
-            this.panel23.Size = new System.Drawing.Size(30, 126);
+            this.panel23.Size = new System.Drawing.Size(533, 126);
             this.panel23.TabIndex = 0;
-            // 
-            // circularShape2
-            // 
-            this.circularShape2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.circularShape2.Image = global::Lecture_Seri.Properties.Resources.avatar;
-            this.circularShape2.Location = new System.Drawing.Point(210, 31);
-            this.circularShape2.Name = "circularShape2";
-            this.circularShape2.Size = new System.Drawing.Size(0, 67);
-            this.circularShape2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.circularShape2.TabIndex = 9;
-            this.circularShape2.TabStop = false;
             // 
             // panel45
             // 
             this.panel45.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel45.Location = new System.Drawing.Point(-180, 31);
+            this.panel45.Location = new System.Drawing.Point(323, 31);
             this.panel45.Name = "panel45";
             this.panel45.Size = new System.Drawing.Size(210, 67);
             this.panel45.TabIndex = 8;
@@ -1143,7 +1122,7 @@
             this.panel49.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel49.Location = new System.Drawing.Point(0, 98);
             this.panel49.Name = "panel49";
-            this.panel49.Size = new System.Drawing.Size(30, 28);
+            this.panel49.Size = new System.Drawing.Size(533, 28);
             this.panel49.TabIndex = 6;
             // 
             // panel50
@@ -1151,7 +1130,7 @@
             this.panel50.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel50.Location = new System.Drawing.Point(0, 0);
             this.panel50.Name = "panel50";
-            this.panel50.Size = new System.Drawing.Size(30, 31);
+            this.panel50.Size = new System.Drawing.Size(533, 31);
             this.panel50.TabIndex = 5;
             // 
             // panel9
@@ -1271,6 +1250,28 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(828, 48);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
+            // avatar
+            // 
+            this.avatar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.avatar.Image = ((System.Drawing.Image)(resources.GetObject("avatar.Image")));
+            this.avatar.Location = new System.Drawing.Point(232, 28);
+            this.avatar.Name = "avatar";
+            this.avatar.Size = new System.Drawing.Size(0, 76);
+            this.avatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.avatar.TabIndex = 4;
+            this.avatar.TabStop = false;
+            // 
+            // circularShape2
+            // 
+            this.circularShape2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.circularShape2.Image = global::Lecture_Seri.Properties.Resources.avatar;
+            this.circularShape2.Location = new System.Drawing.Point(210, 31);
+            this.circularShape2.Name = "circularShape2";
+            this.circularShape2.Size = new System.Drawing.Size(113, 67);
+            this.circularShape2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.circularShape2.TabIndex = 9;
+            this.circularShape2.TabStop = false;
+            // 
             // signInScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1283,7 +1284,6 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "signInScreen";
-            this.TopMost = true;
             this.Load += new System.EventHandler(this.signInScreen_Load);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
@@ -1310,7 +1310,6 @@
             this.panel13.ResumeLayout(false);
             this.panel13.PerformLayout();
             this.panel10.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.avatar)).EndInit();
             this.panel42.ResumeLayout(false);
             this.movingPanel.ResumeLayout(false);
             this.panel37.ResumeLayout(false);
@@ -1323,11 +1322,12 @@
             this.panel31.ResumeLayout(false);
             this.panel31.PerformLayout();
             this.panel23.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.circularShape2)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.avatar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.circularShape2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1385,7 +1385,7 @@
         private System.Windows.Forms.Button signupBtn;
         private System.Windows.Forms.Panel panel22;
         private System.Windows.Forms.Panel panel37;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button signInBtn;
         private System.Windows.Forms.Panel panel38;
         private System.Windows.Forms.Panel panel30;
         private System.Windows.Forms.Panel panel35;

@@ -21,15 +21,15 @@ namespace Lecture_Seri
 
         private void setupScreen_Load(object sender, EventArgs e)
         {
-            Console.WriteLine(uniSettings.Default.dataSaved);
+            Console.WriteLine(uniSettings.Default.duration);
            
         }
 
         private void createFolders()
         {
-            string dir = @""+ uniSettings.Default.localPath;
+            string dir = @""+ uniSettings.Default.index;
             // If directory does not exist, create it
-            string[] paths = { dir, uniSettings.Default.uni, "L1S1" };
+            string[] paths = { dir, uniSettings.Default.uniID, "L1S1" };
             if (Directory.Exists(dir))
             {
                 
@@ -49,12 +49,12 @@ namespace Lecture_Seri
 
         private void okBtn_Click(object sender, EventArgs e)
         {
-            uniSettings.Default.uni = uniTxtBox.Text;
-            uniSettings.Default.degree = degreeTxtBox.Text;
-            uniSettings.Default.email= mailTxtBox.Text;
-            uniSettings.Default.psw = pswTxtBox.Text;
-            uniSettings.Default.localPath = pathTxtBox.Text;
-            uniSettings.Default.dataSaved = true;
+            uniSettings.Default.uniID = uniTxtBox.Text;
+            uniSettings.Default.uniName = degreeTxtBox.Text;
+            uniSettings.Default.degree= mailTxtBox.Text;
+            uniSettings.Default.faculty = pswTxtBox.Text;
+            uniSettings.Default.index = pathTxtBox.Text;
+            uniSettings.Default.duration = true;
             uniSettings.Default.Save();
             createFolders();
 

@@ -20,9 +20,9 @@ namespace Lecture_Seri
 
         private void createFolders()
         {
-            string dir = @"" + uniSettings.Default.localPath;
+            string dir = @"" + uniSettings.Default.index;
             // If directory does not exist, create it
-            string[] paths = { dir, uniSettings.Default.uni, lvlComboBox.SelectedItem.ToString(),idTxtBox.Text+"-"+nameTxtBox.Text,"type" };
+            string[] paths = { dir, uniSettings.Default.uniID, lvlComboBox.SelectedItem.ToString(),idTxtBox.Text+"-"+nameTxtBox.Text,"type" };
             string[] materials = { "Screen Captures", "Recordings", "Assignments", "Lecture Materials" };
             foreach (string path in paths)
             {

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,8 +17,22 @@ namespace Lecture_Seri
         {
             InitializeComponent();
         }
+        MySqlConnection conn;
+        MySqlCommand cmd;
 
-        
+        private void sqlConn()
+        {
+            string server = "localhost";
+            string database = "lecture_seri";
+            string username = "root";
+            string password = "pass@123";
+            string port = "3306";
+
+            string conString = "SERVER=" + server + ";" + "PORT=" + port + ";" + "DATABASE=" + database + ";" + "USER=" + username + ";" + "PASSWORD=" + password + ";";
+
+            conn = new MySqlConnection(conString);
+            conn.Open();
+        }
 
         private void addGrade()
         {
@@ -33,6 +48,15 @@ namespace Lecture_Seri
             }
 
         }
+
+        private void loadUniData()
+        {
+
+        }
+
+
+
+        
         private void button2_Click(object sender, EventArgs e)
         {
           
@@ -41,6 +65,7 @@ namespace Lecture_Seri
 
         private void UniversityScreen_Load(object sender, EventArgs e)
         {
+            sqlConn();
             movingPanel.Width = 0;
             GradeView.ColumnCount = 3;
             durationCombo.SelectedIndex = 0;

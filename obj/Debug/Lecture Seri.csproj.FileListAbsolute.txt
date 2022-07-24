@@ -22,3 +22,25 @@ D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Debug\Lecture Seri.exe
 D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Debug\Lecture Seri.pdb
 D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Debug\Lecture_Seri.signInScreen.resources
 D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Debug\Lecture_Seri.UniversityScreen.resources
+D:\Projects\c#\Lecture Seri\Lecture Seri\bin\Debug\BouncyCastle.Crypto.dll
+D:\Projects\c#\Lecture Seri\Lecture Seri\bin\Debug\Google.Protobuf.dll
+D:\Projects\c#\Lecture Seri\Lecture Seri\bin\Debug\K4os.Compression.LZ4.dll
+D:\Projects\c#\Lecture Seri\Lecture Seri\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\Projects\c#\Lecture Seri\Lecture Seri\bin\Debug\K4os.Hash.xxHash.dll
+D:\Projects\c#\Lecture Seri\Lecture Seri\bin\Debug\MySql.Data.dll
+D:\Projects\c#\Lecture Seri\Lecture Seri\bin\Debug\System.Buffers.dll
+D:\Projects\c#\Lecture Seri\Lecture Seri\bin\Debug\System.Memory.dll
+D:\Projects\c#\Lecture Seri\Lecture Seri\bin\Debug\System.Numerics.Vectors.dll
+D:\Projects\c#\Lecture Seri\Lecture Seri\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Projects\c#\Lecture Seri\Lecture Seri\bin\Debug\Ubiety.Dns.Core.dll
+D:\Projects\c#\Lecture Seri\Lecture Seri\bin\Debug\ZstdNet.dll
+D:\Projects\c#\Lecture Seri\Lecture Seri\bin\Debug\Google.Protobuf.pdb
+D:\Projects\c#\Lecture Seri\Lecture Seri\bin\Debug\Google.Protobuf.xml
+D:\Projects\c#\Lecture Seri\Lecture Seri\bin\Debug\K4os.Compression.LZ4.xml
+D:\Projects\c#\Lecture Seri\Lecture Seri\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\Projects\c#\Lecture Seri\Lecture Seri\bin\Debug\K4os.Hash.xxHash.xml
+D:\Projects\c#\Lecture Seri\Lecture Seri\bin\Debug\MySql.Data.xml
+D:\Projects\c#\Lecture Seri\Lecture Seri\bin\Debug\System.Buffers.xml
+D:\Projects\c#\Lecture Seri\Lecture Seri\bin\Debug\System.Memory.xml
+D:\Projects\c#\Lecture Seri\Lecture Seri\bin\Debug\System.Numerics.Vectors.xml
+D:\Projects\c#\Lecture Seri\Lecture Seri\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml

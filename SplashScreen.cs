@@ -44,7 +44,7 @@ namespace Lecture_Seri
                 timer1.Stop();
              
 
-                bool dataSaved = uniSettings.Default.dataSaved;
+                bool dataSaved = uniSettings.Default.duration;
                 if (!dataSaved)
                 {
                     setupScreen ls = new setupScreen();

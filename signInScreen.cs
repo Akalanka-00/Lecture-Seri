@@ -1,7 +1,9 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -20,6 +22,8 @@ namespace Lecture_Seri
         bool signin = true;
 		Bitmap image;
 		String basae64Text = "";
+		MySqlConnection conn;
+		MySqlCommand cmd;
 		public static string[] Names = new string[]
 	{
 	"Afghanistan",
@@ -263,6 +267,89 @@ namespace Lecture_Seri
 	"Zimbabwe",
 	};
 
+
+		private void sqlConn()
+		{
+			string server = "localhost";
+			string database = "lecture_seri";
+			string username = "root";
+			string password = "pass@123";
+			string port = "3306";
+
+			string conString = "SERVER=" + server + ";" +"PORT="+ port + ";"+ "DATABASE=" + database + ";" + "USER=" + username + ";" + "PASSWORD=" + password+";";
+
+			conn = new MySqlConnection(conString);
+			conn.Open();
+		}
+		private bool signupValidation()
+		{
+			bool valid = false;
+            if (signUpUsernameTxt.Text.Length>0)
+            {
+				string query = "select user_name from UserInfo where user_name = '" + signUpUsernameTxt.Text+"';";
+				cmd = new MySqlCommand(query,conn);
+				MySqlDataReader reader = cmd.ExecuteReader();
+				int count=0;
+				while (reader.Read())
+                {
+					count++;
+                }
+				if (count == 0) { 
+					valid = true;
+					
+				}
+                else
+                {
+					MessageBox.Show("Usesrname is already exist");
+				}
+				reader.Close();
+
+            }
+
+			return valid;
+
+
+		}
+
+		private void logging()
+        {
+			string query = "select * from UserInfo where user_name = '" + signinUsernameTxt.Text + "' AND psw ='"+signInPswTxt.Text+"';";
+			cmd = new MySqlCommand(query, conn);
+			MySqlDataReader reader = cmd.ExecuteReader();
+
+			while (reader.Read())
+			{
+
+				userSettings.Default.id = reader[0].ToString();
+				userSettings.Default.Username = reader[1].ToString();
+				userSettings.Default.Password = reader[2].ToString();
+				userSettings.Default.Avatar = reader[3].ToString();
+				userSettings.Default.country = reader[4].ToString();
+				userSettings.Default.mail = reader[5].ToString();
+
+				MessageBox.Show("Logged In");
+			}
+			MessageBox.Show(query);
+			HomeScreen hs = new HomeScreen();
+			this.Close();
+		}
+
+		private string userID()
+        {
+			return "C0002";
+        }
+
+		private void saveSignUpSqlData()
+        {
+			string query = "Insert Into UserInfo (user_id, user_name, psw , avatar, country, email)" +
+				"values ('" + userID() + "', '" + signUpUsernameTxt.Text + "', '" + signUpPswTxt.Text + "', '" + basae64Text + "', '" + countryCombo.SelectedItem.ToString() + "', '" + signUpMailTxt.Text + "')";
+
+			cmd = new MySqlCommand(query, conn);
+			cmd.ExecuteNonQuery();
+			MessageBox.Show("Usesrname added");
+			conn.Close();
+		}
+
 		private void label4_Click(object sender, EventArgs e)
         {
             if (signin)
@@ -286,7 +373,9 @@ namespace Lecture_Seri
 
         private void signInScreen_Load(object sender, EventArgs e)
         {
-            movingPanel.Width = 0;
+			sqlConn();
+
+			movingPanel.Width = 0;
 			countryCombo.SelectedIndex = 0;
 			hideWarnings();
 
@@ -329,10 +418,14 @@ namespace Lecture_Seri
 
         private void signupBtn_Click(object sender, EventArgs e)
         {
-			saveData();
-			HomeScreen hs = new HomeScreen();
+            if (signupValidation()==true)
+            {
+				saveData();
+				saveSignUpSqlData();
+				HomeScreen hs = new HomeScreen();
+				this.Close();
+			}
 			
-			this.Close();
         }
 
 		private void hideWarnings()
@@ -351,6 +444,12 @@ namespace Lecture_Seri
         private void removeAvatarBtn_Click(object sender, EventArgs e)
         {
 			avatar.Image = Lecture_Seri.Properties.Resources.avatar;
+
+		}
+
+        private void signInBtn_Click(object sender, EventArgs e)
+        {
+			logging();
 
 		}
     }

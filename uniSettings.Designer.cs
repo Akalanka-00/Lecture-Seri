@@ -26,12 +26,24 @@ namespace Lecture_Seri {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string uni {
+        public string uniID {
             get {
-                return ((string)(this["uni"]));
+                return ((string)(this["uniID"]));
             }
             set {
-                this["uni"] = value;
+                this["uniID"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string uniName {
+            get {
+                return ((string)(this["uniName"]));
+            }
+            set {
+                this["uniName"] = value;
             }
         }
         
@@ -50,48 +62,47 @@ namespace Lecture_Seri {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string email {
+        public string faculty {
             get {
-                return ((string)(this["email"]));
+                return ((string)(this["faculty"]));
             }
             set {
-                this["email"] = value;
+                this["faculty"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string psw {
+        public string index {
             get {
-                return ((string)(this["psw"]));
+                return ((string)(this["index"]));
             }
             set {
-                this["psw"] = value;
+                this["index"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public int duration {
+            get {
+                return ((int)(this["duration"]));
+            }
+            set {
+                this["duration"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string localPath {
+        public string location {
             get {
-                return ((string)(this["localPath"]));
+                return ((string)(this["location"]));
             }
             set {
-                this["localPath"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool dataSaved {
-            get {
-                return ((bool)(this["dataSaved"]));
-            }
-            set {
-                this["dataSaved"] = value;
+                this["location"] = value;
             }
         }
     }
