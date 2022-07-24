@@ -135,5 +135,10 @@ namespace Lecture_Seri
         {
             addUni();
         }
+
+        private void avatarShape_Click(object sender, EventArgs e)
+        {
+            userSettings.Default.access = false;
+        }
     }
 }

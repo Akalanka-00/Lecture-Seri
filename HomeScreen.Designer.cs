@@ -254,6 +254,7 @@
             this.avatarShape.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.avatarShape.TabIndex = 3;
             this.avatarShape.TabStop = false;
+            this.avatarShape.Click += new System.EventHandler(this.avatarShape_Click);
             // 
             // panel14
             // 
@@ -310,14 +311,14 @@
             this.SignInToolBtn.BackColor = System.Drawing.Color.White;
             this.SignInToolBtn.ForeColor = System.Drawing.Color.Black;
             this.SignInToolBtn.Name = "SignInToolBtn";
-            this.SignInToolBtn.Size = new System.Drawing.Size(224, 26);
+            this.SignInToolBtn.Size = new System.Drawing.Size(156, 26);
             this.SignInToolBtn.Text = "Sign In";
             this.SignInToolBtn.Click += new System.EventHandler(this.SignInToolBtn_Click);
             // 
             // addUniversityToolStripMenuItem
             // 
             this.addUniversityToolStripMenuItem.Name = "addUniversityToolStripMenuItem";
-            this.addUniversityToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.addUniversityToolStripMenuItem.Size = new System.Drawing.Size(156, 26);
             this.addUniversityToolStripMenuItem.Text = "University";
             this.addUniversityToolStripMenuItem.Click += new System.EventHandler(this.addUniversityToolStripMenuItem_Click);
             // 
@@ -326,7 +327,7 @@
             this.exitToolStripMenuItem.BackColor = System.Drawing.Color.White;
             this.exitToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(156, 26);
             this.exitToolStripMenuItem.Text = "Settings";
             // 
             // exitToolBtn
@@ -334,7 +335,7 @@
             this.exitToolBtn.BackColor = System.Drawing.Color.White;
             this.exitToolBtn.ForeColor = System.Drawing.Color.Black;
             this.exitToolBtn.Name = "exitToolBtn";
-            this.exitToolBtn.Size = new System.Drawing.Size(224, 26);
+            this.exitToolBtn.Size = new System.Drawing.Size(156, 26);
             this.exitToolBtn.Text = "Exit";
             this.exitToolBtn.Click += new System.EventHandler(this.exitToolBtn_Click);
             // 
