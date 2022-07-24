@@ -33,7 +33,10 @@
             this.warningSigninPsw = new System.Windows.Forms.Label();
             this.panel36 = new System.Windows.Forms.Panel();
             this.panel34 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.panel30 = new System.Windows.Forms.Panel();
+            this.GradeView = new System.Windows.Forms.DataGridView();
             this.panel35 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.panel38 = new System.Windows.Forms.Panel();
@@ -43,6 +46,7 @@
             this.warningSigninUsername = new System.Windows.Forms.Label();
             this.panel33 = new System.Windows.Forms.Panel();
             this.panel31 = new System.Windows.Forms.Panel();
+            this.durationCombo = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.panel23 = new System.Windows.Forms.Panel();
             this.panel45 = new System.Windows.Forms.Panel();
@@ -54,12 +58,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.label14 = new System.Windows.Forms.Label();
-            this.warningSignupCountry = new System.Windows.Forms.Label();
-            this.panel25 = new System.Windows.Forms.Panel();
-            this.panel26 = new System.Windows.Forms.Panel();
-            this.countryCombo = new System.Windows.Forms.ComboBox();
-            this.panel24 = new System.Windows.Forms.Panel();
             this.signUpMailTxt = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.warningSignupEmail = new System.Windows.Forms.Label();
@@ -95,18 +93,26 @@
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.GradeTxt = new System.Windows.Forms.TextBox();
-            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel42 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.panel43 = new System.Windows.Forms.Panel();
+            this.panel44 = new System.Windows.Forms.Panel();
+            this.addGradeBtn = new System.Windows.Forms.Button();
+            this.panel46 = new System.Windows.Forms.Panel();
             this.creditTxt = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.panel47 = new System.Windows.Forms.Panel();
+            this.GradeTxt = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.panel51 = new System.Windows.Forms.Panel();
+            this.label12 = new System.Windows.Forms.Label();
             this.panel41 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.GradeView = new System.Windows.Forms.DataGridView();
+            this.locationTxt = new System.Windows.Forms.TextBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.panel34.SuspendLayout();
             this.panel30.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.GradeView)).BeginInit();
             this.panel35.SuspendLayout();
             this.panel37.SuspendLayout();
             this.movingPanel.SuspendLayout();
@@ -115,8 +121,6 @@
             this.panel23.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
-            this.panel26.SuspendLayout();
-            this.panel24.SuspendLayout();
             this.panel29.SuspendLayout();
             this.panel21.SuspendLayout();
             this.panel11.SuspendLayout();
@@ -131,7 +135,8 @@
             this.panel7.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.GradeView)).BeginInit();
+            this.panel42.SuspendLayout();
+            this.panel44.SuspendLayout();
             this.SuspendLayout();
             // 
             // label2
@@ -157,7 +162,7 @@
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(140, 31);
             this.label17.TabIndex = 4;
-            this.label17.Text = "Gradings";
+            this.label17.Text = "Location";
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // warningSigninPsw
@@ -186,28 +191,69 @@
             // 
             this.panel34.Controls.Add(this.button2);
             this.panel34.Controls.Add(this.panel41);
-            this.panel34.Controls.Add(this.creditTxt);
-            this.panel34.Controls.Add(this.label4);
-            this.panel34.Controls.Add(this.panel6);
-            this.panel34.Controls.Add(this.GradeTxt);
-            this.panel34.Controls.Add(this.label3);
+            this.panel34.Controls.Add(this.locationTxt);
             this.panel34.Controls.Add(this.panel5);
             this.panel34.Controls.Add(this.label17);
             this.panel34.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel34.Location = new System.Drawing.Point(0, 0);
             this.panel34.Name = "panel34";
-            this.panel34.Size = new System.Drawing.Size(550, 31);
+            this.panel34.Size = new System.Drawing.Size(431, 31);
             this.panel34.TabIndex = 4;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.RoyalBlue;
+            this.button2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.8F);
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(458, 0);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(52, 31);
+            this.button2.TabIndex = 12;
+            this.button2.Text = "...";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // panel5
+            // 
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel5.Location = new System.Drawing.Point(140, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(8, 31);
+            this.panel5.TabIndex = 5;
             // 
             // panel30
             // 
             this.panel30.BackColor = System.Drawing.Color.White;
             this.panel30.Controls.Add(this.GradeView);
+            this.panel30.Controls.Add(this.panel42);
+            this.panel30.Controls.Add(this.panel35);
             this.panel30.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel30.Location = new System.Drawing.Point(0, 276);
+            this.panel30.Location = new System.Drawing.Point(0, 201);
             this.panel30.Name = "panel30";
-            this.panel30.Size = new System.Drawing.Size(550, 265);
+            this.panel30.Size = new System.Drawing.Size(431, 340);
             this.panel30.TabIndex = 4;
+            // 
+            // GradeView
+            // 
+            this.GradeView.AllowUserToAddRows = false;
+            this.GradeView.AllowUserToDeleteRows = false;
+            this.GradeView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.GradeView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
+            this.GradeView.BackgroundColor = System.Drawing.Color.White;
+            this.GradeView.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.GradeView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.GradeView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.GradeView.GridColor = System.Drawing.Color.Black;
+            this.GradeView.Location = new System.Drawing.Point(0, 150);
+            this.GradeView.Name = "GradeView";
+            this.GradeView.ReadOnly = true;
+            this.GradeView.RowHeadersWidth = 51;
+            this.GradeView.RowTemplate.Height = 24;
+            this.GradeView.Size = new System.Drawing.Size(431, 190);
+            this.GradeView.TabIndex = 0;
+            this.GradeView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GradeView_CellClick);
             // 
             // panel35
             // 
@@ -215,9 +261,9 @@
             this.panel35.Controls.Add(this.panel36);
             this.panel35.Controls.Add(this.panel34);
             this.panel35.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel35.Location = new System.Drawing.Point(0, 201);
+            this.panel35.Location = new System.Drawing.Point(0, 0);
             this.panel35.Name = "panel35";
-            this.panel35.Size = new System.Drawing.Size(550, 75);
+            this.panel35.Size = new System.Drawing.Size(431, 75);
             this.panel35.TabIndex = 5;
             // 
             // button1
@@ -227,7 +273,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.8F);
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(378, 0);
+            this.button1.Location = new System.Drawing.Point(259, 0);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(102, 43);
             this.button1.TabIndex = 1;
@@ -237,19 +283,21 @@
             // panel38
             // 
             this.panel38.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel38.Location = new System.Drawing.Point(480, 0);
+            this.panel38.Location = new System.Drawing.Point(361, 0);
             this.panel38.Name = "panel38";
             this.panel38.Size = new System.Drawing.Size(70, 43);
             this.panel38.TabIndex = 0;
             // 
             // panel37
             // 
+            this.panel37.Controls.Add(this.button4);
+            this.panel37.Controls.Add(this.panel6);
             this.panel37.Controls.Add(this.button1);
             this.panel37.Controls.Add(this.panel38);
             this.panel37.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel37.Location = new System.Drawing.Point(0, 541);
             this.panel37.Name = "panel37";
-            this.panel37.Size = new System.Drawing.Size(550, 43);
+            this.panel37.Size = new System.Drawing.Size(431, 43);
             this.panel37.TabIndex = 8;
             // 
             // movingPanel
@@ -257,13 +305,12 @@
             this.movingPanel.BackColor = System.Drawing.Color.White;
             this.movingPanel.Controls.Add(this.panel37);
             this.movingPanel.Controls.Add(this.panel30);
-            this.movingPanel.Controls.Add(this.panel35);
             this.movingPanel.Controls.Add(this.panel32);
             this.movingPanel.Controls.Add(this.panel23);
             this.movingPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.movingPanel.Location = new System.Drawing.Point(130, 0);
             this.movingPanel.Name = "movingPanel";
-            this.movingPanel.Size = new System.Drawing.Size(550, 607);
+            this.movingPanel.Size = new System.Drawing.Size(431, 607);
             this.movingPanel.TabIndex = 2;
             // 
             // panel32
@@ -274,7 +321,7 @@
             this.panel32.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel32.Location = new System.Drawing.Point(0, 126);
             this.panel32.Name = "panel32";
-            this.panel32.Size = new System.Drawing.Size(550, 75);
+            this.panel32.Size = new System.Drawing.Size(431, 75);
             this.panel32.TabIndex = 3;
             // 
             // warningSigninUsername
@@ -301,13 +348,32 @@
             // 
             // panel31
             // 
-            this.panel31.Controls.Add(this.comboBox1);
+            this.panel31.Controls.Add(this.durationCombo);
             this.panel31.Controls.Add(this.label11);
             this.panel31.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel31.Location = new System.Drawing.Point(0, 0);
             this.panel31.Name = "panel31";
-            this.panel31.Size = new System.Drawing.Size(550, 31);
+            this.panel31.Size = new System.Drawing.Size(431, 31);
             this.panel31.TabIndex = 4;
+            // 
+            // durationCombo
+            // 
+            this.durationCombo.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.durationCombo.Dock = System.Windows.Forms.DockStyle.Left;
+            this.durationCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.durationCombo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.durationCombo.FormattingEnabled = true;
+            this.durationCombo.Items.AddRange(new object[] {
+            "1 Year",
+            "2 Year",
+            "3 Year",
+            "4 Year",
+            "5 Year",
+            "6 Year"});
+            this.durationCombo.Location = new System.Drawing.Point(140, 0);
+            this.durationCombo.Name = "durationCombo";
+            this.durationCombo.Size = new System.Drawing.Size(177, 24);
+            this.durationCombo.TabIndex = 6;
             // 
             // label11
             // 
@@ -331,13 +397,13 @@
             this.panel23.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel23.Location = new System.Drawing.Point(0, 0);
             this.panel23.Name = "panel23";
-            this.panel23.Size = new System.Drawing.Size(550, 126);
+            this.panel23.Size = new System.Drawing.Size(431, 126);
             this.panel23.TabIndex = 0;
             // 
             // panel45
             // 
             this.panel45.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel45.Location = new System.Drawing.Point(340, 31);
+            this.panel45.Location = new System.Drawing.Point(221, 31);
             this.panel45.Name = "panel45";
             this.panel45.Size = new System.Drawing.Size(210, 67);
             this.panel45.TabIndex = 8;
@@ -355,7 +421,7 @@
             this.panel49.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel49.Location = new System.Drawing.Point(0, 98);
             this.panel49.Name = "panel49";
-            this.panel49.Size = new System.Drawing.Size(550, 28);
+            this.panel49.Size = new System.Drawing.Size(431, 28);
             this.panel49.TabIndex = 6;
             // 
             // panel50
@@ -363,7 +429,7 @@
             this.panel50.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel50.Location = new System.Drawing.Point(0, 0);
             this.panel50.Name = "panel50";
-            this.panel50.Size = new System.Drawing.Size(550, 31);
+            this.panel50.Size = new System.Drawing.Size(431, 31);
             this.panel50.TabIndex = 5;
             // 
             // panel2
@@ -415,313 +481,6 @@
             this.panel9.Size = new System.Drawing.Size(130, 607);
             this.panel9.TabIndex = 1;
             // 
-            // label14
-            // 
-            this.label14.BackColor = System.Drawing.Color.White;
-            this.label14.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.label14.ForeColor = System.Drawing.Color.Black;
-            this.label14.Location = new System.Drawing.Point(0, 0);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(140, 31);
-            this.label14.TabIndex = 4;
-            this.label14.Text = "Field";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // warningSignupCountry
-            // 
-            this.warningSignupCountry.AutoSize = true;
-            this.warningSignupCountry.Dock = System.Windows.Forms.DockStyle.Left;
-            this.warningSignupCountry.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.8F);
-            this.warningSignupCountry.ForeColor = System.Drawing.Color.Red;
-            this.warningSignupCountry.Location = new System.Drawing.Point(140, 31);
-            this.warningSignupCountry.Name = "warningSignupCountry";
-            this.warningSignupCountry.Size = new System.Drawing.Size(177, 15);
-            this.warningSignupCountry.TabIndex = 6;
-            this.warningSignupCountry.Text = "This username is already taken";
-            this.warningSignupCountry.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // panel25
-            // 
-            this.panel25.BackColor = System.Drawing.Color.White;
-            this.panel25.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel25.Location = new System.Drawing.Point(0, 31);
-            this.panel25.Name = "panel25";
-            this.panel25.Size = new System.Drawing.Size(140, 44);
-            this.panel25.TabIndex = 5;
-            // 
-            // panel26
-            // 
-            this.panel26.Controls.Add(this.countryCombo);
-            this.panel26.Controls.Add(this.label14);
-            this.panel26.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel26.Location = new System.Drawing.Point(0, 0);
-            this.panel26.Name = "panel26";
-            this.panel26.Size = new System.Drawing.Size(18, 31);
-            this.panel26.TabIndex = 4;
-            // 
-            // countryCombo
-            // 
-            this.countryCombo.Dock = System.Windows.Forms.DockStyle.Left;
-            this.countryCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.countryCombo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.countryCombo.FormattingEnabled = true;
-            this.countryCombo.Items.AddRange(new object[] {
-            "\"Afghanistan\",",
-            "\t\"Albania\",",
-            "\t\"Algeria\",",
-            "\t\"American Samoa\",",
-            "\t\"Andorra\",",
-            "\t\"Angola\",",
-            "\t\"Anguilla\",",
-            "\t\"Antarctica\",",
-            "\t\"Antigua and Barbuda\",",
-            "\t\"Argentina\",",
-            "\t\"Armenia\",",
-            "\t\"Aruba\",",
-            "\t\"Australia\",",
-            "\t\"Austria\",",
-            "\t\"Azerbaijan\",",
-            "\t\"Bahamas\",",
-            "\t\"Bahrain\",",
-            "\t\"Bangladesh\",",
-            "\t\"Barbados\",",
-            "\t\"Belarus\",",
-            "\t\"Belgium\",",
-            "\t\"Belize\",",
-            "\t\"Benin\",",
-            "\t\"Bermuda\",",
-            "\t\"Bhutan\",",
-            "\t\"Bolivia\",",
-            "\t\"Bosnia and Herzegovina\",",
-            "\t\"Botswana\",",
-            "\t\"Bouvet Island\",",
-            "\t\"Brazil\",",
-            "\t\"British Indian Ocean Territory\",",
-            "\t\"Brunei Darussalam\",",
-            "\t\"Bulgaria\",",
-            "\t\"Burkina Faso\",",
-            "\t\"Burundi\",",
-            "\t\"Cambodia\",",
-            "\t\"Cameroon\",",
-            "\t\"Canada\",",
-            "\t\"Cape Verde\",",
-            "\t\"Cayman Islands\",",
-            "\t\"Central African Republic\",",
-            "\t\"Chad\",",
-            "\t\"Chile\",",
-            "\t\"China\",",
-            "\t\"Christmas Island\",",
-            "\t\"Cocos (Keeling) Islands\",",
-            "\t\"Colombia\",",
-            "\t\"Comoros\",",
-            "\t\"Congo\",",
-            "\t\"Congo, the Democratic Republic of the\",",
-            "\t\"Cook Islands\",",
-            "\t\"Costa Rica\",",
-            "\t\"Cote D\'Ivoire\",",
-            "\t\"Croatia\",",
-            "\t\"Cuba\",",
-            "\t\"Cyprus\",",
-            "\t\"Czech Republic\",",
-            "\t\"Denmark\",",
-            "\t\"Djibouti\",",
-            "\t\"Dominica\",",
-            "\t\"Dominican Republic\",",
-            "\t\"Ecuador\",",
-            "\t\"Egypt\",",
-            "\t\"El Salvador\",",
-            "\t\"Equatorial Guinea\",",
-            "\t\"Eritrea\",",
-            "\t\"Estonia\",",
-            "\t\"Ethiopia\",",
-            "\t\"Falkland Islands (Malvinas)\",",
-            "\t\"Faroe Islands\",",
-            "\t\"Fiji\",",
-            "\t\"Finland\",",
-            "\t\"France\",",
-            "\t\"French Guiana\",",
-            "\t\"French Polynesia\",",
-            "\t\"French Southern Territories\",",
-            "\t\"Gabon\",",
-            "\t\"Gambia\",",
-            "\t\"Georgia\",",
-            "\t\"Germany\",",
-            "\t\"Ghana\",",
-            "\t\"Gibraltar\",",
-            "\t\"Greece\",",
-            "\t\"Greenland\",",
-            "\t\"Grenada\",",
-            "\t\"Guadeloupe\",",
-            "\t\"Guam\",",
-            "\t\"Guatemala\",",
-            "\t\"Guinea\",",
-            "\t\"Guinea-Bissau\",",
-            "\t\"Guyana\",",
-            "\t\"Haiti\",",
-            "\t\"Heard Island and Mcdonald Islands\",",
-            "\t\"Holy See (Vatican City State)\",",
-            "\t\"Honduras\",",
-            "\t\"Hong Kong\",",
-            "\t\"Hungary\",",
-            "\t\"Iceland\",",
-            "\t\"India\",",
-            "\t\"Indonesia\",",
-            "\t\"Iran, Islamic Republic of\",",
-            "\t\"Iraq\",",
-            "\t\"Ireland\",",
-            "\t\"Israel\",",
-            "\t\"Italy\",",
-            "\t\"Jamaica\",",
-            "\t\"Japan\",",
-            "\t\"Jordan\",",
-            "\t\"Kazakhstan\",",
-            "\t\"Kenya\",",
-            "\t\"Kiribati\",",
-            "\t\"Korea, Democratic People\'s Republic of\",",
-            "\t\"Korea, Republic of\",",
-            "\t\"Kuwait\",",
-            "\t\"Kyrgyzstan\",",
-            "\t\"Lao People\'s Democratic Republic\",",
-            "\t\"Latvia\",",
-            "\t\"Lebanon\",",
-            "\t\"Lesotho\",",
-            "\t\"Liberia\",",
-            "\t\"Libyan Arab Jamahiriya\",",
-            "\t\"Liechtenstein\",",
-            "\t\"Lithuania\",",
-            "\t\"Luxembourg\",",
-            "\t\"Macao\",",
-            "\t\"Macedonia, the Former Yugoslav Republic of\",",
-            "\t\"Madagascar\",",
-            "\t\"Malawi\",",
-            "\t\"Malaysia\",",
-            "\t\"Maldives\",",
-            "\t\"Mali\",",
-            "\t\"Malta\",",
-            "\t\"Marshall Islands\",",
-            "\t\"Martinique\",",
-            "\t\"Mauritania\",",
-            "\t\"Mauritius\",",
-            "\t\"Mayotte\",",
-            "\t\"Mexico\",",
-            "\t\"Micronesia, Federated States of\",",
-            "\t\"Moldova, Republic of\",",
-            "\t\"Monaco\",",
-            "\t\"Mongolia\",",
-            "\t\"Montserrat\",",
-            "\t\"Morocco\",",
-            "\t\"Mozambique\",",
-            "\t\"Myanmar\",",
-            "\t\"Namibia\",",
-            "\t\"Nauru\",",
-            "\t\"Nepal\",",
-            "\t\"Netherlands\",",
-            "\t\"Netherlands Antilles\",",
-            "\t\"New Caledonia\",",
-            "\t\"New Zealand\",",
-            "\t\"Nicaragua\",",
-            "\t\"Niger\",",
-            "\t\"Nigeria\",",
-            "\t\"Niue\",",
-            "\t\"Norfolk Island\",",
-            "\t\"Northern Mariana Islands\",",
-            "\t\"Norway\",",
-            "\t\"Oman\",",
-            "\t\"Pakistan\",",
-            "\t\"Palau\",",
-            "\t\"Palestinian Territory, Occupied\",",
-            "\t\"Panama\",",
-            "\t\"Papua New Guinea\",",
-            "\t\"Paraguay\",",
-            "\t\"Peru\",",
-            "\t\"Philippines\",",
-            "\t\"Pitcairn\",",
-            "\t\"Poland\",",
-            "\t\"Portugal\",",
-            "\t\"Puerto Rico\",",
-            "\t\"Qatar\",",
-            "\t\"Reunion\",",
-            "\t\"Romania\",",
-            "\t\"Russian Federation\",",
-            "\t\"Rwanda\",",
-            "\t\"Saint Helena\",",
-            "\t\"Saint Kitts and Nevis\",",
-            "\t\"Saint Lucia\",",
-            "\t\"Saint Pierre and Miquelon\",",
-            "\t\"Saint Vincent and the Grenadines\",",
-            "\t\"Samoa\",",
-            "\t\"San Marino\",",
-            "\t\"Sao Tome and Principe\",",
-            "\t\"Saudi Arabia\",",
-            "\t\"Senegal\",",
-            "\t\"Serbia and Montenegro\",",
-            "\t\"Seychelles\",",
-            "\t\"Sierra Leone\",",
-            "\t\"Singapore\",",
-            "\t\"Slovakia\",",
-            "\t\"Slovenia\",",
-            "\t\"Solomon Islands\",",
-            "\t\"Somalia\",",
-            "\t\"South Africa\",",
-            "\t\"South Georgia and the South Sandwich Islands\",",
-            "\t\"Spain\",",
-            "\t\"Sri Lanka\",",
-            "\t\"Sudan\",",
-            "\t\"Suriname\",",
-            "\t\"Svalbard and Jan Mayen\",",
-            "\t\"Swaziland\",",
-            "\t\"Sweden\",",
-            "\t\"Switzerland\",",
-            "\t\"Syrian Arab Republic\",",
-            "\t\"Taiwan, Province of China\",",
-            "\t\"Tajikistan\",",
-            "\t\"Tanzania, United Republic of\",",
-            "\t\"Thailand\",",
-            "\t\"Timor-Leste\",",
-            "\t\"Togo\",",
-            "\t\"Tokelau\",",
-            "\t\"Tonga\",",
-            "\t\"Trinidad and Tobago\",",
-            "\t\"Tunisia\",",
-            "\t\"Turkey\",",
-            "\t\"Turkmenistan\",",
-            "\t\"Turks and Caicos Islands\",",
-            "\t\"Tuvalu\",",
-            "\t\"Uganda\",",
-            "\t\"Ukraine\",",
-            "\t\"United Arab Emirates\",",
-            "\t\"United Kingdom\",",
-            "\t\"United States\",",
-            "\t\"United States Minor Outlying Islands\",",
-            "\t\"Uruguay\",",
-            "\t\"Uzbekistan\",",
-            "\t\"Vanuatu\",",
-            "\t\"Venezuela\",",
-            "\t\"Viet Nam\",",
-            "\t\"Virgin Islands, British\",",
-            "\t\"Virgin Islands, US\",",
-            "\t\"Wallis and Futuna\",",
-            "\t\"Western Sahara\",",
-            "\t\"Yemen\",",
-            "\t\"Zambia\",",
-            "\t\"Zimbabwe\","});
-            this.countryCombo.Location = new System.Drawing.Point(140, 0);
-            this.countryCombo.Name = "countryCombo";
-            this.countryCombo.Size = new System.Drawing.Size(177, 24);
-            this.countryCombo.TabIndex = 5;
-            // 
-            // panel24
-            // 
-            this.panel24.Controls.Add(this.warningSignupCountry);
-            this.panel24.Controls.Add(this.panel25);
-            this.panel24.Controls.Add(this.panel26);
-            this.panel24.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel24.Location = new System.Drawing.Point(0, 351);
-            this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(18, 75);
-            this.panel24.TabIndex = 5;
-            // 
             // signUpMailTxt
             // 
             this.signUpMailTxt.Dock = System.Windows.Forms.DockStyle.Left;
@@ -761,7 +520,7 @@
             // panel22
             // 
             this.panel22.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel22.Location = new System.Drawing.Point(-52, 0);
+            this.panel22.Location = new System.Drawing.Point(67, 0);
             this.panel22.Name = "panel22";
             this.panel22.Size = new System.Drawing.Size(70, 43);
             this.panel22.TabIndex = 0;
@@ -782,7 +541,7 @@
             this.panel29.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel29.Location = new System.Drawing.Point(0, 0);
             this.panel29.Name = "panel29";
-            this.panel29.Size = new System.Drawing.Size(18, 31);
+            this.panel29.Size = new System.Drawing.Size(137, 31);
             this.panel29.TabIndex = 4;
             // 
             // signupBtn
@@ -792,21 +551,22 @@
             this.signupBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.signupBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.8F);
             this.signupBtn.ForeColor = System.Drawing.Color.White;
-            this.signupBtn.Location = new System.Drawing.Point(-154, 0);
+            this.signupBtn.Location = new System.Drawing.Point(-35, 0);
             this.signupBtn.Name = "signupBtn";
             this.signupBtn.Size = new System.Drawing.Size(102, 43);
             this.signupBtn.TabIndex = 1;
             this.signupBtn.Text = "Next";
             this.signupBtn.UseVisualStyleBackColor = false;
+            this.signupBtn.Click += new System.EventHandler(this.signupBtn_Click);
             // 
             // panel21
             // 
             this.panel21.Controls.Add(this.signupBtn);
             this.panel21.Controls.Add(this.panel22);
             this.panel21.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel21.Location = new System.Drawing.Point(0, 501);
+            this.panel21.Location = new System.Drawing.Point(0, 426);
             this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(18, 43);
+            this.panel21.Size = new System.Drawing.Size(137, 43);
             this.panel21.TabIndex = 7;
             // 
             // panel11
@@ -814,15 +574,14 @@
             this.panel11.BackColor = System.Drawing.Color.White;
             this.panel11.Controls.Add(this.panel21);
             this.panel11.Controls.Add(this.panel27);
-            this.panel11.Controls.Add(this.panel24);
             this.panel11.Controls.Add(this.panel18);
             this.panel11.Controls.Add(this.panel15);
             this.panel11.Controls.Add(this.panel12);
             this.panel11.Controls.Add(this.panel10);
             this.panel11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel11.Location = new System.Drawing.Point(680, 0);
+            this.panel11.Location = new System.Drawing.Point(561, 0);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(18, 607);
+            this.panel11.Size = new System.Drawing.Size(137, 607);
             this.panel11.TabIndex = 3;
             // 
             // panel27
@@ -831,9 +590,9 @@
             this.panel27.Controls.Add(this.panel28);
             this.panel27.Controls.Add(this.panel29);
             this.panel27.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel27.Location = new System.Drawing.Point(0, 426);
+            this.panel27.Location = new System.Drawing.Point(0, 351);
             this.panel27.Name = "panel27";
-            this.panel27.Size = new System.Drawing.Size(18, 75);
+            this.panel27.Size = new System.Drawing.Size(137, 75);
             this.panel27.TabIndex = 6;
             // 
             // panel18
@@ -844,7 +603,7 @@
             this.panel18.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel18.Location = new System.Drawing.Point(0, 276);
             this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(18, 75);
+            this.panel18.Size = new System.Drawing.Size(137, 75);
             this.panel18.TabIndex = 3;
             // 
             // warningSignupPsw2
@@ -876,7 +635,7 @@
             this.panel20.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel20.Location = new System.Drawing.Point(0, 0);
             this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(18, 31);
+            this.panel20.Size = new System.Drawing.Size(137, 31);
             this.panel20.TabIndex = 4;
             // 
             // textBox3
@@ -910,7 +669,7 @@
             this.panel15.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel15.Location = new System.Drawing.Point(0, 201);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(18, 75);
+            this.panel15.Size = new System.Drawing.Size(137, 75);
             this.panel15.TabIndex = 2;
             // 
             // warningSignupPsw
@@ -942,7 +701,7 @@
             this.panel17.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel17.Location = new System.Drawing.Point(0, 0);
             this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(18, 31);
+            this.panel17.Size = new System.Drawing.Size(137, 31);
             this.panel17.TabIndex = 4;
             // 
             // signUpPswTxt
@@ -976,7 +735,7 @@
             this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel12.Location = new System.Drawing.Point(0, 126);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(18, 75);
+            this.panel12.Size = new System.Drawing.Size(137, 75);
             this.panel12.TabIndex = 1;
             // 
             // warningSignupUsername
@@ -1008,7 +767,7 @@
             this.panel13.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel13.Location = new System.Drawing.Point(0, 0);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(18, 31);
+            this.panel13.Size = new System.Drawing.Size(137, 31);
             this.panel13.TabIndex = 4;
             // 
             // signUpUsernameTxt
@@ -1042,7 +801,7 @@
             this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel10.Location = new System.Drawing.Point(0, 0);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(18, 126);
+            this.panel10.Size = new System.Drawing.Size(137, 126);
             this.panel10.TabIndex = 0;
             // 
             // panel40
@@ -1050,7 +809,7 @@
             this.panel40.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel40.Location = new System.Drawing.Point(0, 104);
             this.panel40.Name = "panel40";
-            this.panel40.Size = new System.Drawing.Size(18, 22);
+            this.panel40.Size = new System.Drawing.Size(137, 22);
             this.panel40.TabIndex = 1;
             // 
             // panel39
@@ -1058,7 +817,7 @@
             this.panel39.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel39.Location = new System.Drawing.Point(0, 0);
             this.panel39.Name = "panel39";
-            this.panel39.Size = new System.Drawing.Size(18, 28);
+            this.panel39.Size = new System.Drawing.Size(137, 28);
             this.panel39.TabIndex = 0;
             // 
             // panel7
@@ -1105,62 +864,78 @@
             this.panel1.Size = new System.Drawing.Size(828, 835);
             this.panel1.TabIndex = 1;
             // 
-            // comboBox1
+            // panel42
             // 
-            this.comboBox1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "1 Year",
-            "2 Year",
-            "3 Year",
-            "4 Year",
-            "5 Year",
-            "6 Year"});
-            this.comboBox1.Location = new System.Drawing.Point(140, 0);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(177, 24);
-            this.comboBox1.TabIndex = 6;
+            this.panel42.Controls.Add(this.label6);
+            this.panel42.Controls.Add(this.panel43);
+            this.panel42.Controls.Add(this.panel44);
+            this.panel42.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel42.Location = new System.Drawing.Point(0, 75);
+            this.panel42.Name = "panel42";
+            this.panel42.Size = new System.Drawing.Size(431, 75);
+            this.panel42.TabIndex = 6;
             // 
-            // panel5
+            // label6
             // 
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel5.Location = new System.Drawing.Point(140, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(8, 31);
-            this.panel5.TabIndex = 5;
+            this.label6.AutoSize = true;
+            this.label6.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.8F);
+            this.label6.ForeColor = System.Drawing.Color.Red;
+            this.label6.Location = new System.Drawing.Point(140, 31);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(177, 15);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "This username is already taken";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label3
+            // panel43
             // 
-            this.label3.BackColor = System.Drawing.Color.White;
-            this.label3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(148, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(62, 31);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Grade";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.panel43.BackColor = System.Drawing.Color.White;
+            this.panel43.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel43.Location = new System.Drawing.Point(0, 31);
+            this.panel43.Name = "panel43";
+            this.panel43.Size = new System.Drawing.Size(140, 44);
+            this.panel43.TabIndex = 5;
             // 
-            // GradeTxt
+            // panel44
             // 
-            this.GradeTxt.Dock = System.Windows.Forms.DockStyle.Left;
-            this.GradeTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.GradeTxt.Location = new System.Drawing.Point(210, 0);
-            this.GradeTxt.Margin = new System.Windows.Forms.Padding(6, 3, 3, 3);
-            this.GradeTxt.Name = "GradeTxt";
-            this.GradeTxt.Size = new System.Drawing.Size(52, 26);
-            this.GradeTxt.TabIndex = 7;
+            this.panel44.Controls.Add(this.addGradeBtn);
+            this.panel44.Controls.Add(this.panel46);
+            this.panel44.Controls.Add(this.creditTxt);
+            this.panel44.Controls.Add(this.label7);
+            this.panel44.Controls.Add(this.panel47);
+            this.panel44.Controls.Add(this.GradeTxt);
+            this.panel44.Controls.Add(this.label9);
+            this.panel44.Controls.Add(this.panel51);
+            this.panel44.Controls.Add(this.label12);
+            this.panel44.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel44.Location = new System.Drawing.Point(0, 0);
+            this.panel44.Name = "panel44";
+            this.panel44.Size = new System.Drawing.Size(431, 31);
+            this.panel44.TabIndex = 4;
             // 
-            // panel6
+            // addGradeBtn
             // 
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel6.Location = new System.Drawing.Point(262, 0);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(12, 31);
-            this.panel6.TabIndex = 8;
+            this.addGradeBtn.BackColor = System.Drawing.Color.RoyalBlue;
+            this.addGradeBtn.Dock = System.Windows.Forms.DockStyle.Left;
+            this.addGradeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addGradeBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.8F);
+            this.addGradeBtn.ForeColor = System.Drawing.Color.White;
+            this.addGradeBtn.Location = new System.Drawing.Point(433, 0);
+            this.addGradeBtn.Name = "addGradeBtn";
+            this.addGradeBtn.Size = new System.Drawing.Size(52, 31);
+            this.addGradeBtn.TabIndex = 12;
+            this.addGradeBtn.Text = "Add";
+            this.addGradeBtn.UseVisualStyleBackColor = false;
+            this.addGradeBtn.Click += new System.EventHandler(this.addGradeBtn_Click);
+            // 
+            // panel46
+            // 
+            this.panel46.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel46.Location = new System.Drawing.Point(420, 0);
+            this.panel46.Name = "panel46";
+            this.panel46.Size = new System.Drawing.Size(13, 31);
+            this.panel46.TabIndex = 11;
             // 
             // creditTxt
             // 
@@ -1172,61 +947,111 @@
             this.creditTxt.Size = new System.Drawing.Size(69, 26);
             this.creditTxt.TabIndex = 10;
             // 
-            // label4
+            // label7
             // 
-            this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(274, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(77, 31);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "Credits";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label7.BackColor = System.Drawing.Color.White;
+            this.label7.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(274, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(77, 31);
+            this.label7.TabIndex = 9;
+            this.label7.Text = "Credits";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // panel47
+            // 
+            this.panel47.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel47.Location = new System.Drawing.Point(262, 0);
+            this.panel47.Name = "panel47";
+            this.panel47.Size = new System.Drawing.Size(12, 31);
+            this.panel47.TabIndex = 8;
+            // 
+            // GradeTxt
+            // 
+            this.GradeTxt.Dock = System.Windows.Forms.DockStyle.Left;
+            this.GradeTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.GradeTxt.Location = new System.Drawing.Point(210, 0);
+            this.GradeTxt.Margin = new System.Windows.Forms.Padding(6, 3, 3, 3);
+            this.GradeTxt.Name = "GradeTxt";
+            this.GradeTxt.Size = new System.Drawing.Size(52, 26);
+            this.GradeTxt.TabIndex = 7;
+            // 
+            // label9
+            // 
+            this.label9.BackColor = System.Drawing.Color.White;
+            this.label9.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(148, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(62, 31);
+            this.label9.TabIndex = 6;
+            this.label9.Text = "Grade";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // panel51
+            // 
+            this.panel51.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel51.Location = new System.Drawing.Point(140, 0);
+            this.panel51.Name = "panel51";
+            this.panel51.Size = new System.Drawing.Size(8, 31);
+            this.panel51.TabIndex = 5;
+            // 
+            // label12
+            // 
+            this.label12.BackColor = System.Drawing.Color.White;
+            this.label12.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
+            this.label12.ForeColor = System.Drawing.Color.Black;
+            this.label12.Location = new System.Drawing.Point(0, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(140, 31);
+            this.label12.TabIndex = 4;
+            this.label12.Text = "Gradings";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // panel41
             // 
             this.panel41.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel41.Location = new System.Drawing.Point(420, 0);
+            this.panel41.Location = new System.Drawing.Point(445, 0);
             this.panel41.Name = "panel41";
             this.panel41.Size = new System.Drawing.Size(13, 31);
             this.panel41.TabIndex = 11;
             // 
-            // button2
+            // locationTxt
             // 
-            this.button2.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.8F);
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(433, 0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(52, 31);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "Add";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.locationTxt.Dock = System.Windows.Forms.DockStyle.Left;
+            this.locationTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.locationTxt.Location = new System.Drawing.Point(148, 0);
+            this.locationTxt.Margin = new System.Windows.Forms.Padding(6, 3, 3, 3);
+            this.locationTxt.Name = "locationTxt";
+            this.locationTxt.Size = new System.Drawing.Size(297, 26);
+            this.locationTxt.TabIndex = 10;
             // 
-            // GradeView
+            // button4
             // 
-            this.GradeView.AllowUserToAddRows = false;
-            this.GradeView.AllowUserToDeleteRows = false;
-            this.GradeView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.GradeView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
-            this.GradeView.BackgroundColor = System.Drawing.Color.White;
-            this.GradeView.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.GradeView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.GradeView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.GradeView.GridColor = System.Drawing.Color.White;
-            this.GradeView.Location = new System.Drawing.Point(0, 0);
-            this.GradeView.Name = "GradeView";
-            this.GradeView.ReadOnly = true;
-            this.GradeView.RowHeadersWidth = 51;
-            this.GradeView.RowTemplate.Height = 24;
-            this.GradeView.Size = new System.Drawing.Size(550, 265);
-            this.GradeView.TabIndex = 0;
-            this.GradeView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GradeView_CellClick);
+            this.button4.BackColor = System.Drawing.Color.RoyalBlue;
+            this.button4.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.8F);
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(157, 0);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(83, 43);
+            this.button4.TabIndex = 3;
+            this.button4.Text = "Back";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // panel6
+            // 
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel6.Location = new System.Drawing.Point(240, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(19, 43);
+            this.panel6.TabIndex = 2;
             // 
             // UniversityScreen
             // 
@@ -1243,6 +1068,7 @@
             this.panel34.ResumeLayout(false);
             this.panel34.PerformLayout();
             this.panel30.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.GradeView)).EndInit();
             this.panel35.ResumeLayout(false);
             this.panel35.PerformLayout();
             this.panel37.ResumeLayout(false);
@@ -1253,9 +1079,6 @@
             this.panel23.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
-            this.panel26.ResumeLayout(false);
-            this.panel24.ResumeLayout(false);
-            this.panel24.PerformLayout();
             this.panel29.ResumeLayout(false);
             this.panel29.PerformLayout();
             this.panel21.ResumeLayout(false);
@@ -1278,7 +1101,10 @@
             this.panel7.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.GradeView)).EndInit();
+            this.panel42.ResumeLayout(false);
+            this.panel42.PerformLayout();
+            this.panel44.ResumeLayout(false);
+            this.panel44.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1311,12 +1137,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label warningSignupCountry;
-        private System.Windows.Forms.Panel panel25;
-        private System.Windows.Forms.Panel panel26;
-        private System.Windows.Forms.ComboBox countryCombo;
-        private System.Windows.Forms.Panel panel24;
         private System.Windows.Forms.TextBox signUpMailTxt;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label warningSignupEmail;
@@ -1353,14 +1173,25 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Panel panel41;
-        private System.Windows.Forms.TextBox creditTxt;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.TextBox GradeTxt;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.DataGridView GradeView;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox durationCombo;
+        private System.Windows.Forms.Panel panel41;
+        private System.Windows.Forms.TextBox locationTxt;
+        private System.Windows.Forms.Panel panel42;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Panel panel43;
+        private System.Windows.Forms.Panel panel44;
+        private System.Windows.Forms.Button addGradeBtn;
+        private System.Windows.Forms.Panel panel46;
+        private System.Windows.Forms.TextBox creditTxt;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Panel panel47;
+        private System.Windows.Forms.TextBox GradeTxt;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Panel panel51;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Panel panel6;
     }
 }

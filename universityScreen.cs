@@ -21,11 +21,11 @@ namespace Lecture_Seri
 
         private void addGrade()
         {
-            if(GradeTxt.Text !=null && creditTxt.Text != null)
+            if(GradeTxt.Text !=null && locationTxt.Text != null)
             {
 
                 GradeView.ColumnCount = 3;
-                string[] row = new string[] { GradeTxt.Text, creditTxt.Text, "Delete" };
+                string[] row = new string[] { GradeTxt.Text, locationTxt.Text, "Delete" };
                 GradeView.Rows.Add(row); 
                 GradeView.Refresh();
 
@@ -35,13 +35,15 @@ namespace Lecture_Seri
         }
         private void button2_Click(object sender, EventArgs e)
         {
-            addGrade();
+          
 
         }
 
         private void UniversityScreen_Load(object sender, EventArgs e)
         {
+            movingPanel.Width = 0;
             GradeView.ColumnCount = 3;
+            durationCombo.SelectedIndex = 0;
             string[] row = new string[] { "Grade", "Credit", "Action" };
             GradeView.Rows.Add(row);
         }
@@ -61,6 +63,21 @@ namespace Lecture_Seri
                     //Nothing to do
                 }
             }
+        }
+
+        private void signupBtn_Click(object sender, EventArgs e)
+        {
+            movingPanel.Width = 568;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            movingPanel.Width = 0;
+        }
+
+        private void addGradeBtn_Click(object sender, EventArgs e)
+        {
+            addGrade();
         }
     }
 }
