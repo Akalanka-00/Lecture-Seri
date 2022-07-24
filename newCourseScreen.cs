@@ -20,15 +20,14 @@ namespace Lecture_Seri
 
         private void createFolders()
         {
-            string dir = @"" + uniSettings.Default.index;
             // If directory does not exist, create it
-            string[] paths = { dir, uniSettings.Default.uniID, lvlComboBox.SelectedItem.ToString(),idTxtBox.Text+"-"+nameTxtBox.Text,"type" };
+            string[] paths = { uniSettings.Default.location, uniSettings.Default.uniName, lvlComboBox.SelectedItem.ToString(),idTxtBox.Text+"-"+nameTxtBox.Text,"type" };
             string[] materials = { "Screen Captures", "Recordings", "Assignments", "Lecture Materials" };
             foreach (string path in paths)
             {
                 Console.WriteLine(path);
             }
-            if (Directory.Exists(dir))
+            if (Directory.Exists(uniSettings.Default.location))
             {
 
 

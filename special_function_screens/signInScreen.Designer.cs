@@ -67,6 +67,7 @@
             this.signUpUsernameTxt = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.avatar = new Lecture_Seri.CircularShape();
             this.panel42 = new System.Windows.Forms.Panel();
             this.removeAvatarBtn = new System.Windows.Forms.Button();
             this.panel46 = new System.Windows.Forms.Panel();
@@ -94,6 +95,7 @@
             this.signinUsernameTxt = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.panel23 = new System.Windows.Forms.Panel();
+            this.circularShape2 = new Lecture_Seri.CircularShape();
             this.panel45 = new System.Windows.Forms.Panel();
             this.panel48 = new System.Windows.Forms.Panel();
             this.panel49 = new System.Windows.Forms.Panel();
@@ -109,8 +111,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.avatar = new Lecture_Seri.CircularShape();
-            this.circularShape2 = new Lecture_Seri.CircularShape();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -127,6 +127,7 @@
             this.panel12.SuspendLayout();
             this.panel13.SuspendLayout();
             this.panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.avatar)).BeginInit();
             this.panel42.SuspendLayout();
             this.movingPanel.SuspendLayout();
             this.panel37.SuspendLayout();
@@ -135,11 +136,10 @@
             this.panel32.SuspendLayout();
             this.panel31.SuspendLayout();
             this.panel23.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.circularShape2)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.avatar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularShape2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -809,6 +809,17 @@
             this.panel10.Size = new System.Drawing.Size(35, 126);
             this.panel10.TabIndex = 0;
             // 
+            // avatar
+            // 
+            this.avatar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.avatar.Image = ((System.Drawing.Image)(resources.GetObject("avatar.Image")));
+            this.avatar.Location = new System.Drawing.Point(232, 28);
+            this.avatar.Name = "avatar";
+            this.avatar.Size = new System.Drawing.Size(0, 76);
+            this.avatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.avatar.TabIndex = 4;
+            this.avatar.TabStop = false;
+            // 
             // panel42
             // 
             this.panel42.Controls.Add(this.removeAvatarBtn);
@@ -1101,6 +1112,17 @@
             this.panel23.Size = new System.Drawing.Size(533, 126);
             this.panel23.TabIndex = 0;
             // 
+            // circularShape2
+            // 
+            this.circularShape2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.circularShape2.Image = global::Lecture_Seri.Properties.Resources.avatar;
+            this.circularShape2.Location = new System.Drawing.Point(210, 31);
+            this.circularShape2.Name = "circularShape2";
+            this.circularShape2.Size = new System.Drawing.Size(113, 67);
+            this.circularShape2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.circularShape2.TabIndex = 9;
+            this.circularShape2.TabStop = false;
+            // 
             // panel45
             // 
             this.panel45.Dock = System.Windows.Forms.DockStyle.Right;
@@ -1250,28 +1272,6 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(828, 48);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
-            // avatar
-            // 
-            this.avatar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.avatar.Image = ((System.Drawing.Image)(resources.GetObject("avatar.Image")));
-            this.avatar.Location = new System.Drawing.Point(232, 28);
-            this.avatar.Name = "avatar";
-            this.avatar.Size = new System.Drawing.Size(0, 76);
-            this.avatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.avatar.TabIndex = 4;
-            this.avatar.TabStop = false;
-            // 
-            // circularShape2
-            // 
-            this.circularShape2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.circularShape2.Image = global::Lecture_Seri.Properties.Resources.avatar;
-            this.circularShape2.Location = new System.Drawing.Point(210, 31);
-            this.circularShape2.Name = "circularShape2";
-            this.circularShape2.Size = new System.Drawing.Size(113, 67);
-            this.circularShape2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.circularShape2.TabIndex = 9;
-            this.circularShape2.TabStop = false;
-            // 
             // signInScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1310,6 +1310,7 @@
             this.panel13.ResumeLayout(false);
             this.panel13.PerformLayout();
             this.panel10.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.avatar)).EndInit();
             this.panel42.ResumeLayout(false);
             this.movingPanel.ResumeLayout(false);
             this.panel37.ResumeLayout(false);
@@ -1322,12 +1323,11 @@
             this.panel31.ResumeLayout(false);
             this.panel31.PerformLayout();
             this.panel23.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.circularShape2)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.avatar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularShape2)).EndInit();
             this.ResumeLayout(false);
 
         }

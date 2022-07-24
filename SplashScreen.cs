@@ -19,7 +19,7 @@ namespace Lecture_Seri
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            loadedPanel.Width += 3;
+            loadedPanel.Width += 30;
 
             if (loadedPanel.Width % 20 == 0)
             {

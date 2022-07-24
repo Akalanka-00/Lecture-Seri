@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.WindowsAPICodePack.Dialogs;
-
+using System.IO;
 
 namespace Lecture_Seri
 {
@@ -120,9 +120,39 @@ namespace Lecture_Seri
             cmd = new MySqlCommand(query+" "+ values, conn);
             cmd.ExecuteNonQuery();
         }
+        private string uniID()
+        {
+            return "U0001";
+        }
+        private void saveUniSettings()
+        {
+            uniSettings.Default.uniID = uniID();
+            uniSettings.Default.uniName = uniCombo.SelectedItem.ToString();
+            uniSettings.Default.location = locationTxt.Text;
+            uniSettings.Default.Save();
+        }
+        private void generateFolders()
+        {
+            string[] paths = { locationTxt.Text,uniCombo.SelectedItem.ToString() };
+            string path = Path.Combine(paths);
 
+            MessageBox.Show(path);
+            if (!Directory.Exists(path))
+            {
+                Directory.CreateDirectory(path);
+                for (int i = 1; i <= durationCombo.SelectedIndex+1; i++)
+                {
+                    string tempPath = "L" + i + "S" + 1;
+                    string[] tempPaths = {path,tempPath };
+                    Directory.CreateDirectory(Path.Combine(tempPaths));
 
+                    string tempPath2 = "L" + i + "S" + 2;
+                    string[] tempPaths2 = { path, tempPath2 };
+                    Directory.CreateDirectory(Path.Combine(tempPaths2));
+                }
+            }
 
+        }
 
 
         private void button2_Click(object sender, EventArgs e)
@@ -193,8 +223,11 @@ namespace Lecture_Seri
 
         private void button1_Click(object sender, EventArgs e)
         {
-            saveEnrollData();
-            saveGrades();
+            //saveEnrollData();
+            //saveGrades();
+            saveUniSettings();
+            generateFolders();
+            this.Close();
         }
     }
 }

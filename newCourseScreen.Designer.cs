@@ -105,14 +105,15 @@
             // 
             // okBtn
             // 
+            this.okBtn.BackColor = System.Drawing.Color.RoyalBlue;
             this.okBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.okBtn.ForeColor = System.Drawing.Color.Blue;
+            this.okBtn.ForeColor = System.Drawing.Color.White;
             this.okBtn.Location = new System.Drawing.Point(526, 7);
             this.okBtn.Name = "okBtn";
             this.okBtn.Size = new System.Drawing.Size(99, 31);
             this.okBtn.TabIndex = 1;
             this.okBtn.Text = "Create";
-            this.okBtn.UseVisualStyleBackColor = true;
+            this.okBtn.UseVisualStyleBackColor = false;
             this.okBtn.Click += new System.EventHandler(this.okBtn_Click);
             // 
             // panel10

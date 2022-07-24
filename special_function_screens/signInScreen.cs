@@ -400,6 +400,7 @@ namespace Lecture_Seri
 
 		private void saveData()
         {
+			userSettings.Default.id = userID();
 			userSettings.Default.Avatar = basae64Text;
 			userSettings.Default.Username = signUpUsernameTxt.Text;
 			userSettings.Default.Password = signUpPswTxt.Text;

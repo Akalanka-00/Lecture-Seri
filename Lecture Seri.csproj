@@ -146,10 +146,10 @@
     <Compile Include="recordingScreen.Designer.cs">
       <DependentUpon>recordingScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="signInScreen.cs">
+    <Compile Include="special_function_screens\signInScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="signInScreen.Designer.cs">
+    <Compile Include="special_function_screens\signInScreen.Designer.cs">
       <DependentUpon>signInScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="SplashScreen.cs">
@@ -164,10 +164,10 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>uniSettings.settings</DependentUpon>
     </Compile>
-    <Compile Include="UniversityScreen.cs">
+    <Compile Include="special_function_screens\UniversityScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UniversityScreen.Designer.cs">
+    <Compile Include="special_function_screens\UniversityScreen.Designer.cs">
       <DependentUpon>UniversityScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="userSettings.Designer.cs">
@@ -200,13 +200,13 @@
     <EmbeddedResource Include="recordingScreen.resx">
       <DependentUpon>recordingScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="signInScreen.resx">
+    <EmbeddedResource Include="special_function_screens\signInScreen.resx">
       <DependentUpon>signInScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SplashScreen.resx">
       <DependentUpon>SplashScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UniversityScreen.resx">
+    <EmbeddedResource Include="special_function_screens\UniversityScreen.resx">
       <DependentUpon>UniversityScreen.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
@@ -248,6 +248,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\avatar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Settings\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
