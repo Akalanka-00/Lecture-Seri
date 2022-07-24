@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.WindowsAPICodePack.Dialogs;
+
 
 namespace Lecture_Seri
 {
@@ -19,6 +21,10 @@ namespace Lecture_Seri
         }
         MySqlConnection conn;
         MySqlCommand cmd;
+        MySqlDataReader reader;
+
+        List<string> uniList = new List<string>();
+        List<string> uniIdList = new List<string>();
 
         private void sqlConn()
         {
@@ -40,10 +46,12 @@ namespace Lecture_Seri
             {
 
                 GradeView.ColumnCount = 3;
-                string[] row = new string[] { GradeTxt.Text, locationTxt.Text, "Delete" };
+                string[] row = new string[] { GradeTxt.Text, creditTxt.Text, "Delete" };
                 GradeView.Rows.Add(row); 
                 GradeView.Refresh();
 
+                GradeTxt.Text = "";
+                creditTxt.Text = "";
 
             }
 
@@ -51,21 +59,99 @@ namespace Lecture_Seri
 
         private void loadUniData()
         {
+            string query = "select * from University;";
+            cmd = new MySqlCommand(query, conn);
+            reader = cmd.ExecuteReader();
+           
 
+            uniCombo.Items.Clear();
+            while (reader.Read())
+            {
+                uniIdList.Add(reader.GetString(0));
+                uniList.Add(reader.GetString(1));
+                uniCombo.Items.Add(reader.GetString(1));
+
+            }
+
+            reader.Close();
+            uniCombo.SelectedIndex = 0;
+           // uniCombo.Items.Add(uniList);
+
+
+        }
+
+        private void saveEnrollData()
+        {
+            int duration = durationCombo.SelectedIndex + 1;
+            string query = "Insert Into Enroll (user_id, uni_id,index_no, degree, faculty, duration, location)" +
+             "values ('" + userSettings.Default.id + "', '" + uniIdList[uniCombo.SelectedIndex] + "', '" + indexTxt.Text + "', '" + degreeTxt.Text + "', '" + facTxt.Text + "', '" +
+             duration + "', '" + locationTxt.Text + "');";
+
+            cmd = new MySqlCommand(query, conn);
+            cmd.ExecuteNonQuery();
+        }
+
+        private int getEnrollID()
+        {
+            int eid = 0;
+            string query = "select * from University;";
+            cmd = new MySqlCommand(query, conn);
+            reader.Close();
+            reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                eid++;
+            }
+            reader.Close();
+            return eid;
+        }
+
+        private void saveGrades()
+        {
+            MessageBox.Show(GradeView.Rows[1].Cells[1].Value.ToString());
+            string query = "Insert Into Grade (enroll_id, grade, credit)";
+            string values = "Values ('"+getEnrollID()+"', '" +GradeView.Rows[1].Cells[0].Value.ToString() + "', '" + (float)Convert.ToDouble(GradeView.Rows[1].Cells[1].Value.ToString()) + "')";
+            int rc = GradeView.RowCount;
+            for (int i = 2; i < rc; i++)
+            {
+              values = values +  " ,('" + getEnrollID() + "', '" + GradeView.Rows[i].Cells[0].Value.ToString() + "', '" + (float)Convert.ToDouble(GradeView.Rows[i].Cells[1].Value.ToString()) + "')";
+
+            }
+            cmd = new MySqlCommand(query+" "+ values, conn);
+            cmd.ExecuteNonQuery();
         }
 
 
 
-        
+
+
         private void button2_Click(object sender, EventArgs e)
         {
-          
+          /*  CommonOpenFileDialog dialog = new CommonOpenFileDialog();
+            dialog.InitialDirectory = "C:\\Users";
+            dialog.IsFolderPicker = true;
+            if (dialog.ShowDialog() == CommonFileDialogResult.Ok)
+            {
+                locationTxt.Text = dialog.FileName;
+               // MessageBox.Show("You selected: " + dialog.FileName);
+            }*/
+
+            FolderBrowserDialog folder = new FolderBrowserDialog();
+
+            //folder.RootFolder = Environment.SpecialFolder.MyDocuments;
+
+           // folder.ShowDialog();
+           if(folder.ShowDialog() == DialogResult.OK)
+            {
+                locationTxt.Text = folder.SelectedPath;
+            }
 
         }
 
         private void UniversityScreen_Load(object sender, EventArgs e)
         {
             sqlConn();
+            loadUniData();
             movingPanel.Width = 0;
             GradeView.ColumnCount = 3;
             durationCombo.SelectedIndex = 0;
@@ -103,6 +189,12 @@ namespace Lecture_Seri
         private void addGradeBtn_Click(object sender, EventArgs e)
         {
             addGrade();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            saveEnrollData();
+            saveGrades();
         }
     }
 }

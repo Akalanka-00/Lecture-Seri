@@ -326,7 +326,7 @@ namespace Lecture_Seri
 				userSettings.Default.Avatar = reader[3].ToString();
 				userSettings.Default.country = reader[4].ToString();
 				userSettings.Default.mail = reader[5].ToString();
-
+				userSettings.Default.Save();
 				MessageBox.Show("Logged In");
 			}
 			MessageBox.Show(query);

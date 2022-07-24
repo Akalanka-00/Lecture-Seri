@@ -13,7 +13,6 @@ D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Debug\Lecture_Seri.HomeScreen.resou
 D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Debug\Lecture_Seri.newCourseScreen.resources
 D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Debug\Lecture_Seri.Properties.Resources.resources
 D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Debug\Lecture_Seri.recordingScreen.resources
-D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Debug\Lecture_Seri.setupScreen.resources
 D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Debug\Lecture_Seri.SplashScreen.resources
 D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Debug\Lecture Seri.csproj.GenerateResource.cache
 D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Debug\Lecture Seri.csproj.CoreCompileInputs.cache

@@ -33,7 +33,7 @@
             this.warningSigninPsw = new System.Windows.Forms.Label();
             this.panel36 = new System.Windows.Forms.Panel();
             this.panel34 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
+            this.locationBtn = new System.Windows.Forms.Button();
             this.panel41 = new System.Windows.Forms.Panel();
             this.locationTxt = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -75,7 +75,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.signUpMailTxt = new System.Windows.Forms.TextBox();
+            this.indexTxt = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.warningSignupEmail = new System.Windows.Forms.Label();
             this.panel22 = new System.Windows.Forms.Panel();
@@ -89,18 +89,19 @@
             this.warningSignupPsw2 = new System.Windows.Forms.Label();
             this.panel19 = new System.Windows.Forms.Panel();
             this.panel20 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.facTxt = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.panel15 = new System.Windows.Forms.Panel();
             this.warningSignupPsw = new System.Windows.Forms.Label();
             this.panel16 = new System.Windows.Forms.Panel();
             this.panel17 = new System.Windows.Forms.Panel();
-            this.signUpPswTxt = new System.Windows.Forms.TextBox();
+            this.degreeTxt = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
             this.warningSignupUsername = new System.Windows.Forms.Label();
             this.panel14 = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
+            this.uniCombo = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel40 = new System.Windows.Forms.Panel();
@@ -109,7 +110,6 @@
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel34.SuspendLayout();
             this.panel30.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GradeView)).BeginInit();
@@ -189,7 +189,7 @@
             // 
             // panel34
             // 
-            this.panel34.Controls.Add(this.button2);
+            this.panel34.Controls.Add(this.locationBtn);
             this.panel34.Controls.Add(this.panel41);
             this.panel34.Controls.Add(this.locationTxt);
             this.panel34.Controls.Add(this.panel5);
@@ -197,23 +197,23 @@
             this.panel34.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel34.Location = new System.Drawing.Point(0, 0);
             this.panel34.Name = "panel34";
-            this.panel34.Size = new System.Drawing.Size(474, 31);
+            this.panel34.Size = new System.Drawing.Size(531, 31);
             this.panel34.TabIndex = 4;
             // 
-            // button2
+            // locationBtn
             // 
-            this.button2.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.8F);
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(458, 0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(52, 31);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "...";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.locationBtn.BackColor = System.Drawing.Color.RoyalBlue;
+            this.locationBtn.Dock = System.Windows.Forms.DockStyle.Left;
+            this.locationBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.locationBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.8F);
+            this.locationBtn.ForeColor = System.Drawing.Color.White;
+            this.locationBtn.Location = new System.Drawing.Point(458, 0);
+            this.locationBtn.Name = "locationBtn";
+            this.locationBtn.Size = new System.Drawing.Size(52, 31);
+            this.locationBtn.TabIndex = 12;
+            this.locationBtn.Text = "...";
+            this.locationBtn.UseVisualStyleBackColor = false;
+            this.locationBtn.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel41
             // 
@@ -250,7 +250,7 @@
             this.panel30.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel30.Location = new System.Drawing.Point(0, 201);
             this.panel30.Name = "panel30";
-            this.panel30.Size = new System.Drawing.Size(474, 340);
+            this.panel30.Size = new System.Drawing.Size(531, 340);
             this.panel30.TabIndex = 4;
             // 
             // GradeView
@@ -269,7 +269,7 @@
             this.GradeView.ReadOnly = true;
             this.GradeView.RowHeadersWidth = 51;
             this.GradeView.RowTemplate.Height = 24;
-            this.GradeView.Size = new System.Drawing.Size(474, 190);
+            this.GradeView.Size = new System.Drawing.Size(531, 190);
             this.GradeView.TabIndex = 0;
             this.GradeView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GradeView_CellClick);
             // 
@@ -281,7 +281,7 @@
             this.panel42.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel42.Location = new System.Drawing.Point(0, 75);
             this.panel42.Name = "panel42";
-            this.panel42.Size = new System.Drawing.Size(474, 75);
+            this.panel42.Size = new System.Drawing.Size(531, 75);
             this.panel42.TabIndex = 6;
             // 
             // label6
@@ -320,7 +320,7 @@
             this.panel44.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel44.Location = new System.Drawing.Point(0, 0);
             this.panel44.Name = "panel44";
-            this.panel44.Size = new System.Drawing.Size(474, 31);
+            this.panel44.Size = new System.Drawing.Size(531, 31);
             this.panel44.TabIndex = 4;
             // 
             // addGradeBtn
@@ -429,7 +429,7 @@
             this.panel35.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel35.Location = new System.Drawing.Point(0, 0);
             this.panel35.Name = "panel35";
-            this.panel35.Size = new System.Drawing.Size(474, 75);
+            this.panel35.Size = new System.Drawing.Size(531, 75);
             this.panel35.TabIndex = 5;
             // 
             // button1
@@ -439,17 +439,18 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.8F);
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(302, 0);
+            this.button1.Location = new System.Drawing.Point(359, 0);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(102, 43);
             this.button1.TabIndex = 1;
             this.button1.Text = "Sign Up";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel38
             // 
             this.panel38.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel38.Location = new System.Drawing.Point(404, 0);
+            this.panel38.Location = new System.Drawing.Point(461, 0);
             this.panel38.Name = "panel38";
             this.panel38.Size = new System.Drawing.Size(70, 43);
             this.panel38.TabIndex = 0;
@@ -463,7 +464,7 @@
             this.panel37.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel37.Location = new System.Drawing.Point(0, 541);
             this.panel37.Name = "panel37";
-            this.panel37.Size = new System.Drawing.Size(474, 43);
+            this.panel37.Size = new System.Drawing.Size(531, 43);
             this.panel37.TabIndex = 8;
             // 
             // button4
@@ -473,7 +474,7 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.8F);
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(200, 0);
+            this.button4.Location = new System.Drawing.Point(257, 0);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(83, 43);
             this.button4.TabIndex = 3;
@@ -484,7 +485,7 @@
             // panel6
             // 
             this.panel6.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel6.Location = new System.Drawing.Point(283, 0);
+            this.panel6.Location = new System.Drawing.Point(340, 0);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(19, 43);
             this.panel6.TabIndex = 2;
@@ -499,7 +500,7 @@
             this.movingPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.movingPanel.Location = new System.Drawing.Point(130, 0);
             this.movingPanel.Name = "movingPanel";
-            this.movingPanel.Size = new System.Drawing.Size(474, 607);
+            this.movingPanel.Size = new System.Drawing.Size(531, 607);
             this.movingPanel.TabIndex = 2;
             // 
             // panel32
@@ -510,7 +511,7 @@
             this.panel32.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel32.Location = new System.Drawing.Point(0, 126);
             this.panel32.Name = "panel32";
-            this.panel32.Size = new System.Drawing.Size(474, 75);
+            this.panel32.Size = new System.Drawing.Size(531, 75);
             this.panel32.TabIndex = 3;
             // 
             // warningSigninUsername
@@ -542,7 +543,7 @@
             this.panel31.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel31.Location = new System.Drawing.Point(0, 0);
             this.panel31.Name = "panel31";
-            this.panel31.Size = new System.Drawing.Size(474, 31);
+            this.panel31.Size = new System.Drawing.Size(531, 31);
             this.panel31.TabIndex = 4;
             // 
             // durationCombo
@@ -586,13 +587,13 @@
             this.panel23.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel23.Location = new System.Drawing.Point(0, 0);
             this.panel23.Name = "panel23";
-            this.panel23.Size = new System.Drawing.Size(474, 126);
+            this.panel23.Size = new System.Drawing.Size(531, 126);
             this.panel23.TabIndex = 0;
             // 
             // panel45
             // 
             this.panel45.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel45.Location = new System.Drawing.Point(264, 31);
+            this.panel45.Location = new System.Drawing.Point(321, 31);
             this.panel45.Name = "panel45";
             this.panel45.Size = new System.Drawing.Size(210, 67);
             this.panel45.TabIndex = 8;
@@ -610,7 +611,7 @@
             this.panel49.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel49.Location = new System.Drawing.Point(0, 98);
             this.panel49.Name = "panel49";
-            this.panel49.Size = new System.Drawing.Size(474, 28);
+            this.panel49.Size = new System.Drawing.Size(531, 28);
             this.panel49.TabIndex = 6;
             // 
             // panel50
@@ -618,7 +619,7 @@
             this.panel50.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel50.Location = new System.Drawing.Point(0, 0);
             this.panel50.Name = "panel50";
-            this.panel50.Size = new System.Drawing.Size(474, 31);
+            this.panel50.Size = new System.Drawing.Size(531, 31);
             this.panel50.TabIndex = 5;
             // 
             // panel2
@@ -670,15 +671,15 @@
             this.panel9.Size = new System.Drawing.Size(130, 607);
             this.panel9.TabIndex = 1;
             // 
-            // signUpMailTxt
+            // indexTxt
             // 
-            this.signUpMailTxt.Dock = System.Windows.Forms.DockStyle.Left;
-            this.signUpMailTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.signUpMailTxt.Location = new System.Drawing.Point(140, 0);
-            this.signUpMailTxt.Margin = new System.Windows.Forms.Padding(6, 3, 3, 3);
-            this.signUpMailTxt.Name = "signUpMailTxt";
-            this.signUpMailTxt.Size = new System.Drawing.Size(266, 26);
-            this.signUpMailTxt.TabIndex = 5;
+            this.indexTxt.Dock = System.Windows.Forms.DockStyle.Left;
+            this.indexTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.indexTxt.Location = new System.Drawing.Point(140, 0);
+            this.indexTxt.Margin = new System.Windows.Forms.Padding(6, 3, 3, 3);
+            this.indexTxt.Name = "indexTxt";
+            this.indexTxt.Size = new System.Drawing.Size(266, 26);
+            this.indexTxt.TabIndex = 5;
             // 
             // label16
             // 
@@ -709,7 +710,7 @@
             // panel22
             // 
             this.panel22.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel22.Location = new System.Drawing.Point(24, 0);
+            this.panel22.Location = new System.Drawing.Point(-33, 0);
             this.panel22.Name = "panel22";
             this.panel22.Size = new System.Drawing.Size(70, 43);
             this.panel22.TabIndex = 0;
@@ -725,12 +726,12 @@
             // 
             // panel29
             // 
-            this.panel29.Controls.Add(this.signUpMailTxt);
+            this.panel29.Controls.Add(this.indexTxt);
             this.panel29.Controls.Add(this.label16);
             this.panel29.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel29.Location = new System.Drawing.Point(0, 0);
             this.panel29.Name = "panel29";
-            this.panel29.Size = new System.Drawing.Size(94, 31);
+            this.panel29.Size = new System.Drawing.Size(37, 31);
             this.panel29.TabIndex = 4;
             // 
             // signupBtn
@@ -740,7 +741,7 @@
             this.signupBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.signupBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.8F);
             this.signupBtn.ForeColor = System.Drawing.Color.White;
-            this.signupBtn.Location = new System.Drawing.Point(-78, 0);
+            this.signupBtn.Location = new System.Drawing.Point(-135, 0);
             this.signupBtn.Name = "signupBtn";
             this.signupBtn.Size = new System.Drawing.Size(102, 43);
             this.signupBtn.TabIndex = 1;
@@ -755,7 +756,7 @@
             this.panel21.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel21.Location = new System.Drawing.Point(0, 426);
             this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(94, 43);
+            this.panel21.Size = new System.Drawing.Size(37, 43);
             this.panel21.TabIndex = 7;
             // 
             // panel11
@@ -768,9 +769,9 @@
             this.panel11.Controls.Add(this.panel12);
             this.panel11.Controls.Add(this.panel10);
             this.panel11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel11.Location = new System.Drawing.Point(604, 0);
+            this.panel11.Location = new System.Drawing.Point(661, 0);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(94, 607);
+            this.panel11.Size = new System.Drawing.Size(37, 607);
             this.panel11.TabIndex = 3;
             // 
             // panel27
@@ -781,7 +782,7 @@
             this.panel27.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel27.Location = new System.Drawing.Point(0, 351);
             this.panel27.Name = "panel27";
-            this.panel27.Size = new System.Drawing.Size(94, 75);
+            this.panel27.Size = new System.Drawing.Size(37, 75);
             this.panel27.TabIndex = 6;
             // 
             // panel18
@@ -792,7 +793,7 @@
             this.panel18.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel18.Location = new System.Drawing.Point(0, 276);
             this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(94, 75);
+            this.panel18.Size = new System.Drawing.Size(37, 75);
             this.panel18.TabIndex = 3;
             // 
             // warningSignupPsw2
@@ -819,23 +820,23 @@
             // 
             // panel20
             // 
-            this.panel20.Controls.Add(this.textBox3);
+            this.panel20.Controls.Add(this.facTxt);
             this.panel20.Controls.Add(this.label10);
             this.panel20.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel20.Location = new System.Drawing.Point(0, 0);
             this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(94, 31);
+            this.panel20.Size = new System.Drawing.Size(37, 31);
             this.panel20.TabIndex = 4;
             // 
-            // textBox3
+            // facTxt
             // 
-            this.textBox3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textBox3.Location = new System.Drawing.Point(140, 0);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(6, 3, 3, 3);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(266, 26);
-            this.textBox3.TabIndex = 5;
+            this.facTxt.Dock = System.Windows.Forms.DockStyle.Left;
+            this.facTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.facTxt.Location = new System.Drawing.Point(140, 0);
+            this.facTxt.Margin = new System.Windows.Forms.Padding(6, 3, 3, 3);
+            this.facTxt.Name = "facTxt";
+            this.facTxt.Size = new System.Drawing.Size(266, 26);
+            this.facTxt.TabIndex = 5;
             // 
             // label10
             // 
@@ -858,7 +859,7 @@
             this.panel15.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel15.Location = new System.Drawing.Point(0, 201);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(94, 75);
+            this.panel15.Size = new System.Drawing.Size(37, 75);
             this.panel15.TabIndex = 2;
             // 
             // warningSignupPsw
@@ -885,23 +886,23 @@
             // 
             // panel17
             // 
-            this.panel17.Controls.Add(this.signUpPswTxt);
+            this.panel17.Controls.Add(this.degreeTxt);
             this.panel17.Controls.Add(this.label8);
             this.panel17.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel17.Location = new System.Drawing.Point(0, 0);
             this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(94, 31);
+            this.panel17.Size = new System.Drawing.Size(37, 31);
             this.panel17.TabIndex = 4;
             // 
-            // signUpPswTxt
+            // degreeTxt
             // 
-            this.signUpPswTxt.Dock = System.Windows.Forms.DockStyle.Left;
-            this.signUpPswTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.signUpPswTxt.Location = new System.Drawing.Point(140, 0);
-            this.signUpPswTxt.Margin = new System.Windows.Forms.Padding(6, 3, 3, 3);
-            this.signUpPswTxt.Name = "signUpPswTxt";
-            this.signUpPswTxt.Size = new System.Drawing.Size(266, 26);
-            this.signUpPswTxt.TabIndex = 5;
+            this.degreeTxt.Dock = System.Windows.Forms.DockStyle.Left;
+            this.degreeTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.degreeTxt.Location = new System.Drawing.Point(140, 0);
+            this.degreeTxt.Margin = new System.Windows.Forms.Padding(6, 3, 3, 3);
+            this.degreeTxt.Name = "degreeTxt";
+            this.degreeTxt.Size = new System.Drawing.Size(266, 26);
+            this.degreeTxt.TabIndex = 5;
             // 
             // label8
             // 
@@ -924,7 +925,7 @@
             this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel12.Location = new System.Drawing.Point(0, 126);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(94, 75);
+            this.panel12.Size = new System.Drawing.Size(37, 75);
             this.panel12.TabIndex = 1;
             // 
             // warningSignupUsername
@@ -951,13 +952,25 @@
             // 
             // panel13
             // 
-            this.panel13.Controls.Add(this.comboBox1);
+            this.panel13.Controls.Add(this.uniCombo);
             this.panel13.Controls.Add(this.label5);
             this.panel13.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel13.Location = new System.Drawing.Point(0, 0);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(94, 31);
+            this.panel13.Size = new System.Drawing.Size(37, 31);
             this.panel13.TabIndex = 4;
+            // 
+            // uniCombo
+            // 
+            this.uniCombo.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.uniCombo.Dock = System.Windows.Forms.DockStyle.Left;
+            this.uniCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.uniCombo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.uniCombo.FormattingEnabled = true;
+            this.uniCombo.Location = new System.Drawing.Point(140, 0);
+            this.uniCombo.Name = "uniCombo";
+            this.uniCombo.Size = new System.Drawing.Size(177, 24);
+            this.uniCombo.TabIndex = 7;
             // 
             // label5
             // 
@@ -980,7 +993,7 @@
             this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel10.Location = new System.Drawing.Point(0, 0);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(94, 126);
+            this.panel10.Size = new System.Drawing.Size(37, 126);
             this.panel10.TabIndex = 0;
             // 
             // panel40
@@ -988,7 +1001,7 @@
             this.panel40.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel40.Location = new System.Drawing.Point(0, 104);
             this.panel40.Name = "panel40";
-            this.panel40.Size = new System.Drawing.Size(94, 22);
+            this.panel40.Size = new System.Drawing.Size(37, 22);
             this.panel40.TabIndex = 1;
             // 
             // panel39
@@ -996,7 +1009,7 @@
             this.panel39.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel39.Location = new System.Drawing.Point(0, 0);
             this.panel39.Name = "panel39";
-            this.panel39.Size = new System.Drawing.Size(94, 28);
+            this.panel39.Size = new System.Drawing.Size(37, 28);
             this.panel39.TabIndex = 0;
             // 
             // panel7
@@ -1042,18 +1055,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(828, 835);
             this.panel1.TabIndex = 1;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.comboBox1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(140, 0);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(177, 24);
-            this.comboBox1.TabIndex = 7;
             // 
             // UniversityScreen
             // 
@@ -1138,7 +1139,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.TextBox signUpMailTxt;
+        private System.Windows.Forms.TextBox indexTxt;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label warningSignupEmail;
         private System.Windows.Forms.Panel panel22;
@@ -1152,13 +1153,13 @@
         private System.Windows.Forms.Label warningSignupPsw2;
         private System.Windows.Forms.Panel panel19;
         private System.Windows.Forms.Panel panel20;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox facTxt;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.Label warningSignupPsw;
         private System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.Panel panel17;
-        private System.Windows.Forms.TextBox signUpPswTxt;
+        private System.Windows.Forms.TextBox degreeTxt;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Label warningSignupUsername;
@@ -1172,7 +1173,7 @@
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button locationBtn;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.DataGridView GradeView;
         private System.Windows.Forms.ComboBox durationCombo;
@@ -1193,6 +1194,6 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox uniCombo;
     }
 }

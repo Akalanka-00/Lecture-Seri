@@ -44,17 +44,10 @@ namespace Lecture_Seri
                 timer1.Stop();
              
 
-                bool dataSaved = uniSettings.Default.duration;
-                if (!dataSaved)
-                {
-                    setupScreen ls = new setupScreen();
-                    ls.Show();
-                }
-                else
-                {
+               
                     HomeScreen hs = new HomeScreen();
                     hs.Show();
-                }
+                
 
                 this.Hide();
             }
