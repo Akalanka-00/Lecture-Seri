@@ -146,6 +146,12 @@
     <Compile Include="recordingScreen.Designer.cs">
       <DependentUpon>recordingScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="special_function_screens\ScreenCaptureScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="special_function_screens\ScreenCaptureScreen.Designer.cs">
+      <DependentUpon>ScreenCaptureScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="special_function_screens\signInScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -199,6 +205,9 @@
     </Compile>
     <EmbeddedResource Include="recordingScreen.resx">
       <DependentUpon>recordingScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="special_function_screens\ScreenCaptureScreen.resx">
+      <DependentUpon>ScreenCaptureScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="special_function_screens\signInScreen.resx">
       <DependentUpon>signInScreen.cs</DependentUpon>
