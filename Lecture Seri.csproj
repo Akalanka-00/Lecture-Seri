@@ -132,10 +132,10 @@
     <Compile Include="HomeScreen.Designer.cs">
       <DependentUpon>HomeScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="newCourseScreen.cs">
+    <Compile Include="special_function_screens\newCourseScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="newCourseScreen.Designer.cs">
+    <Compile Include="special_function_screens\newCourseScreen.Designer.cs">
       <DependentUpon>newCourseScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -184,7 +184,7 @@
     <EmbeddedResource Include="HomeScreen.resx">
       <DependentUpon>HomeScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="newCourseScreen.resx">
+    <EmbeddedResource Include="special_function_screens\newCourseScreen.resx">
       <DependentUpon>newCourseScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

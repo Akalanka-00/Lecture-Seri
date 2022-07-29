@@ -55,6 +55,7 @@ namespace Lecture_Seri
         private void okBtn_Click(object sender, EventArgs e)
         {
             createFolders();
+            this.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
