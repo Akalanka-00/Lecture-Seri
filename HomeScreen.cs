@@ -60,6 +60,12 @@ namespace Lecture_Seri
             return ret;
         }
 
+        private void screenCapture()
+        {
+            special_function_screens.ScreenCaptureScreen sc = new special_function_screens.ScreenCaptureScreen();
+            sc.Show();
+        }
+
         private void loadAvatar()
         {
             Image img;
@@ -140,6 +146,11 @@ namespace Lecture_Seri
         {
             userSettings.Default.access = false;
             userSettings.Default.Save();
+        }
+
+        private void screenCapturesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            screenCapture();
         }
     }
 }

@@ -43,3 +43,4 @@ D:\Projects\c#\Lecture Seri\Lecture Seri\bin\Debug\System.Buffers.xml
 D:\Projects\c#\Lecture Seri\Lecture Seri\bin\Debug\System.Memory.xml
 D:\Projects\c#\Lecture Seri\Lecture Seri\bin\Debug\System.Numerics.Vectors.xml
 D:\Projects\c#\Lecture Seri\Lecture Seri\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Projects\c#\Lecture Seri\Lecture Seri\obj\Debug\Lecture_Seri.special_function_screens.ScreenCaptureScreen.resources

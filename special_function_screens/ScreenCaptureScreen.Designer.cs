@@ -36,17 +36,17 @@
             this.okBtn = new System.Windows.Forms.Button();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.lvlCombo = new System.Windows.Forms.ComboBox();
             this.courseIdLab = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.courseNameCombo = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel6.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -128,7 +128,7 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.comboBox1);
+            this.panel3.Controls.Add(this.lvlCombo);
             this.panel3.Controls.Add(this.courseIdLab);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 85);
@@ -136,6 +136,26 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(637, 61);
             this.panel3.TabIndex = 1;
+            // 
+            // lvlCombo
+            // 
+            this.lvlCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.lvlCombo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lvlCombo.FormattingEnabled = true;
+            this.lvlCombo.Items.AddRange(new object[] {
+            "L1S1",
+            "L1S2",
+            "L2S1",
+            "L2S2",
+            "L3S1",
+            "L3S2",
+            "L4S1",
+            "L4S2"});
+            this.lvlCombo.Location = new System.Drawing.Point(144, 25);
+            this.lvlCombo.Name = "lvlCombo";
+            this.lvlCombo.Size = new System.Drawing.Size(121, 24);
+            this.lvlCombo.TabIndex = 2;
+            this.lvlCombo.SelectedIndexChanged += new System.EventHandler(this.lvlCombo_SelectedIndexChanged);
             // 
             // courseIdLab
             // 
@@ -159,7 +179,7 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.comboBox2);
+            this.panel4.Controls.Add(this.courseNameCombo);
             this.panel4.Controls.Add(this.label2);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 146);
@@ -167,6 +187,25 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(637, 61);
             this.panel4.TabIndex = 2;
+            // 
+            // courseNameCombo
+            // 
+            this.courseNameCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.courseNameCombo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.courseNameCombo.FormattingEnabled = true;
+            this.courseNameCombo.Items.AddRange(new object[] {
+            "L1S1",
+            "L1S2",
+            "L2S1",
+            "L2S2",
+            "L3S1",
+            "L3S2",
+            "L4S1",
+            "L4S2"});
+            this.courseNameCombo.Location = new System.Drawing.Point(144, 22);
+            this.courseNameCombo.Name = "courseNameCombo";
+            this.courseNameCombo.Size = new System.Drawing.Size(231, 24);
+            this.courseNameCombo.TabIndex = 2;
             // 
             // label3
             // 
@@ -189,6 +228,13 @@
             this.panel5.Size = new System.Drawing.Size(637, 61);
             this.panel5.TabIndex = 3;
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(144, 19);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(231, 22);
+            this.textBox1.TabIndex = 2;
+            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.label1);
@@ -208,7 +254,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(637, 85);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Add a new Course";
+            this.label1.Text = "Screen Captures";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel1
@@ -226,51 +272,6 @@
             this.panel1.Size = new System.Drawing.Size(637, 464);
             this.panel1.TabIndex = 1;
             // 
-            // comboBox1
-            // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "L1S1",
-            "L1S2",
-            "L2S1",
-            "L2S2",
-            "L3S1",
-            "L3S2",
-            "L4S1",
-            "L4S2"});
-            this.comboBox1.Location = new System.Drawing.Point(144, 25);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
-            this.comboBox1.TabIndex = 2;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "L1S1",
-            "L1S2",
-            "L2S1",
-            "L2S2",
-            "L3S1",
-            "L3S2",
-            "L4S1",
-            "L4S2"});
-            this.comboBox2.Location = new System.Drawing.Point(144, 22);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(231, 24);
-            this.comboBox2.TabIndex = 2;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(144, 19);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(231, 22);
-            this.textBox1.TabIndex = 2;
-            // 
             // ScreenCaptureScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -281,6 +282,7 @@
             this.Name = "ScreenCaptureScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ScreenCaptureScreen";
+            this.Load += new System.EventHandler(this.ScreenCaptureScreen_Load);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel9.ResumeLayout(false);
@@ -314,8 +316,8 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox lvlCombo;
+        private System.Windows.Forms.ComboBox courseNameCombo;
         private System.Windows.Forms.TextBox textBox1;
     }
 }
