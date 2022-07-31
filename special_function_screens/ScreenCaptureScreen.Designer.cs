@@ -47,6 +47,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.screenCaptureBackground = new System.ComponentModel.BackgroundWorker();
             this.panel6.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -80,9 +81,9 @@
             this.label4.Location = new System.Drawing.Point(13, 25);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(88, 16);
+            this.label4.Size = new System.Drawing.Size(75, 16);
             this.label4.TabIndex = 0;
-            this.label4.Text = "Course Credit";
+            this.label4.Text = "Description";
             // 
             // panel9
             // 
@@ -117,6 +118,7 @@
             this.okBtn.TabIndex = 1;
             this.okBtn.Text = "Create";
             this.okBtn.UseVisualStyleBackColor = false;
+            this.okBtn.Click += new System.EventHandler(this.okBtn_Click);
             // 
             // panel10
             // 
@@ -213,9 +215,9 @@
             this.label3.Location = new System.Drawing.Point(13, 25);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(40, 16);
+            this.label3.Size = new System.Drawing.Size(33, 16);
             this.label3.TabIndex = 0;
-            this.label3.Text = "Level";
+            this.label3.Text = "Title";
             // 
             // panel5
             // 
@@ -272,6 +274,11 @@
             this.panel1.Size = new System.Drawing.Size(637, 464);
             this.panel1.TabIndex = 1;
             // 
+            // screenCaptureBackground
+            // 
+            this.screenCaptureBackground.WorkerReportsProgress = true;
+            this.screenCaptureBackground.DoWork += new System.ComponentModel.DoWorkEventHandler(this.screenCaptureBackground_DoWork);
+            // 
             // ScreenCaptureScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -319,5 +326,6 @@
         private System.Windows.Forms.ComboBox lvlCombo;
         private System.Windows.Forms.ComboBox courseNameCombo;
         private System.Windows.Forms.TextBox textBox1;
+        private System.ComponentModel.BackgroundWorker screenCaptureBackground;
     }
 }
