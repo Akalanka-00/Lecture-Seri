@@ -53,33 +53,16 @@ namespace Lecture_Seri.special_function_screens
 
         private void okBtn_Click(object sender, EventArgs e)
         {
-            screenCaptureBackground.RunWorkerAsync();
+            Services.CaptureScreen cs = new Services.CaptureScreen();
+            this.Close();
+            cs.Show();
+            
 
         }
 
         private void screenCaptureBackground_DoWork(object sender, DoWorkEventArgs e)
         {
-            ConsoleKey key;
-            do
-            {
-                while (!Console.KeyAvailable)
-                {
-                    // Do something, but don't read key here
-                }
-
-                // Key is available - read it
-                key = Console.ReadKey(true).Key;
-
-                if (key == ConsoleKey.PrintScreen)
-                {
-                    MessageBox.Show("captured");
-                }
-                else if (key == ConsoleKey.NumPad2)
-                {
-                    Console.WriteLine(ConsoleKey.NumPad1.ToString());
-                }
-
-            } while (key != ConsoleKey.Escape);
+          
         }
     }
 }
