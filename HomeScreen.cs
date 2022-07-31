@@ -85,6 +85,47 @@ namespace Lecture_Seri
 
         }
 
+        private void loadCourses()
+        {
+            string path = Path.Combine(uniSettings.Default.location, uniSettings.Default.uniName);
+            path = Path.Combine(path, lvlComboBox.SelectedItem.ToString());
+            var directories = Directory.GetDirectories(path);
+            courseListView.Items.Clear();
+            foreach (var d in directories)
+            {
+                FileInfo file = new FileInfo(d);
+                courseListView.Items.Add(file.Name);
+                //  MessageBox.Show(path);
+            }
+          //  courseListView.SelectedIndex = 0;
+
+
+            
+        }
+
+        private void loadItems()
+        {
+          // string MyString = ;
+         /*  char[] MyChar = { '{', '}' };
+            string NewString = MyString.TrimStart(MyChar);
+            NewString = MyString.TrimEnd(MyChar);
+         */
+            string path = Path.Combine(uniSettings.Default.location, uniSettings.Default.uniName);
+            path = Path.Combine(path, lvlComboBox.SelectedItem.ToString());
+            path = Path.Combine(path, courseListView.SelectedItems[0].Text);
+            path = Path.Combine(path, materialSelectBox.SelectedItem.ToString());
+           // MessageBox.Show(path);
+            var directories = Directory.GetFiles(path);
+            itemListView.Items.Clear();
+            foreach (var d in directories)
+            {
+                FileInfo file = new FileInfo(d);
+                itemListView.Items.Add(file.Name);
+                //  MessageBox.Show(path);
+            }
+            //  itemListView
+        }
+
         private void newLectureToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
@@ -120,6 +161,7 @@ namespace Lecture_Seri
             {
                 signIn();
             }
+            loadCourses();
         }
 
         private void SignInToolBtn_Click(object sender, EventArgs e)
@@ -151,6 +193,22 @@ namespace Lecture_Seri
         private void screenCapturesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             screenCapture();
+        }
+
+        private void lvlComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            loadCourses();
+        }
+
+        private void courseListView_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            loadItems();
+        }
+
+        private void materialSelectBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(courseListView.SelectedItems.Count > 0)
+            loadItems();
         }
     }
 }
