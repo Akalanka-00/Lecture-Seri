@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.captureBtn = new System.Windows.Forms.Button();
             this.exitBtn = new System.Windows.Forms.Button();
+            this.captureBtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -43,6 +43,21 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(92, 74);
             this.panel1.TabIndex = 0;
+            // 
+            // exitBtn
+            // 
+            this.exitBtn.BackColor = System.Drawing.Color.DarkRed;
+            this.exitBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.exitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.exitBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
+            this.exitBtn.ForeColor = System.Drawing.Color.White;
+            this.exitBtn.Location = new System.Drawing.Point(0, 38);
+            this.exitBtn.Name = "exitBtn";
+            this.exitBtn.Size = new System.Drawing.Size(92, 36);
+            this.exitBtn.TabIndex = 8;
+            this.exitBtn.Text = "Exit";
+            this.exitBtn.UseVisualStyleBackColor = false;
+            this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
             // 
             // captureBtn
             // 
@@ -59,28 +74,14 @@
             this.captureBtn.UseVisualStyleBackColor = false;
             this.captureBtn.Click += new System.EventHandler(this.captureBtn_Click);
             // 
-            // exitBtn
-            // 
-            this.exitBtn.BackColor = System.Drawing.Color.DarkRed;
-            this.exitBtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.exitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.exitBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
-            this.exitBtn.ForeColor = System.Drawing.Color.White;
-            this.exitBtn.Location = new System.Drawing.Point(0, 38);
-            this.exitBtn.Name = "exitBtn";
-            this.exitBtn.Size = new System.Drawing.Size(92, 36);
-            this.exitBtn.TabIndex = 8;
-            this.exitBtn.Text = "Exit";
-            this.exitBtn.UseVisualStyleBackColor = false;
-            // 
-            // captureScreen
+            // CaptureScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(92, 74);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "captureScreen";
+            this.Name = "CaptureScreen";
             this.Text = "captureScreen";
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);

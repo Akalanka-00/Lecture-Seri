@@ -49,5 +49,10 @@ namespace Lecture_Seri.Services
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void exitBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
