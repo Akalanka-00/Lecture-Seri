@@ -126,6 +126,8 @@ namespace Lecture_Seri
             //  itemListView
         }
 
+
+
         private void newLectureToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
