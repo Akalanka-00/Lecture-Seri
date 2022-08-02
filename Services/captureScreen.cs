@@ -29,7 +29,7 @@ namespace Lecture_Seri.Services
         private void takeScreenCapture()
         {
             DateTime now = DateTime.Now;
-            string fimeName = $"IMG_{now:HHmmss}";
+            string fimeName = $"IMG_{now:yyyyMMddHHmmssms}";
            // MessageBox.Show(fimeName);
 
             var bmpScreenshot = new Bitmap(Screen.PrimaryScreen.Bounds.Width,
