@@ -23,7 +23,9 @@ namespace Lecture_Seri.Services
 
         private void captureBtn_Click(object sender, EventArgs e)
         {
+            this.Hide();
             takeScreenCapture();
+            this.Show();
         }
 
         private void takeScreenCapture()
