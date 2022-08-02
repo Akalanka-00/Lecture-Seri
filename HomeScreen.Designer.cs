@@ -40,6 +40,8 @@
             this.lvlComboBox = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.filenameLbl = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.materialSelectBox = new System.Windows.Forms.ComboBox();
@@ -71,17 +73,15 @@
             this.recordingsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.assignmentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lectureReferencesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel15 = new System.Windows.Forms.Panel();
-            this.filenameLbl = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel6.SuspendLayout();
+            this.panel15.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.avatarShape)).BeginInit();
             this.menuStrip1.SuspendLayout();
-            this.panel15.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -220,6 +220,25 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(297, 179);
             this.panel6.TabIndex = 0;
+            // 
+            // panel15
+            // 
+            this.panel15.Controls.Add(this.filenameLbl);
+            this.panel15.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel15.Location = new System.Drawing.Point(0, 0);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(297, 33);
+            this.panel15.TabIndex = 1;
+            // 
+            // filenameLbl
+            // 
+            this.filenameLbl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.filenameLbl.Location = new System.Drawing.Point(0, 0);
+            this.filenameLbl.Name = "filenameLbl";
+            this.filenameLbl.Size = new System.Drawing.Size(297, 33);
+            this.filenameLbl.TabIndex = 0;
+            this.filenameLbl.Text = "File Name";
+            this.filenameLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel7
             // 
@@ -520,25 +539,6 @@
             this.lectureReferencesToolStripMenuItem1.Size = new System.Drawing.Size(216, 26);
             this.lectureReferencesToolStripMenuItem1.Text = "Lecture References";
             // 
-            // panel15
-            // 
-            this.panel15.Controls.Add(this.filenameLbl);
-            this.panel15.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel15.Location = new System.Drawing.Point(0, 0);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(297, 33);
-            this.panel15.TabIndex = 1;
-            // 
-            // filenameLbl
-            // 
-            this.filenameLbl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.filenameLbl.Location = new System.Drawing.Point(0, 0);
-            this.filenameLbl.Name = "filenameLbl";
-            this.filenameLbl.Size = new System.Drawing.Size(297, 33);
-            this.filenameLbl.TabIndex = 0;
-            this.filenameLbl.Text = "File Name";
-            this.filenameLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // HomeScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
@@ -556,12 +556,12 @@
             this.panel4.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
+            this.panel15.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.avatarShape)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.panel15.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

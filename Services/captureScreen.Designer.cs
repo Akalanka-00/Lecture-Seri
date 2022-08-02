@@ -83,6 +83,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "CaptureScreen";
             this.Text = "captureScreen";
+            this.TopMost = true;
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 

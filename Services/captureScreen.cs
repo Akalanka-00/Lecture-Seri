@@ -8,8 +8,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Rectangle = System.Drawing.Rectangle;
-
+using System.Runtime.InteropServices;
+using System.Drawing;
+using System.Drawing.Imaging;
 
 namespace Lecture_Seri.Services
 {
@@ -27,27 +28,27 @@ namespace Lecture_Seri.Services
 
         private void takeScreenCapture()
         {
-            try
-            {
-                //Creating a new Bitmap object
-                Bitmap captureBitmap = new Bitmap(1024, 768, PixelFormat.Format32bppArgb);
-                //Bitmap captureBitmap = new Bitmap(int width, int height, PixelFormat);
-                //Creating a Rectangle object which will
-                //capture our Current Screen
-                Rectangle captureRectangle = Screen.AllScreens[0].Bounds;
-                //Creating a New Graphics Object
-                Graphics captureGraphics = Graphics.FromImage(captureBitmap);
-                //Copying Image from The Screen
-                captureGraphics.CopyFromScreen(captureRectangle.Left, captureRectangle.Top, 0, 0, captureRectangle.Size);
-                //Saving the Image File (I am here Saving it in My E drive).
-                captureBitmap.Save(uniSettings.Default.location, ImageFormat.Jpeg);
-                //Displaying the Successfull Result
-                MessageBox.Show("Screen Captured");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            DateTime now = DateTime.Now;
+            string fimeName = $"IMG_{now:HHmmss}";
+           // MessageBox.Show(fimeName);
+
+            var bmpScreenshot = new Bitmap(Screen.PrimaryScreen.Bounds.Width,
+                               Screen.PrimaryScreen.Bounds.Height,
+                               PixelFormat.Format32bppArgb);
+
+            // Create a graphics object from the bitmap.
+            var gfxScreenshot = Graphics.FromImage(bmpScreenshot);
+
+            // Take the screenshot from the upper left corner to the right bottom corner.
+            gfxScreenshot.CopyFromScreen(Screen.PrimaryScreen.Bounds.X,
+                                        Screen.PrimaryScreen.Bounds.Y,
+                                        0,
+                                        0,
+                                        Screen.PrimaryScreen.Bounds.Size,
+                                        CopyPixelOperation.SourceCopy);
+
+            // Save the screenshot to the specified path that the user has chosen.
+            bmpScreenshot.Save("C:\\Users\\ASUS\\Downloads\\temp4\\" + fimeName+".png", ImageFormat.Png);
         }
 
         private void exitBtn_Click(object sender, EventArgs e)
