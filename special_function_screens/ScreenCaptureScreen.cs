@@ -64,5 +64,10 @@ namespace Lecture_Seri.special_function_screens
         {
           
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
