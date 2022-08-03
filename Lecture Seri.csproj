@@ -138,6 +138,12 @@
     <Compile Include="Services\CaptureScreen.Designer.cs">
       <DependentUpon>CaptureScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="special_function_screens\ImageViewScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="special_function_screens\ImageViewScreen.Designer.cs">
+      <DependentUpon>ImageViewScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="special_function_screens\newCourseScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -198,6 +204,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Services\CaptureScreen.resx">
       <DependentUpon>CaptureScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="special_function_screens\ImageViewScreen.resx">
+      <DependentUpon>ImageViewScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="special_function_screens\newCourseScreen.resx">
       <DependentUpon>newCourseScreen.cs</DependentUpon>
