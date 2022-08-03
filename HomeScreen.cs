@@ -120,7 +120,7 @@ namespace Lecture_Seri
             foreach (var d in directories)
             {
                 FileInfo file = new FileInfo(d);
-                itemListView.Items.Add(generateBitmap(file.Name));
+              //  itemListView.Items.Add(generateBitmap(file.Name));
                 //  MessageBox.Show(path);
             }
             //  itemListView

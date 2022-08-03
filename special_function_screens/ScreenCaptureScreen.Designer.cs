@@ -278,7 +278,6 @@
             // screenCaptureBackground
             // 
             this.screenCaptureBackground.WorkerReportsProgress = true;
-            this.screenCaptureBackground.DoWork += new System.ComponentModel.DoWorkEventHandler(this.screenCaptureBackground_DoWork);
             // 
             // ScreenCaptureScreen
             // 
