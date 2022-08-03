@@ -120,7 +120,7 @@ namespace Lecture_Seri
             foreach (var d in directories)
             {
                 FileInfo file = new FileInfo(d);
-                itemListView.Items.Add(file.Name);
+                itemListView.Items.Add(generateBitmap(file.Name));
                 //  MessageBox.Show(path);
             }
             //  itemListView
@@ -211,6 +211,13 @@ namespace Lecture_Seri
         {
             if(courseListView.SelectedItems.Count > 0)
             loadItems();
+        }
+
+        private Image generateBitmap(string fileName)
+        {
+            Image image = Image.FromFile(fileName);
+            Image thumb = image.GetThumbnailImage(120, 120, () => false, IntPtr.Zero);
+            return thumb;
         }
     }
 }

@@ -60,14 +60,13 @@ namespace Lecture_Seri.special_function_screens
 
         }
 
-        private void screenCaptureBackground_DoWork(object sender, DoWorkEventArgs e)
-        {
-          
-        }
+       
 
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+
+        
     }
 }
