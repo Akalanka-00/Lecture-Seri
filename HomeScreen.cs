@@ -117,12 +117,26 @@ namespace Lecture_Seri
            // MessageBox.Show(path);
             var directories = Directory.GetFiles(path);
             itemListView.Items.Clear();
+            var imageList = new ImageList();
             foreach (var d in directories)
             {
                 FileInfo file = new FileInfo(d);
-              //  itemListView.Items.Add(generateBitmap(file.Name));
+                if (file.FullName.EndsWith("jpg"))
+                {
+                    pictureBox1.Image = generateBitmap(file.FullName);
+
+                    imageList.Images.Add("itemImageKey", generateBitmap(file.FullName));
+                   // itemListView.Items.Add((string)file.Name);
+                    //itemListView.LargeImageList.Images.Add(generateBitmap(file.FullName));
+                }
+
+
                 //  MessageBox.Show(path);
             }
+            itemListView.LargeImageList = imageList;
+            var listViewItem = itemListView.Items.Add("");
+            // and tell the item which image to use
+            listViewItem.ImageKey = "itemImageKey";
             //  itemListView
         }
 
@@ -215,9 +229,11 @@ namespace Lecture_Seri
 
         private Image generateBitmap(string fileName)
         {
-            Image image = Image.FromFile(fileName);
-            Image thumb = image.GetThumbnailImage(120, 120, () => false, IntPtr.Zero);
-            return thumb;
+            
+                Image image = Image.FromFile(fileName);
+                Image thumb = image.GetThumbnailImage(120, 120, () => false, IntPtr.Zero);
+                return thumb;
+            
         }
     }
 }
