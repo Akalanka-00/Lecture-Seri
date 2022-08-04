@@ -124,7 +124,6 @@ namespace Lecture_Seri
                 FileInfo file = new FileInfo(d);
                 if (file.FullName.EndsWith("png"))
                 {
-                    pictureBox1.Image = generateBitmap(file.FullName);
 
                     imageList.Images.Add("itemImageKey", generateBitmap(file.FullName));
                     // itemListView.Items.Add((string)file.Name);

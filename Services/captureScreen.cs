@@ -50,7 +50,7 @@ namespace Lecture_Seri.Services
                                         CopyPixelOperation.SourceCopy);
 
             // Save the screenshot to the specified path that the user has chosen.
-            bmpScreenshot.Save("C:\\Users\\ASUS\\Downloads\\temp5\\" + fimeName+".png", ImageFormat.Png);
+            bmpScreenshot.Save("E:\\Study\\UOM\\Lectures\\L2S1\\DI1001 - Health and Safety\\20220704\\" + fimeName+".png", ImageFormat.Png);
         }
 
         private void exitBtn_Click(object sender, EventArgs e)
