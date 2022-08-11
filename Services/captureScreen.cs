@@ -53,6 +53,7 @@ namespace Lecture_Seri.Services
             bmpScreenshot.Save("E:\\Study\\UOM\\Lectures\\L2S1\\IN2900 - Industry Based Project\\20220810\\" + fimeName+".png", ImageFormat.Png);
         }
 
+        
         private void exitBtn_Click(object sender, EventArgs e)
         {
             this.Close();

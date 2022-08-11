@@ -29,6 +29,7 @@ namespace Lecture_Seri.special_function_screens
                 lvlCombo.Items.Add(file.Name);
               //  MessageBox.Show(path);
             }
+            setTitle();
             lvlCombo.SelectedIndex = 0;
         }
 
@@ -67,6 +68,16 @@ namespace Lecture_Seri.special_function_screens
             this.Close();
         }
 
-        
+        private void setTitle()
+        {
+            DateTime now = DateTime.Now;
+            string fimeName = $"{now:yyyyMMdd}";
+            titleTxtBox.Text = fimeName;
+        }
+
+        private void createDirectory()
+        {
+
+        }
     }
 }

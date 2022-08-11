@@ -43,7 +43,7 @@
             this.courseNameCombo = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.titleTxtBox = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -222,7 +222,7 @@
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.textBox1);
+            this.panel5.Controls.Add(this.titleTxtBox);
             this.panel5.Controls.Add(this.label3);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(0, 207);
@@ -231,12 +231,12 @@
             this.panel5.Size = new System.Drawing.Size(637, 61);
             this.panel5.TabIndex = 3;
             // 
-            // textBox1
+            // titleTxtBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(144, 19);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(231, 22);
-            this.textBox1.TabIndex = 2;
+            this.titleTxtBox.Location = new System.Drawing.Point(144, 19);
+            this.titleTxtBox.Name = "titleTxtBox";
+            this.titleTxtBox.Size = new System.Drawing.Size(231, 22);
+            this.titleTxtBox.TabIndex = 2;
             // 
             // panel2
             // 
@@ -325,7 +325,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ComboBox lvlCombo;
         private System.Windows.Forms.ComboBox courseNameCombo;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox titleTxtBox;
         private System.ComponentModel.BackgroundWorker screenCaptureBackground;
     }
 }
