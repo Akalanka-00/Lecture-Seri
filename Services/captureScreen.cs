@@ -50,7 +50,7 @@ namespace Lecture_Seri.Services
                                         CopyPixelOperation.SourceCopy);
 
             // Save the screenshot to the specified path that the user has chosen.
-            bmpScreenshot.Save("E:\\Study\\UOM\\Lectures\\L2S1\\IS2300 - Principles of Marketing\\20220812\\" + fimeName+".png", ImageFormat.Png);
+            bmpScreenshot.Save("E:\\Study\\UOM\\Lectures\\L2S1\\IN2200 - Software Engineering Methods\\20220815\\" + fimeName+".png", ImageFormat.Png);
         }
 
         
