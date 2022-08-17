@@ -50,7 +50,7 @@ namespace Lecture_Seri.Services
                                         CopyPixelOperation.SourceCopy);
 
             // Save the screenshot to the specified path that the user has chosen.
-            bmpScreenshot.Save("E:\\Study\\UOM\\Lectures\\L2S1\\CM2110 - Statistical Distributions\\20220816-Tutorial\\" + fimeName+".png", ImageFormat.Png);
+            bmpScreenshot.Save("E:\\Study\\UOM\\Lectures\\L2S1\\CM2110 - Calculus & Statistical Distributions\\20220817\\" + fimeName+".png", ImageFormat.Png);
         }
 
         
