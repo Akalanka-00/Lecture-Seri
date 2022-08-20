@@ -156,7 +156,7 @@
             "L4S2"});
             this.lvlCombo.Location = new System.Drawing.Point(144, 25);
             this.lvlCombo.Name = "lvlCombo";
-            this.lvlCombo.Size = new System.Drawing.Size(121, 24);
+            this.lvlCombo.Size = new System.Drawing.Size(231, 24);
             this.lvlCombo.TabIndex = 2;
             this.lvlCombo.SelectedIndexChanged += new System.EventHandler(this.lvlCombo_SelectedIndexChanged);
             // 
