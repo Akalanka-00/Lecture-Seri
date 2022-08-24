@@ -71,8 +71,8 @@
             this.customNotesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lectureMaterialsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.recordingsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.assignmentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lectureReferencesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.assignmentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -408,7 +408,7 @@
             this.lectureToolStripMenuItem.BackColor = System.Drawing.Color.White;
             this.lectureToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.lectureToolStripMenuItem.Name = "lectureToolStripMenuItem";
-            this.lectureToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.lectureToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.lectureToolStripMenuItem.Text = "Course";
             this.lectureToolStripMenuItem.Click += new System.EventHandler(this.lectureToolStripMenuItem_Click);
             // 
@@ -420,7 +420,7 @@
             this.customNotesToolStripMenuItem1});
             this.lectureToolStripMenuItem1.ForeColor = System.Drawing.Color.Black;
             this.lectureToolStripMenuItem1.Name = "lectureToolStripMenuItem1";
-            this.lectureToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.lectureToolStripMenuItem1.Size = new System.Drawing.Size(216, 26);
             this.lectureToolStripMenuItem1.Text = "Lecture";
             // 
             // screenCapturesToolStripMenuItem
@@ -441,7 +441,7 @@
             this.notesToolStripMenuItem.BackColor = System.Drawing.Color.White;
             this.notesToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.notesToolStripMenuItem.Name = "notesToolStripMenuItem";
-            this.notesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.notesToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.notesToolStripMenuItem.Text = "Lecture Notes";
             this.notesToolStripMenuItem.Click += new System.EventHandler(this.notesToolStripMenuItem_Click);
             // 
@@ -450,7 +450,7 @@
             this.lectureReferencesToolStripMenuItem.BackColor = System.Drawing.Color.White;
             this.lectureReferencesToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.lectureReferencesToolStripMenuItem.Name = "lectureReferencesToolStripMenuItem";
-            this.lectureReferencesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.lectureReferencesToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.lectureReferencesToolStripMenuItem.Text = "Lecture References";
             this.lectureReferencesToolStripMenuItem.Click += new System.EventHandler(this.lectureReferencesToolStripMenuItem_Click);
             // 
@@ -459,7 +459,7 @@
             this.recordingsToolStripMenuItem.BackColor = System.Drawing.Color.White;
             this.recordingsToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.recordingsToolStripMenuItem.Name = "recordingsToolStripMenuItem";
-            this.recordingsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.recordingsToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.recordingsToolStripMenuItem.Text = "Recordings";
             this.recordingsToolStripMenuItem.Click += new System.EventHandler(this.recordingsToolStripMenuItem_Click);
             // 
@@ -468,7 +468,7 @@
             this.anAssignmentToolStripMenuItem.BackColor = System.Drawing.Color.White;
             this.anAssignmentToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.anAssignmentToolStripMenuItem.Name = "anAssignmentToolStripMenuItem";
-            this.anAssignmentToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.anAssignmentToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.anAssignmentToolStripMenuItem.Text = "An Assignment";
             // 
             // selectToolStripMenuItem
@@ -493,20 +493,20 @@
             this.lectureNotesToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.lectureNotesToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.lectureNotesToolStripMenuItem.Name = "lectureNotesToolStripMenuItem";
-            this.lectureNotesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.lectureNotesToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.lectureNotesToolStripMenuItem.Text = "Lecture Notes";
             this.lectureNotesToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // screenShotsToolStripMenuItem
             // 
             this.screenShotsToolStripMenuItem.Name = "screenShotsToolStripMenuItem";
-            this.screenShotsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.screenShotsToolStripMenuItem.Size = new System.Drawing.Size(198, 26);
             this.screenShotsToolStripMenuItem.Text = "Screen Captures";
             // 
             // customNotesToolStripMenuItem
             // 
             this.customNotesToolStripMenuItem.Name = "customNotesToolStripMenuItem";
-            this.customNotesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.customNotesToolStripMenuItem.Size = new System.Drawing.Size(198, 26);
             this.customNotesToolStripMenuItem.Text = "Custom Notes";
             // 
             // lectureMaterialsToolStripMenuItem
@@ -515,7 +515,7 @@
             this.lectureMaterialsToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.lectureMaterialsToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.lectureMaterialsToolStripMenuItem.Name = "lectureMaterialsToolStripMenuItem";
-            this.lectureMaterialsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.lectureMaterialsToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.lectureMaterialsToolStripMenuItem.Text = "Lecture Materials";
             this.lectureMaterialsToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -525,19 +525,9 @@
             this.recordingsToolStripMenuItem1.ForeColor = System.Drawing.Color.Black;
             this.recordingsToolStripMenuItem1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.recordingsToolStripMenuItem1.Name = "recordingsToolStripMenuItem1";
-            this.recordingsToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.recordingsToolStripMenuItem1.Size = new System.Drawing.Size(216, 26);
             this.recordingsToolStripMenuItem1.Text = "Recordings";
             this.recordingsToolStripMenuItem1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // assignmentToolStripMenuItem
-            // 
-            this.assignmentToolStripMenuItem.BackColor = System.Drawing.Color.White;
-            this.assignmentToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
-            this.assignmentToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.assignmentToolStripMenuItem.Name = "assignmentToolStripMenuItem";
-            this.assignmentToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.assignmentToolStripMenuItem.Text = "Assignment";
-            this.assignmentToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lectureReferencesToolStripMenuItem1
             // 
@@ -545,9 +535,19 @@
             this.lectureReferencesToolStripMenuItem1.ForeColor = System.Drawing.Color.Black;
             this.lectureReferencesToolStripMenuItem1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.lectureReferencesToolStripMenuItem1.Name = "lectureReferencesToolStripMenuItem1";
-            this.lectureReferencesToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.lectureReferencesToolStripMenuItem1.Size = new System.Drawing.Size(216, 26);
             this.lectureReferencesToolStripMenuItem1.Text = "Lecture References";
             this.lectureReferencesToolStripMenuItem1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // assignmentToolStripMenuItem
+            // 
+            this.assignmentToolStripMenuItem.BackColor = System.Drawing.Color.White;
+            this.assignmentToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
+            this.assignmentToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.assignmentToolStripMenuItem.Name = "assignmentToolStripMenuItem";
+            this.assignmentToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.assignmentToolStripMenuItem.Text = "Assignment";
+            this.assignmentToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // HomeScreen
             // 
