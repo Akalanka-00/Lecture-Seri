@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using System.Threading;
 
 namespace Lecture_Seri.Services
 {
@@ -22,6 +23,8 @@ namespace Lecture_Seri.Services
         private void captureBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
+            int milliseconds = 2000;
+            Thread.Sleep(milliseconds);
             takeScreenCapture();
             this.Show();
         }
